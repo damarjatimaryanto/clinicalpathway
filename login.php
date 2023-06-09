@@ -1,3 +1,5 @@
+
+
 <?php
 session_start(); // Memulai session
 
@@ -27,12 +29,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         // Login berhasil
         $_SESSION['username'] = $username;
-        header("Location: pasien.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
+        header("Location: kelas1.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
         exit();
     } else {
         // Login gagal
         $error = "Username atau password salah.";
     }
+}
+
+//nyimpen session
+// session_start();
+
+// Check if the user is not logged in
+if (isset($_SESSION['username'])) {
+    header("Location: kelas1.php"); // Redirect the user to the login page if not authenticated
+    exit();
 }
 
 // Menutup koneksi

@@ -1,3 +1,19 @@
+<?php
+// include 'auth.php';
+
+session_start();
+
+// Check if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php"); // Redirect the user to the login page if not authenticated
+    exit();
+}
+
+require_once 'db_connection.php';
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,10 +44,13 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="assets/index3.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="logout.php" class="nav-link">Logout</a>
                 </li>
             </ul>
 
@@ -224,12 +243,41 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="../widgets.html" class="nav-link">
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Widgets
                                     <span class="right badge badge-danger">New</span>
+                                </p>
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="kelas1.php" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Pasien Kelas I
+
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="kelas2.php" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Pasien Kelas II
+
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="kelas3.php" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Pasien Kelas III
+
                                 </p>
                             </a>
                         </li>
@@ -276,286 +324,63 @@
 
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">DataTable with default features</h3>
+                                    <h3 class="card-title">Data Pasien</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <table id="example1" class="table table-bordered ">
+
+                                    <table id="example3" class="table table-bordered table-hover">
+                                        
                                         <thead>
                                             <tr>
-                                                <th rowspan="2">No.</th>
-                                                <th rowspan="2">Kegiatan</th>
-                                                <th rowspan="2">Uraian Kegiatan</th>
-                                                <th colspan="6" class="text-center">Hari</th>
-                                                <th rowspan="2">Keterangan</th>
-                                                <th rowspan="2">Biaya</th>
-
-                                            </tr>
-
-                                            <tr>
-                                                <th>1</th>
-                                                <th>2</th>
-                                                <th>3</th>
-                                                <th>4</th>
-                                                <th>5</th>
-                                                <th>6</th>
-
-
+                                                <th>Nama Pasien</th>
+                                                <th>NO. RM</th>
+                                                <th>Alamat</th>
+                                                <th>Tgl Daftar</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- Nomor 1 -->
-                                            <tr>
-                                                <td rowspan="4">1</td>
-                                                <td rowspan="2">a. Asesment awal Medis</td>
-                                                <td>Dokter IGD</td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td> -</td>
-                                                <td>Rp. -</td>
-                                            </tr>
-                                            <tr>
+                                            <?php
+                                            // Assuming you have established a database connection
+                                            $sql = "SELECT NAMA, NOMR, ALAMAT, TGLDAFTAR FROM simrs2012.m_pasien group by TGLDAFTAR desc LIMIT 1000";
+                                            $result = $conn->query($sql);
 
-                                                <td>DPJP</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td rowspan="2">a. Asesment awal Keperawatan</td>
-                                                <td>IGD / Poli</td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td>
-                                                    -
-                                                </td>
-                                                <td>Rp. -</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>Rawat Inap</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <!-- Nomor 2 -->
-                                            <tr>
-                                                <td rowspan="8">2</td>
-                                                <td rowspan="8">Laboratorium</td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td>Darah Lengkap</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Urenium Kriatin</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>GDS</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Elektrolit</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Asam Urat</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>Profil Lipid</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>GDP</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-
-                                            <!-- Nomor 3 -->
-                                            <tr>
-                                                <td rowspan="3">3</td>
-                                                <td rowspan="3">Radiologi / Imaging</td>
-                                                <td>RTO Thorax</td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td> -</td>
-                                                <td>Rp. -</td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <td>CT Scan Kepala</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-                                            <tr>
-
-                                                <td>EKG</td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td></td>
-                                                <td> </td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td> Rp. -</td>
-
-                                            </tr>
-
-                                            <!-- Nomor 4 -->
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Konsultasi</td>
-                                                <td>DPJP</td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>-</td>
-                                                <td>Rp. -</td>
-                                            </tr>
-
-
-
-
-
-
-
-
-
+                                            // Check if there are any rows returned from the query
+                                            if ($result->num_rows > 0) {
+                                                // Loop through each row of the result set
+                                                while ($row = $result->fetch_assoc()) {
+                                                    $nama = $row["NAMA"];
+                                                    $nomr = $row["NOMR"];
+                                                    $alamat = $row["ALAMAT"];
+                                                    $tanggaldaftar = $row["TGLDAFTAR"]
+                                            ?>
+                                                    <tr>
+                                                        <td><?php echo $nama; ?></td>
+                                                        <td><?php echo $nomr; ?></td>
+                                                        <td><?php echo $alamat; ?></td>
+                                                        <td><?php echo $tanggaldaftar; ?></td>
+                                                        <td>
+                                                            <a href="detailkelas2.php?nomr=<?php echo $nomr?>" class="nav-link">
+                                                                <button type="button" class="btn btn-block bg-gradient-primary btn-sm">Detail</button>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                            <?php
+                                                }
+                                            } else {
+                                                // No rows found in the result set
+                                                echo "<tr><td colspan='4'>No data found.</td></tr>";
+                                            }
+                                            ?>
                                         </tbody>
-                                        <tfoot>
-                                            <tr>
-
-                                                <th colspan="9" class="text-center"></th>
-                                                <th class="text-center">TOTAL BIAYA</th>
-                                                <th class="text-center">Rp. 0</th>
-
-
-                                            </tr>
-
-                                            <tr>
-
-                                                <th colspan="9" class="text-center"></th>
-                                                <th class="text-center">BIAYA INA CBGS</th>
-                                                <th class="text-center">Rp. 0</th>
-
-
-                                            </tr>
-                                        </tfoot>
                                     </table>
+
                                 </div>
                                 <!-- /.card-body -->
                             </div>
+                            <!-- /.card -->
+
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
@@ -620,6 +445,19 @@
                 "info": true,
                 "autoWidth": false,
                 "responsive": true,
+            });
+            $('#example3').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+                order: [
+                    [1, 'asc']
+                ] // Set the default ordering for the second column in ascending order
+
             });
         });
     </script>
