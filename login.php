@@ -74,8 +74,12 @@ $conn->close();
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
+        <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
+                <img src="img/Logo.png" alt="SINAPS LOGO" class="" style="opacity: .8; height:200px;">
+                
+            </a>
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h1"><b>Clinical</b>Pathway</a>
+            <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>

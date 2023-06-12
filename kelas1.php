@@ -20,7 +20,7 @@ require_once 'db_connection.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | DataTables</title>
+    <title>SINAPS</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -181,8 +181,8 @@ require_once 'db_connection.php';
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="assets/index3.html" class="brand-link">
-                <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <img src="img/Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">SINAPS</span>
             </a>
 
             <!-- Sidebar -->
@@ -193,7 +193,7 @@ require_once 'db_connection.php';
                         <img src="assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">User</a>
                     </div>
                 </div>
 
@@ -330,7 +330,7 @@ require_once 'db_connection.php';
                                 <div class="card-body">
 
                                     <table id="example3" class="table table-bordered table-hover">
-                                        
+
                                         <thead>
                                             <tr>
                                                 <th>Nama Pasien</th>
@@ -341,42 +341,42 @@ require_once 'db_connection.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php
-// Assuming you have established a database connection
-$sql = "SELECT * FROM simrs2012.m_pasien a
+                                            <?php
+                                            // Assuming you have established a database connection
+                                            $sql = "SELECT * FROM simrs2012.m_pasien a
         LEFT JOIN simrs2012.t_sep b ON a.NOMR = b.NOMR
         WHERE b.kelas_rawat = 1 && b.jenis_layanan = 1
         -- GROUP BY b.kelas_rawat DESC
         LIMIT 10000";
-$result = mysqli_query($conn, $sql);
+                                            $result = mysqli_query($conn, $sql);
 
-// Check if there are any rows returned from the query
-if (mysqli_num_rows($result) > 0) {
-    // Loop through each row of the result set
-    while ($row = mysqli_fetch_assoc($result)) {
-        $nama = $row["NAMA"];
-        $nomr = $row["NOMR"];
-        $alamat = $row["ALAMAT"];
-        $kelas_rawat = $row["kelas_rawat"];
-        ?>
-        <tr>
-            <td><?php echo $nama; ?></td>
-            <td><?php echo $nomr; ?></td>
-            <td><?php echo $alamat; ?></td>
-            <td><?php echo $kelas_rawat; ?></td>
-            <td>
-                <a href="detailkelas1.php?nomr=<?php echo $nomr?>" class="nav-link">
-                    <button type="button" class="btn btn-block bg-gradient-primary btn-sm">Detail</button>
-                </a>
-            </td>
-        </tr>
-        <?php
-    }
-} else {
-    // No rows found in the result set
-    echo "<tr><td colspan='4'>No data found.</td></tr>";
-}
-?>
+                                            // Check if there are any rows returned from the query
+                                            if (mysqli_num_rows($result) > 0) {
+                                                // Loop through each row of the result set
+                                                while ($row = mysqli_fetch_assoc($result)) {
+                                                    $nama = $row["NAMA"];
+                                                    $nomr = $row["NOMR"];
+                                                    $alamat = $row["ALAMAT"];
+                                                    $kelas_rawat = $row["kelas_rawat"];
+                                            ?>
+                                                    <tr>
+                                                        <td><?php echo $nama; ?></td>
+                                                        <td><?php echo $nomr; ?></td>
+                                                        <td><?php echo $alamat; ?></td>
+                                                        <td><?php echo $kelas_rawat; ?></td>
+                                                        <td>
+                                                            <a href="detailkelas1.php?nomr=<?php echo $nomr ?>" class="nav-link">
+                                                                <button type="button" class="btn btn-block bg-gradient-primary btn-sm">Detail</button>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                            <?php
+                                                }
+                                            } else {
+                                                // No rows found in the result set
+                                                echo "<tr><td colspan='4'>No data found.</td></tr>";
+                                            }
+                                            ?>
                                         </tbody>
                                     </table>
 
