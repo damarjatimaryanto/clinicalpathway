@@ -47,20 +47,402 @@ $biaya10 = isset($_SESSION['biaya10']) ? $_SESSION['biaya10'] : $row['biaya10'];
 $biaya11 = isset($_SESSION['biaya11']) ? $_SESSION['biaya11'] : $row['biaya11'];
 $biaya12 = isset($_SESSION['biaya12']) ? $_SESSION['biaya12'] : $row['biaya12'];
 
+$biaya13 = isset($_SESSION['biaya13']) ? $_SESSION['biaya13'] : $row['biaya13'];
+$biaya14 = isset($_SESSION['biaya14']) ? $_SESSION['biaya14'] : $row['biaya14'];
+$biaya15 = isset($_SESSION['biaya15']) ? $_SESSION['biaya15'] : $row['biaya15'];
+$biaya16 = isset($_SESSION['biaya16']) ? $_SESSION['biaya16'] : $row['biaya16'];
+$biaya17 = isset($_SESSION['biaya17']) ? $_SESSION['biaya17'] : $row['biaya17'];
+$biaya18 = isset($_SESSION['biaya18']) ? $_SESSION['biaya18'] : $row['biaya18'];
+$biaya19 = isset($_SESSION['biaya19']) ? $_SESSION['biaya19'] : $row['biaya19'];
+$biaya20 = isset($_SESSION['biaya20']) ? $_SESSION['biaya20'] : $row['biaya20'];
+$biaya21 = isset($_SESSION['biaya21']) ? $_SESSION['biaya21'] : $row['biaya21'];
+$biaya22 = isset($_SESSION['biaya22']) ? $_SESSION['biaya22'] : $row['biaya22'];
+$biaya23 = isset($_SESSION['biaya23']) ? $_SESSION['biaya23'] : $row['biaya23'];
+$biaya24 = isset($_SESSION['biaya24']) ? $_SESSION['biaya24'] : $row['biaya24'];
+
+$biaya25 = isset($_SESSION['biaya25']) ? $_SESSION['biaya25'] : $row['biaya25'];
+$biaya26 = isset($_SESSION['biaya26']) ? $_SESSION['biaya26'] : $row['biaya26'];
+$biaya27 = isset($_SESSION['biaya27']) ? $_SESSION['biaya27'] : $row['biaya27'];
+$biaya28 = isset($_SESSION['biaya28']) ? $_SESSION['biaya28'] : $row['biaya28'];
+$biaya29 = isset($_SESSION['biaya29']) ? $_SESSION['biaya29'] : $row['biaya29'];
+$biaya30 = isset($_SESSION['biaya30']) ? $_SESSION['biaya30'] : $row['biaya30'];
+$biaya31 = isset($_SESSION['biaya31']) ? $_SESSION['biaya31'] : $row['biaya31'];
+$biaya32 = isset($_SESSION['biaya32']) ? $_SESSION['biaya32'] : $row['biaya32'];
+$biaya33 = isset($_SESSION['biaya33']) ? $_SESSION['biaya33'] : $row['biaya33'];
+$biaya34 = isset($_SESSION['biaya34']) ? $_SESSION['biaya34'] : $row['biaya34'];
+$biaya35 = isset($_SESSION['biaya35']) ? $_SESSION['biaya35'] : $row['biaya35'];
+$biaya36 = isset($_SESSION['biaya36']) ? $_SESSION['biaya36'] : $row['biaya36'];
+
+$biaya37 = isset($_SESSION['biaya37']) ? $_SESSION['biaya37'] : $row['biaya37'];
+$biaya38 = isset($_SESSION['biaya38']) ? $_SESSION['biaya38'] : $row['biaya38'];
+$biaya39 = isset($_SESSION['biaya39']) ? $_SESSION['biaya39'] : $row['biaya39'];
+$biaya40 = isset($_SESSION['biaya40']) ? $_SESSION['biaya40'] : $row['biaya40'];
+$biaya41 = isset($_SESSION['biaya41']) ? $_SESSION['biaya41'] : $row['biaya41'];
+$biaya42 = isset($_SESSION['biaya42']) ? $_SESSION['biaya42'] : $row['biaya42'];
+$biaya43 = isset($_SESSION['biaya43']) ? $_SESSION['biaya43'] : $row['biaya43'];
+$biaya44 = isset($_SESSION['biaya44']) ? $_SESSION['biaya44'] : $row['biaya44'];
+$biaya45 = isset($_SESSION['biaya45']) ? $_SESSION['biaya45'] : $row['biaya45'];
+$biaya46 = isset($_SESSION['biaya46']) ? $_SESSION['biaya46'] : $row['biaya46'];
+$biaya47 = isset($_SESSION['biaya47']) ? $_SESSION['biaya47'] : $row['biaya47'];
+$biaya48 = isset($_SESSION['biaya48']) ? $_SESSION['biaya48'] : $row['biaya48'];
+
+$biaya49 = isset($_SESSION['biaya49']) ? $_SESSION['biaya49'] : $row['biaya49'];
+$biaya50 = isset($_SESSION['biaya50']) ? $_SESSION['biaya50'] : $row['biaya50'];
+$biaya51 = isset($_SESSION['biaya51']) ? $_SESSION['biaya51'] : $row['biaya51'];
+$biaya52 = isset($_SESSION['biaya52']) ? $_SESSION['biaya52'] : $row['biaya52'];
+$biaya53 = isset($_SESSION['biaya53']) ? $_SESSION['biaya53'] : $row['biaya53'];
+$biaya54 = isset($_SESSION['biaya54']) ? $_SESSION['biaya54'] : $row['biaya54'];
+$biaya55 = isset($_SESSION['biaya55']) ? $_SESSION['biaya55'] : $row['biaya55'];
+$biaya56 = isset($_SESSION['biaya56']) ? $_SESSION['biaya56'] : $row['biaya56'];
+$biaya57 = isset($_SESSION['biaya57']) ? $_SESSION['biaya57'] : $row['biaya57'];
+$biaya58 = isset($_SESSION['biaya58']) ? $_SESSION['biaya58'] : $row['biaya58'];
+$biaya59 = isset($_SESSION['biaya59']) ? $_SESSION['biaya59'] : $row['biaya59'];
+$biaya60 = isset($_SESSION['biaya60']) ? $_SESSION['biaya60'] : $row['biaya60'];
+
+$biaya61 = isset($_SESSION['biaya61']) ? $_SESSION['biaya61'] : $row['biaya61'];
+$biaya62 = isset($_SESSION['biaya62']) ? $_SESSION['biaya62'] : $row['biaya62'];
+$biaya63 = isset($_SESSION['biaya63']) ? $_SESSION['biaya63'] : $row['biaya63'];
+$biaya64 = isset($_SESSION['biaya64']) ? $_SESSION['biaya64'] : $row['biaya64'];
+$biaya65 = isset($_SESSION['biaya65']) ? $_SESSION['biaya65'] : $row['biaya65'];
+$biaya66 = isset($_SESSION['biaya66']) ? $_SESSION['biaya66'] : $row['biaya66'];
+$biaya67 = isset($_SESSION['biaya67']) ? $_SESSION['biaya67'] : $row['biaya67'];
+$biaya68 = isset($_SESSION['biaya68']) ? $_SESSION['biaya68'] : $row['biaya68'];
+$biaya69 = isset($_SESSION['biaya69']) ? $_SESSION['biaya69'] : $row['biaya69'];
+$biaya70 = isset($_SESSION['biaya70']) ? $_SESSION['biaya70'] : $row['biaya70'];
+$biaya71 = isset($_SESSION['biaya71']) ? $_SESSION['biaya71'] : $row['biaya71'];
+$biaya72 = isset($_SESSION['biaya72']) ? $_SESSION['biaya72'] : $row['biaya72'];
+
+$biaya73 = isset($_SESSION['biaya73']) ? $_SESSION['biaya73'] : $row['biaya73'];
+$biaya74 = isset($_SESSION['biaya74']) ? $_SESSION['biaya74'] : $row['biaya74'];
+$biaya75 = isset($_SESSION['biaya75']) ? $_SESSION['biaya75'] : $row['biaya75'];
+$biaya76 = isset($_SESSION['biaya76']) ? $_SESSION['biaya76'] : $row['biaya76'];
+$biaya77 = isset($_SESSION['biaya77']) ? $_SESSION['biaya77'] : $row['biaya77'];
+$biaya78 = isset($_SESSION['biaya78']) ? $_SESSION['biaya78'] : $row['biaya78'];
+$biaya79 = isset($_SESSION['biaya79']) ? $_SESSION['biaya79'] : $row['biaya79'];
+$biaya80 = isset($_SESSION['biaya80']) ? $_SESSION['biaya80'] : $row['biaya80'];
+$biaya81 = isset($_SESSION['biaya81']) ? $_SESSION['biaya81'] : $row['biaya81'];
+$biaya82 = isset($_SESSION['biaya82']) ? $_SESSION['biaya82'] : $row['biaya82'];
+$biaya83 = isset($_SESSION['biaya83']) ? $_SESSION['biaya83'] : $row['biaya83'];
+$biaya84 = isset($_SESSION['biaya84']) ? $_SESSION['biaya84'] : $row['biaya84'];
+
+$biaya85 = isset($_SESSION['biaya85']) ? $_SESSION['biaya85'] : $row['biaya85'];
+$biaya86 = isset($_SESSION['biaya86']) ? $_SESSION['biaya86'] : $row['biaya86'];
+$biaya87 = isset($_SESSION['biaya87']) ? $_SESSION['biaya87'] : $row['biaya87'];
+$biaya88 = isset($_SESSION['biaya88']) ? $_SESSION['biaya88'] : $row['biaya88'];
+$biaya89 = isset($_SESSION['biaya89']) ? $_SESSION['biaya89'] : $row['biaya89'];
+$biaya90 = isset($_SESSION['biaya90']) ? $_SESSION['biaya90'] : $row['biaya90'];
+$biaya91 = isset($_SESSION['biaya91']) ? $_SESSION['biaya91'] : $row['biaya91'];
+$biaya92 = isset($_SESSION['biaya92']) ? $_SESSION['biaya92'] : $row['biaya92'];
+$biaya93 = isset($_SESSION['biaya93']) ? $_SESSION['biaya93'] : $row['biaya93'];
+$biaya94 = isset($_SESSION['biaya94']) ? $_SESSION['biaya94'] : $row['biaya94'];
+$biaya95 = isset($_SESSION['biaya95']) ? $_SESSION['biaya95'] : $row['biaya95'];
+$biaya96 = isset($_SESSION['biaya96']) ? $_SESSION['biaya96'] : $row['biaya96'];
+
+$biaya97 = isset($_SESSION['biaya97']) ? $_SESSION['biaya97'] : $row['biaya97'];
+$biaya98 = isset($_SESSION['biaya98']) ? $_SESSION['biaya98'] : $row['biaya98'];
+$biaya99 = isset($_SESSION['biaya99']) ? $_SESSION['biaya99'] : $row['biaya99'];
+$biaya100 = isset($_SESSION['biaya100']) ? $_SESSION['biaya100'] : $row['biaya100'];
+$biaya101 = isset($_SESSION['biaya101']) ? $_SESSION['biaya101'] : $row['biaya101'];
+$biaya102 = isset($_SESSION['biaya102']) ? $_SESSION['biaya102'] : $row['biaya102'];
+$biaya103 = isset($_SESSION['biaya103']) ? $_SESSION['biaya103'] : $row['biaya103'];
+$biaya104 = isset($_SESSION['biaya104']) ? $_SESSION['biaya104'] : $row['biaya104'];
+$biaya105 = isset($_SESSION['biaya105']) ? $_SESSION['biaya105'] : $row['biaya105'];
+$biaya106 = isset($_SESSION['biaya106']) ? $_SESSION['biaya106'] : $row['biaya106'];
+$biaya107 = isset($_SESSION['biaya107']) ? $_SESSION['biaya107'] : $row['biaya107'];
+$biaya108 = isset($_SESSION['biaya108']) ? $_SESSION['biaya108'] : $row['biaya108'];
+
+$biaya109 = isset($_SESSION['biaya109']) ? $_SESSION['biaya109'] : $row['biaya109'];
+$biaya110 = isset($_SESSION['biaya110']) ? $_SESSION['biaya110'] : $row['biaya110'];
+$biaya111 = isset($_SESSION['biaya111']) ? $_SESSION['biaya111'] : $row['biaya111'];
+$biaya112 = isset($_SESSION['biaya112']) ? $_SESSION['biaya112'] : $row['biaya112'];
+$biaya113 = isset($_SESSION['biaya113']) ? $_SESSION['biaya113'] : $row['biaya113'];
+$biaya114 = isset($_SESSION['biaya114']) ? $_SESSION['biaya114'] : $row['biaya114'];
+$biaya115 = isset($_SESSION['biaya115']) ? $_SESSION['biaya115'] : $row['biaya115'];
+$biaya116 = isset($_SESSION['biaya116']) ? $_SESSION['biaya116'] : $row['biaya116'];
+$biaya117 = isset($_SESSION['biaya117']) ? $_SESSION['biaya117'] : $row['biaya117'];
+$biaya118 = isset($_SESSION['biaya118']) ? $_SESSION['biaya118'] : $row['biaya118'];
+$biaya119 = isset($_SESSION['biaya119']) ? $_SESSION['biaya119'] : $row['biaya119'];
+$biaya120 = isset($_SESSION['biaya120']) ? $_SESSION['biaya120'] : $row['biaya120'];
+
+$biaya121 = isset($_SESSION['biaya121']) ? $_SESSION['biaya121'] : $row['biaya121'];
+$biaya122 = isset($_SESSION['biaya122']) ? $_SESSION['biaya122'] : $row['biaya122'];
+$biaya123 = isset($_SESSION['biaya123']) ? $_SESSION['biaya123'] : $row['biaya123'];
+$biaya124 = isset($_SESSION['biaya124']) ? $_SESSION['biaya124'] : $row['biaya124'];
+$biaya125 = isset($_SESSION['biaya125']) ? $_SESSION['biaya125'] : $row['biaya125'];
+$biaya126 = isset($_SESSION['biaya126']) ? $_SESSION['biaya126'] : $row['biaya126'];
+$biaya127 = isset($_SESSION['biaya127']) ? $_SESSION['biaya127'] : $row['biaya127'];
+$biaya128 = isset($_SESSION['biaya128']) ? $_SESSION['biaya128'] : $row['biaya128'];
+$biaya129 = isset($_SESSION['biaya129']) ? $_SESSION['biaya129'] : $row['biaya129'];
+$biaya130 = isset($_SESSION['biaya130']) ? $_SESSION['biaya130'] : $row['biaya130'];
+
+$biaya131 = isset($_SESSION['biaya131']) ? $_SESSION['biaya131'] : $row['biaya131'];
+$biaya132 = isset($_SESSION['biaya132']) ? $_SESSION['biaya132'] : $row['biaya132'];
+$biaya133 = isset($_SESSION['biaya133']) ? $_SESSION['biaya133'] : $row['biaya133'];
+$biaya134 = isset($_SESSION['biaya134']) ? $_SESSION['biaya134'] : $row['biaya134'];
+$biaya135 = isset($_SESSION['biaya135']) ? $_SESSION['biaya135'] : $row['biaya135'];
+$biaya136 = isset($_SESSION['biaya136']) ? $_SESSION['biaya136'] : $row['biaya136'];
+$biaya137 = isset($_SESSION['biaya137']) ? $_SESSION['biaya137'] : $row['biaya137'];
+$biaya138 = isset($_SESSION['biaya138']) ? $_SESSION['biaya138'] : $row['biaya138'];
+$biaya139 = isset($_SESSION['biaya139']) ? $_SESSION['biaya139'] : $row['biaya139'];
+$biaya140 = isset($_SESSION['biaya140']) ? $_SESSION['biaya140'] : $row['biaya140'];
+
+$biaya141 = isset($_SESSION['biaya141']) ? $_SESSION['biaya141'] : $row['biaya141'];
+$biaya142 = isset($_SESSION['biaya142']) ? $_SESSION['biaya142'] : $row['biaya142'];
+$biaya143 = isset($_SESSION['biaya143']) ? $_SESSION['biaya143'] : $row['biaya143'];
+$biaya144 = isset($_SESSION['biaya144']) ? $_SESSION['biaya144'] : $row['biaya144'];
+$biaya145 = isset($_SESSION['biaya145']) ? $_SESSION['biaya145'] : $row['biaya145'];
+$biaya146 = isset($_SESSION['biaya146']) ? $_SESSION['biaya146'] : $row['biaya146'];
+$biaya147 = isset($_SESSION['biaya147']) ? $_SESSION['biaya147'] : $row['biaya147'];
+$biaya148 = isset($_SESSION['biaya148']) ? $_SESSION['biaya148'] : $row['biaya148'];
+$biaya149 = isset($_SESSION['biaya149']) ? $_SESSION['biaya149'] : $row['biaya149'];
+$biaya150 = isset($_SESSION['biaya150']) ? $_SESSION['biaya150'] : $row['biaya150'];
+$biaya151 = isset($_SESSION['biaya151']) ? $_SESSION['biaya151'] : $row['biaya151'];
+$biaya152 = isset($_SESSION['biaya152']) ? $_SESSION['biaya152'] : $row['biaya152'];
+$biaya153 = isset($_SESSION['biaya153']) ? $_SESSION['biaya153'] : $row['biaya153'];
+$biaya154 = isset($_SESSION['biaya154']) ? $_SESSION['biaya154'] : $row['biaya154'];
+$biaya155 = isset($_SESSION['biaya155']) ? $_SESSION['biaya155'] : $row['biaya155'];
+$biaya156 = isset($_SESSION['biaya156']) ? $_SESSION['biaya156'] : $row['biaya156'];
+$biaya157 = isset($_SESSION['biaya157']) ? $_SESSION['biaya157'] : $row['biaya157'];
+$biaya158 = isset($_SESSION['biaya158']) ? $_SESSION['biaya158'] : $row['biaya158'];
+$biaya159 = isset($_SESSION['biaya159']) ? $_SESSION['biaya159'] : $row['biaya159'];
+$biaya160 = isset($_SESSION['biaya160']) ? $_SESSION['biaya160'] : $row['biaya160'];
+$biaya161 = isset($_SESSION['biaya161']) ? $_SESSION['biaya161'] : $row['biaya161'];
+$biaya162 = isset($_SESSION['biaya162']) ? $_SESSION['biaya162'] : $row['biaya162'];
+$biaya163 = isset($_SESSION['biaya163']) ? $_SESSION['biaya163'] : $row['biaya163'];
+$biaya164 = isset($_SESSION['biaya164']) ? $_SESSION['biaya164'] : $row['biaya164'];
+$biaya165 = isset($_SESSION['biaya165']) ? $_SESSION['biaya165'] : $row['biaya165'];
+$biaya166 = isset($_SESSION['biaya166']) ? $_SESSION['biaya166'] : $row['biaya166'];
+$biaya167 = isset($_SESSION['biaya167']) ? $_SESSION['biaya167'] : $row['biaya167'];
+$biaya168 = isset($_SESSION['biaya168']) ? $_SESSION['biaya168'] : $row['biaya168'];
+$biaya169 = isset($_SESSION['biaya169']) ? $_SESSION['biaya169'] : $row['biaya169'];
+$biaya170 = isset($_SESSION['biaya170']) ? $_SESSION['biaya170'] : $row['biaya170'];
+$biaya171 = isset($_SESSION['biaya171']) ? $_SESSION['biaya171'] : $row['biaya171'];
+$biaya172 = isset($_SESSION['biaya172']) ? $_SESSION['biaya172'] : $row['biaya172'];
+$biaya173 = isset($_SESSION['biaya173']) ? $_SESSION['biaya173'] : $row['biaya173'];
+$biaya174 = isset($_SESSION['biaya174']) ? $_SESSION['biaya174'] : $row['biaya174'];
+$biaya175 = isset($_SESSION['biaya175']) ? $_SESSION['biaya175'] : $row['biaya175'];
+$biaya176 = isset($_SESSION['biaya176']) ? $_SESSION['biaya176'] : $row['biaya176'];
+$biaya177 = isset($_SESSION['biaya177']) ? $_SESSION['biaya177'] : $row['biaya177'];
+$biaya178 = isset($_SESSION['biaya178']) ? $_SESSION['biaya178'] : $row['biaya178'];
+$biaya179 = isset($_SESSION['biaya179']) ? $_SESSION['biaya179'] : $row['biaya179'];
+$biaya180 = isset($_SESSION['biaya180']) ? $_SESSION['biaya180'] : $row['biaya180'];
+$biaya181 = isset($_SESSION['biaya181']) ? $_SESSION['biaya181'] : $row['biaya181'];
+$biaya182 = isset($_SESSION['biaya182']) ? $_SESSION['biaya182'] : $row['biaya182'];
+$biaya183 = isset($_SESSION['biaya183']) ? $_SESSION['biaya183'] : $row['biaya183'];
+$biaya184 = isset($_SESSION['biaya184']) ? $_SESSION['biaya184'] : $row['biaya184'];
+$biaya185 = isset($_SESSION['biaya185']) ? $_SESSION['biaya185'] : $row['biaya185'];
+$biaya186 = isset($_SESSION['biaya186']) ? $_SESSION['biaya186'] : $row['biaya186'];
+$biaya187 = isset($_SESSION['biaya187']) ? $_SESSION['biaya187'] : $row['biaya187'];
+$biaya188 = isset($_SESSION['biaya188']) ? $_SESSION['biaya188'] : $row['biaya188'];
+$biaya189 = isset($_SESSION['biaya189']) ? $_SESSION['biaya189'] : $row['biaya189'];
+$biaya190 = isset($_SESSION['biaya190']) ? $_SESSION['biaya190'] : $row['biaya190'];
+$biaya191 = isset($_SESSION['biaya191']) ? $_SESSION['biaya191'] : $row['biaya191'];
+$biaya192 = isset($_SESSION['biaya192']) ? $_SESSION['biaya192'] : $row['biaya192'];
+$biaya193 = isset($_SESSION['biaya193']) ? $_SESSION['biaya193'] : $row['biaya193'];
+$biaya194 = isset($_SESSION['biaya194']) ? $_SESSION['biaya194'] : $row['biaya194'];
+$biaya195 = isset($_SESSION['biaya195']) ? $_SESSION['biaya195'] : $row['biaya195'];
+$biaya196 = isset($_SESSION['biaya196']) ? $_SESSION['biaya196'] : $row['biaya196'];
+$biaya197 = isset($_SESSION['biaya197']) ? $_SESSION['biaya197'] : $row['biaya197'];
+$biaya198 = isset($_SESSION['biaya198']) ? $_SESSION['biaya198'] : $row['biaya198'];
+$biaya199 = isset($_SESSION['biaya199']) ? $_SESSION['biaya199'] : $row['biaya199'];
+$biaya200 = isset($_SESSION['biaya200']) ? $_SESSION['biaya200'] : $row['biaya200'];
+$biaya201 = isset($_SESSION['biaya201']) ? $_SESSION['biaya201'] : $row['biaya201'];
+$biaya202 = isset($_SESSION['biaya202']) ? $_SESSION['biaya202'] : $row['biaya202'];
+$biaya203 = isset($_SESSION['biaya203']) ? $_SESSION['biaya203'] : $row['biaya203'];
+$biaya204 = isset($_SESSION['biaya204']) ? $_SESSION['biaya204'] : $row['biaya204'];
+$biaya205 = isset($_SESSION['biaya205']) ? $_SESSION['biaya205'] : $row['biaya205'];
+$biaya206 = isset($_SESSION['biaya206']) ? $_SESSION['biaya206'] : $row['biaya206'];
+$biaya207 = isset($_SESSION['biaya207']) ? $_SESSION['biaya207'] : $row['biaya207'];
+$biaya208 = isset($_SESSION['biaya208']) ? $_SESSION['biaya208'] : $row['biaya208'];
+$biaya209 = isset($_SESSION['biaya209']) ? $_SESSION['biaya209'] : $row['biaya209'];
+$biaya210 = isset($_SESSION['biaya210']) ? $_SESSION['biaya210'] : $row['biaya210'];
+$biaya211 = isset($_SESSION['biaya211']) ? $_SESSION['biaya211'] : $row['biaya211'];
+$biaya212 = isset($_SESSION['biaya212']) ? $_SESSION['biaya212'] : $row['biaya212'];
+$biaya213 = isset($_SESSION['biaya213']) ? $_SESSION['biaya213'] : $row['biaya213'];
+$biaya214 = isset($_SESSION['biaya214']) ? $_SESSION['biaya214'] : $row['biaya214'];
+$biaya215 = isset($_SESSION['biaya215']) ? $_SESSION['biaya215'] : $row['biaya215'];
+$biaya216 = isset($_SESSION['biaya216']) ? $_SESSION['biaya216'] : $row['biaya216'];
+$biaya217 = isset($_SESSION['biaya217']) ? $_SESSION['biaya217'] : $row['biaya217'];
+$biaya218 = isset($_SESSION['biaya218']) ? $_SESSION['biaya218'] : $row['biaya218'];
+$biaya219 = isset($_SESSION['biaya219']) ? $_SESSION['biaya219'] : $row['biaya219'];
+$biaya220 = isset($_SESSION['biaya220']) ? $_SESSION['biaya220'] : $row['biaya220'];
+$biaya221 = isset($_SESSION['biaya221']) ? $_SESSION['biaya221'] : $row['biaya221'];
+$biaya222 = isset($_SESSION['biaya222']) ? $_SESSION['biaya222'] : $row['biaya222'];
+$biaya223 = isset($_SESSION['biaya223']) ? $_SESSION['biaya223'] : $row['biaya223'];
+$biaya224 = isset($_SESSION['biaya224']) ? $_SESSION['biaya224'] : $row['biaya224'];
+$biaya225 = isset($_SESSION['biaya225']) ? $_SESSION['biaya225'] : $row['biaya225'];
+$biaya226 = isset($_SESSION['biaya226']) ? $_SESSION['biaya226'] : $row['biaya226'];
+$biaya227 = isset($_SESSION['biaya227']) ? $_SESSION['biaya227'] : $row['biaya227'];
+$biaya228 = isset($_SESSION['biaya228']) ? $_SESSION['biaya228'] : $row['biaya228'];
+$biaya229 = isset($_SESSION['biaya229']) ? $_SESSION['biaya229'] : $row['biaya229'];
+$biaya230 = isset($_SESSION['biaya230']) ? $_SESSION['biaya230'] : $row['biaya230'];
+$biaya231 = isset($_SESSION['biaya231']) ? $_SESSION['biaya231'] : $row['biaya231'];
+$biaya232 = isset($_SESSION['biaya232']) ? $_SESSION['biaya232'] : $row['biaya232'];
+$biaya233 = isset($_SESSION['biaya233']) ? $_SESSION['biaya233'] : $row['biaya233'];
+$biaya234 = isset($_SESSION['biaya234']) ? $_SESSION['biaya234'] : $row['biaya234'];
+$biaya235 = isset($_SESSION['biaya235']) ? $_SESSION['biaya235'] : $row['biaya235'];
+$biaya236 = isset($_SESSION['biaya236']) ? $_SESSION['biaya236'] : $row['biaya236'];
+$biaya237 = isset($_SESSION['biaya237']) ? $_SESSION['biaya237'] : $row['biaya237'];
+$biaya238 = isset($_SESSION['biaya238']) ? $_SESSION['biaya238'] : $row['biaya238'];
+$biaya239 = isset($_SESSION['biaya239']) ? $_SESSION['biaya239'] : $row['biaya239'];
+$biaya240 = isset($_SESSION['biaya240']) ? $_SESSION['biaya240'] : $row['biaya240'];
+$biaya241 = isset($_SESSION['biaya241']) ? $_SESSION['biaya241'] : $row['biaya241'];
+$biaya242 = isset($_SESSION['biaya242']) ? $_SESSION['biaya242'] : $row['biaya242'];
+$biaya243 = isset($_SESSION['biaya243']) ? $_SESSION['biaya243'] : $row['biaya243'];
+$biaya244 = isset($_SESSION['biaya244']) ? $_SESSION['biaya244'] : $row['biaya244'];
+$biaya245 = isset($_SESSION['biaya245']) ? $_SESSION['biaya245'] : $row['biaya245'];
+$biaya246 = isset($_SESSION['biaya246']) ? $_SESSION['biaya246'] : $row['biaya246'];
+$biaya247 = isset($_SESSION['biaya247']) ? $_SESSION['biaya247'] : $row['biaya247'];
+$biaya248 = isset($_SESSION['biaya248']) ? $_SESSION['biaya248'] : $row['biaya248'];
+$biaya249 = isset($_SESSION['biaya249']) ? $_SESSION['biaya249'] : $row['biaya249'];
+$biaya250 = isset($_SESSION['biaya250']) ? $_SESSION['biaya250'] : $row['biaya250'];
+$biaya251 = isset($_SESSION['biaya251']) ? $_SESSION['biaya251'] : $row['biaya251'];
+$biaya252 = isset($_SESSION['biaya252']) ? $_SESSION['biaya252'] : $row['biaya252'];
+$biaya253 = isset($_SESSION['biaya253']) ? $_SESSION['biaya253'] : $row['biaya253'];
+$biaya254 = isset($_SESSION['biaya254']) ? $_SESSION['biaya254'] : $row['biaya254'];
+$biaya255 = isset($_SESSION['biaya255']) ? $_SESSION['biaya255'] : $row['biaya255'];
+$biaya256 = isset($_SESSION['biaya256']) ? $_SESSION['biaya256'] : $row['biaya256'];
+$biaya257 = isset($_SESSION['biaya257']) ? $_SESSION['biaya257'] : $row['biaya257'];
+$biaya258 = isset($_SESSION['biaya258']) ? $_SESSION['biaya258'] : $row['biaya258'];
+$biaya259 = isset($_SESSION['biaya259']) ? $_SESSION['biaya259'] : $row['biaya259'];
+$biaya260 = isset($_SESSION['biaya260']) ? $_SESSION['biaya260'] : $row['biaya260'];
+$biaya261 = isset($_SESSION['biaya261']) ? $_SESSION['biaya261'] : $row['biaya261'];
+$biaya262 = isset($_SESSION['biaya262']) ? $_SESSION['biaya262'] : $row['biaya262'];
+$biaya263 = isset($_SESSION['biaya263']) ? $_SESSION['biaya263'] : $row['biaya263'];
+$biaya264 = isset($_SESSION['biaya264']) ? $_SESSION['biaya264'] : $row['biaya264'];
+
+
+
+
 // Update checkbox values when the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $biaya1 = isset($_POST['biaya1']) ? $_POST['biaya1'] : 0;
-    $biaya2 = isset($_POST['biaya2']) ? $_POST['biaya2'] : 0;
-    $biaya3 = isset($_POST['biaya3']) ? $_POST['biaya3'] : 0;
-    $biaya4 = isset($_POST['biaya4']) ? $_POST['biaya4'] : 0;
-    $biaya5 = isset($_POST['biaya5']) ? $_POST['biaya5'] : 0;
-    $biaya6 = isset($_POST['biaya6']) ? $_POST['biaya6'] : 0;
-    $biaya7 = isset($_POST['biaya7']) ? $_POST['biaya7'] : 0;
-    $biaya8 = isset($_POST['biaya8']) ? $_POST['biaya8'] : 0;
-    $biaya9 = isset($_POST['biaya9']) ? $_POST['biaya9'] : 0;
-    $biaya10 = isset($_POST['biaya10']) ? $_POST['biaya10'] : 0;
-    $biaya11 = isset($_POST['biaya11']) ? $_POST['biaya11'] : 0;
-    $biaya12 = isset($_POST['biaya12']) ? $_POST['biaya12'] : 0;
+    $biaya138 = isset($_POST['biaya138']) ? $_POST['biaya138'] : 0;
+    $biaya139 = isset($_POST['biaya139']) ? $_POST['biaya139'] : 0;
+    $biaya140 = isset($_POST['biaya140']) ? $_POST['biaya140'] : 0;
+    $biaya141 = isset($_POST['biaya141']) ? $_POST['biaya141'] : 0;
+    $biaya142 = isset($_POST['biaya142']) ? $_POST['biaya142'] : 0;
+    $biaya143 = isset($_POST['biaya143']) ? $_POST['biaya143'] : 0;
+    $biaya144 = isset($_POST['biaya144']) ? $_POST['biaya144'] : 0;
+    $biaya145 = isset($_POST['biaya145']) ? $_POST['biaya145'] : 0;
+    $biaya146 = isset($_POST['biaya146']) ? $_POST['biaya146'] : 0;
+    $biaya147 = isset($_POST['biaya147']) ? $_POST['biaya147'] : 0;
+    $biaya148 = isset($_POST['biaya148']) ? $_POST['biaya148'] : 0;
+    $biaya149 = isset($_POST['biaya149']) ? $_POST['biaya149'] : 0;
+    $biaya150 = isset($_POST['biaya150']) ? $_POST['biaya150'] : 0;
+    $biaya151 = isset($_POST['biaya151']) ? $_POST['biaya151'] : 0;
+    $biaya152 = isset($_POST['biaya152']) ? $_POST['biaya152'] : 0;
+    $biaya153 = isset($_POST['biaya153']) ? $_POST['biaya153'] : 0;
+    $biaya154 = isset($_POST['biaya154']) ? $_POST['biaya154'] : 0;
+    $biaya155 = isset($_POST['biaya155']) ? $_POST['biaya155'] : 0;
+    $biaya156 = isset($_POST['biaya156']) ? $_POST['biaya156'] : 0;
+    $biaya157 = isset($_POST['biaya157']) ? $_POST['biaya157'] : 0;
+    $biaya158 = isset($_POST['biaya158']) ? $_POST['biaya158'] : 0;
+    $biaya159 = isset($_POST['biaya159']) ? $_POST['biaya159'] : 0;
+    $biaya160 = isset($_POST['biaya160']) ? $_POST['biaya160'] : 0;
+    $biaya161 = isset($_POST['biaya161']) ? $_POST['biaya161'] : 0;
+    $biaya162 = isset($_POST['biaya162']) ? $_POST['biaya162'] : 0;
+    $biaya163 = isset($_POST['biaya163']) ? $_POST['biaya163'] : 0;
+    $biaya164 = isset($_POST['biaya164']) ? $_POST['biaya164'] : 0;
+    $biaya165 = isset($_POST['biaya165']) ? $_POST['biaya165'] : 0;
+    $biaya166 = isset($_POST['biaya166']) ? $_POST['biaya166'] : 0;
+    $biaya167 = isset($_POST['biaya167']) ? $_POST['biaya167'] : 0;
+    $biaya168 = isset($_POST['biaya168']) ? $_POST['biaya168'] : 0;
+    $biaya169 = isset($_POST['biaya169']) ? $_POST['biaya169'] : 0;
+    $biaya170 = isset($_POST['biaya170']) ? $_POST['biaya170'] : 0;
+    $biaya171 = isset($_POST['biaya171']) ? $_POST['biaya171'] : 0;
+    $biaya172 = isset($_POST['biaya172']) ? $_POST['biaya172'] : 0;
+    $biaya173 = isset($_POST['biaya173']) ? $_POST['biaya173'] : 0;
+    $biaya174 = isset($_POST['biaya174']) ? $_POST['biaya174'] : 0;
+    $biaya175 = isset($_POST['biaya175']) ? $_POST['biaya175'] : 0;
+    $biaya176 = isset($_POST['biaya176']) ? $_POST['biaya176'] : 0;
+    $biaya177 = isset($_POST['biaya177']) ? $_POST['biaya177'] : 0;
+    $biaya178 = isset($_POST['biaya178']) ? $_POST['biaya178'] : 0;
+    $biaya179 = isset($_POST['biaya179']) ? $_POST['biaya179'] : 0;
+    $biaya180 = isset($_POST['biaya180']) ? $_POST['biaya180'] : 0;
+    $biaya181 = isset($_POST['biaya181']) ? $_POST['biaya181'] : 0;
+    $biaya182 = isset($_POST['biaya182']) ? $_POST['biaya182'] : 0;
+    $biaya183 = isset($_POST['biaya183']) ? $_POST['biaya183'] : 0;
+    $biaya184 = isset($_POST['biaya184']) ? $_POST['biaya184'] : 0;
+    $biaya185 = isset($_POST['biaya185']) ? $_POST['biaya185'] : 0;
+    $biaya186 = isset($_POST['biaya186']) ? $_POST['biaya186'] : 0;
+    $biaya187 = isset($_POST['biaya187']) ? $_POST['biaya187'] : 0;
+    $biaya188 = isset($_POST['biaya188']) ? $_POST['biaya188'] : 0;
+    $biaya189 = isset($_POST['biaya189']) ? $_POST['biaya189'] : 0;
+    $biaya190 = isset($_POST['biaya190']) ? $_POST['biaya190'] : 0;
+    $biaya191 = isset($_POST['biaya191']) ? $_POST['biaya191'] : 0;
+    $biaya192 = isset($_POST['biaya192']) ? $_POST['biaya192'] : 0;
+    $biaya193 = isset($_POST['biaya193']) ? $_POST['biaya193'] : 0;
+    $biaya194 = isset($_POST['biaya194']) ? $_POST['biaya194'] : 0;
+    $biaya195 = isset($_POST['biaya195']) ? $_POST['biaya195'] : 0;
+    $biaya196 = isset($_POST['biaya196']) ? $_POST['biaya196'] : 0;
+    $biaya197 = isset($_POST['biaya197']) ? $_POST['biaya197'] : 0;
+    $biaya198 = isset($_POST['biaya198']) ? $_POST['biaya198'] : 0;
+    $biaya199 = isset($_POST['biaya199']) ? $_POST['biaya199'] : 0;
+    $biaya200 = isset($_POST['biaya200']) ? $_POST['biaya200'] : 0;
+    $biaya201 = isset($_POST['biaya201']) ? $_POST['biaya201'] : 0;
+    $biaya202 = isset($_POST['biaya202']) ? $_POST['biaya202'] : 0;
+    $biaya203 = isset($_POST['biaya203']) ? $_POST['biaya203'] : 0;
+    $biaya204 = isset($_POST['biaya204']) ? $_POST['biaya204'] : 0;
+    $biaya205 = isset($_POST['biaya205']) ? $_POST['biaya205'] : 0;
+    $biaya206 = isset($_POST['biaya206']) ? $_POST['biaya206'] : 0;
+    $biaya207 = isset($_POST['biaya207']) ? $_POST['biaya207'] : 0;
+    $biaya208 = isset($_POST['biaya208']) ? $_POST['biaya208'] : 0;
+    $biaya209 = isset($_POST['biaya209']) ? $_POST['biaya209'] : 0;
+    $biaya210 = isset($_POST['biaya210']) ? $_POST['biaya210'] : 0;
+    $biaya211 = isset($_POST['biaya211']) ? $_POST['biaya211'] : 0;
+    $biaya212 = isset($_POST['biaya212']) ? $_POST['biaya212'] : 0;
+    $biaya213 = isset($_POST['biaya213']) ? $_POST['biaya213'] : 0;
+    $biaya214 = isset($_POST['biaya214']) ? $_POST['biaya214'] : 0;
+    $biaya215 = isset($_POST['biaya215']) ? $_POST['biaya215'] : 0;
+    $biaya216 = isset($_POST['biaya216']) ? $_POST['biaya216'] : 0;
+    $biaya217 = isset($_POST['biaya217']) ? $_POST['biaya217'] : 0;
+    $biaya218 = isset($_POST['biaya218']) ? $_POST['biaya218'] : 0;
+    $biaya219 = isset($_POST['biaya219']) ? $_POST['biaya219'] : 0;
+    $biaya220 = isset($_POST['biaya220']) ? $_POST['biaya220'] : 0;
+    $biaya221 = isset($_POST['biaya221']) ? $_POST['biaya221'] : 0;
+    $biaya222 = isset($_POST['biaya222']) ? $_POST['biaya222'] : 0;
+    $biaya223 = isset($_POST['biaya223']) ? $_POST['biaya223'] : 0;
+    $biaya224 = isset($_POST['biaya224']) ? $_POST['biaya224'] : 0;
+    $biaya225 = isset($_POST['biaya225']) ? $_POST['biaya225'] : 0;
+    $biaya226 = isset($_POST['biaya226']) ? $_POST['biaya226'] : 0;
+    $biaya227 = isset($_POST['biaya227']) ? $_POST['biaya227'] : 0;
+    $biaya228 = isset($_POST['biaya228']) ? $_POST['biaya228'] : 0;
+    $biaya229 = isset($_POST['biaya229']) ? $_POST['biaya229'] : 0;
+    $biaya230 = isset($_POST['biaya230']) ? $_POST['biaya230'] : 0;
+    $biaya231 = isset($_POST['biaya231']) ? $_POST['biaya231'] : 0;
+    $biaya232 = isset($_POST['biaya232']) ? $_POST['biaya232'] : 0;
+    $biaya233 = isset($_POST['biaya233']) ? $_POST['biaya233'] : 0;
+    $biaya234 = isset($_POST['biaya234']) ? $_POST['biaya234'] : 0;
+    $biaya235 = isset($_POST['biaya235']) ? $_POST['biaya235'] : 0;
+    $biaya236 = isset($_POST['biaya236']) ? $_POST['biaya236'] : 0;
+    $biaya237 = isset($_POST['biaya237']) ? $_POST['biaya237'] : 0;
+    $biaya238 = isset($_POST['biaya238']) ? $_POST['biaya238'] : 0;
+    $biaya239 = isset($_POST['biaya239']) ? $_POST['biaya239'] : 0;
+    $biaya240 = isset($_POST['biaya240']) ? $_POST['biaya240'] : 0;
+    $biaya241 = isset($_POST['biaya241']) ? $_POST['biaya241'] : 0;
+    $biaya242 = isset($_POST['biaya242']) ? $_POST['biaya242'] : 0;
+    $biaya243 = isset($_POST['biaya243']) ? $_POST['biaya243'] : 0;
+    $biaya244 = isset($_POST['biaya244']) ? $_POST['biaya244'] : 0;
+    $biaya245 = isset($_POST['biaya245']) ? $_POST['biaya245'] : 0;
+    $biaya246 = isset($_POST['biaya246']) ? $_POST['biaya246'] : 0;
+    $biaya247 = isset($_POST['biaya247']) ? $_POST['biaya247'] : 0;
+    $biaya248 = isset($_POST['biaya248']) ? $_POST['biaya248'] : 0;
+    $biaya249 = isset($_POST['biaya249']) ? $_POST['biaya249'] : 0;
+    $biaya250 = isset($_POST['biaya250']) ? $_POST['biaya250'] : 0;
+    $biaya251 = isset($_POST['biaya251']) ? $_POST['biaya251'] : 0;
+    $biaya252 = isset($_POST['biaya252']) ? $_POST['biaya252'] : 0;
+    $biaya253 = isset($_POST['biaya253']) ? $_POST['biaya253'] : 0;
+    $biaya254 = isset($_POST['biaya254']) ? $_POST['biaya254'] : 0;
+    $biaya255 = isset($_POST['biaya255']) ? $_POST['biaya255'] : 0;
+    $biaya256 = isset($_POST['biaya256']) ? $_POST['biaya256'] : 0;
+    $biaya257 = isset($_POST['biaya257']) ? $_POST['biaya257'] : 0;
+    $biaya258 = isset($_POST['biaya258']) ? $_POST['biaya258'] : 0;
+    $biaya259 = isset($_POST['biaya259']) ? $_POST['biaya259'] : 0;
+    $biaya260 = isset($_POST['biaya260']) ? $_POST['biaya260'] : 0;
+    $biaya261 = isset($_POST['biaya261']) ? $_POST['biaya261'] : 0;
+    $biaya262 = isset($_POST['biaya262']) ? $_POST['biaya262'] : 0;
+    $biaya263 = isset($_POST['biaya263']) ? $_POST['biaya263'] : 0;
+    $biaya264 = isset($_POST['biaya264']) ? $_POST['biaya264'] : 0;
 
     // Update session variables with checkbox values
     $_SESSION['biaya1'] = $biaya1;
@@ -75,15 +457,383 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['biaya10'] = $biaya10;
     $_SESSION['biaya11'] = $biaya11;
     $_SESSION['biaya12'] = $biaya12;
+    $_SESSION['biaya13'] = $biaya13;
+    $_SESSION['biaya14'] = $biaya14;
+    $_SESSION['biaya15'] = $biaya15;
+    $_SESSION['biaya16'] = $biaya16;
+    $_SESSION['biaya17'] = $biaya17;
+    $_SESSION['biaya18'] = $biaya18;
+    $_SESSION['biaya19'] = $biaya19;
+    $_SESSION['biaya20'] = $biaya20;
+    $_SESSION['biaya21'] = $biaya21;
+    $_SESSION['biaya22'] = $biaya22;
+    $_SESSION['biaya23'] = $biaya23;
+    $_SESSION['biaya24'] = $biaya24;
+    $_SESSION['biaya25'] = $biaya25;
+    $_SESSION['biaya26'] = $biaya26;
+    $_SESSION['biaya27'] = $biaya27;
+    $_SESSION['biaya28'] = $biaya28;
+    $_SESSION['biaya29'] = $biaya29;
+    $_SESSION['biaya30'] = $biaya30;
+    $_SESSION['biaya31'] = $biaya31;
+    $_SESSION['biaya32'] = $biaya32;
+    $_SESSION['biaya33'] = $biaya33;
+    $_SESSION['biaya34'] = $biaya34;
+    $_SESSION['biaya35'] = $biaya35;
+    $_SESSION['biaya36'] = $biaya36;
+    $_SESSION['biaya37'] = $biaya37;
+    $_SESSION['biaya38'] = $biaya38;
+    $_SESSION['biaya39'] = $biaya39;
+    $_SESSION['biaya40'] = $biaya40;
+    $_SESSION['biaya41'] = $biaya41;
+    $_SESSION['biaya42'] = $biaya42;
+    $_SESSION['biaya43'] = $biaya43;
+    $_SESSION['biaya44'] = $biaya44;
+    $_SESSION['biaya45'] = $biaya45;
+    $_SESSION['biaya46'] = $biaya46;
+    $_SESSION['biaya47'] = $biaya47;
+    $_SESSION['biaya48'] = $biaya48;
+    $_SESSION['biaya49'] = $biaya49;
+    $_SESSION['biaya50'] = $biaya50;
+    $_SESSION['biaya51'] = $biaya51;
+    $_SESSION['biaya52'] = $biaya52;
+    $_SESSION['biaya53'] = $biaya53;
+    $_SESSION['biaya54'] = $biaya54;
+    $_SESSION['biaya55'] = $biaya55;
+    $_SESSION['biaya56'] = $biaya56;
+    $_SESSION['biaya57'] = $biaya57;
+    $_SESSION['biaya58'] = $biaya58;
+    $_SESSION['biaya59'] = $biaya59;
+    $_SESSION['biaya60'] = $biaya60;
+    $_SESSION['biaya61'] = $biaya61;
+    $_SESSION['biaya62'] = $biaya62;
+    $_SESSION['biaya63'] = $biaya63;
+    $_SESSION['biaya64'] = $biaya64;
+    $_SESSION['biaya65'] = $biaya65;
+    $_SESSION['biaya66'] = $biaya66;
+    $_SESSION['biaya67'] = $biaya67;
+    $_SESSION['biaya68'] = $biaya68;
+    $_SESSION['biaya69'] = $biaya69;
+    $_SESSION['biaya70'] = $biaya70;
+    $_SESSION['biaya71'] = $biaya71;
+    $_SESSION['biaya72'] = $biaya72;
+    $_SESSION['biaya73'] = $biaya73;
+    $_SESSION['biaya74'] = $biaya74;
+    $_SESSION['biaya75'] = $biaya75;
+    $_SESSION['biaya76'] = $biaya76;
+    $_SESSION['biaya77'] = $biaya77;
+    $_SESSION['biaya78'] = $biaya78;
+    $_SESSION['biaya79'] = $biaya79;
+    $_SESSION['biaya80'] = $biaya80;
+    $_SESSION['biaya81'] = $biaya81;
+    $_SESSION['biaya82'] = $biaya82;
+    $_SESSION['biaya83'] = $biaya83;
+    $_SESSION['biaya84'] = $biaya84;
+    $_SESSION['biaya85'] = $biaya85;
+    $_SESSION['biaya86'] = $biaya86;
+    $_SESSION['biaya87'] = $biaya87;
+    $_SESSION['biaya88'] = $biaya88;
+    $_SESSION['biaya89'] = $biaya89;
+    $_SESSION['biaya90'] = $biaya90;
+    $_SESSION['biaya91'] = $biaya91;
+    $_SESSION['biaya92'] = $biaya92;
+    $_SESSION['biaya93'] = $biaya93;
+    $_SESSION['biaya94'] = $biaya94;
+    $_SESSION['biaya95'] = $biaya95;
+    $_SESSION['biaya96'] = $biaya96;
+    $_SESSION['biaya97'] = $biaya97;
+    $_SESSION['biaya98'] = $biaya98;
+    $_SESSION['biaya99'] = $biaya99;
+    $_SESSION['biaya100'] = $biaya100;
+    $_SESSION['biaya101'] = $biaya101;
+    $_SESSION['biaya102'] = $biaya102;
+    $_SESSION['biaya103'] = $biaya103;
+    $_SESSION['biaya104'] = $biaya104;
+    $_SESSION['biaya105'] = $biaya105;
+    $_SESSION['biaya106'] = $biaya106;
+    $_SESSION['biaya107'] = $biaya107;
+    $_SESSION['biaya108'] = $biaya108;
+    $_SESSION['biaya109'] = $biaya109;
+    $_SESSION['biaya110'] = $biaya110;
+    $_SESSION['biaya111'] = $biaya111;
+    $_SESSION['biaya112'] = $biaya112;
+    $_SESSION['biaya113'] = $biaya113;
+    $_SESSION['biaya114'] = $biaya114;
+    $_SESSION['biaya115'] = $biaya115;
+    $_SESSION['biaya116'] = $biaya116;
+    $_SESSION['biaya117'] = $biaya117;
+    $_SESSION['biaya118'] = $biaya118;
+    $_SESSION['biaya119'] = $biaya119;
+    $_SESSION['biaya120'] = $biaya120;
+    $_SESSION['biaya121'] = $biaya121;
+    $_SESSION['biaya122'] = $biaya122;
+    $_SESSION['biaya123'] = $biaya123;
+    $_SESSION['biaya124'] = $biaya124;
+    $_SESSION['biaya125'] = $biaya125;
+    $_SESSION['biaya126'] = $biaya126;
+    $_SESSION['biaya127'] = $biaya127;
+    $_SESSION['biaya128'] = $biaya128;
+    $_SESSION['biaya129'] = $biaya129;
+    $_SESSION['biaya130'] = $biaya130;
+    $_SESSION['biaya131'] = $biaya131;
+    $_SESSION['biaya132'] = $biaya132;
+    $_SESSION['biaya133'] = $biaya133;
+    $_SESSION['biaya134'] = $biaya134;
+    $_SESSION['biaya135'] = $biaya135;
+    $_SESSION['biaya136'] = $biaya136;
+    $_SESSION['biaya137'] = $biaya137;
+    $_SESSION['biaya138'] = $biaya138;
+    $_SESSION['biaya139'] = $biaya139;
+    $_SESSION['biaya140'] = $biaya140;
+    $_SESSION['biaya141'] = $biaya141;
+    $_SESSION['biaya142'] = $biaya142;
+    $_SESSION['biaya143'] = $biaya143;
+    $_SESSION['biaya144'] = $biaya144;
+    $_SESSION['biaya145'] = $biaya145;
+    $_SESSION['biaya146'] = $biaya146;
+    $_SESSION['biaya147'] = $biaya147;
+    $_SESSION['biaya148'] = $biaya148;
+    $_SESSION['biaya149'] = $biaya149;
+    $_SESSION['biaya150'] = $biaya150;
+    $_SESSION['biaya151'] = $biaya151;
+    $_SESSION['biaya152'] = $biaya152;
+    $_SESSION['biaya153'] = $biaya153;
+    $_SESSION['biaya154'] = $biaya154;
+    $_SESSION['biaya155'] = $biaya155;
+    $_SESSION['biaya156'] = $biaya156;
+    $_SESSION['biaya157'] = $biaya157;
+    $_SESSION['biaya158'] = $biaya158;
+    $_SESSION['biaya159'] = $biaya159;
+    $_SESSION['biaya160'] = $biaya160;
+    $_SESSION['biaya161'] = $biaya161;
+    $_SESSION['biaya162'] = $biaya162;
+    $_SESSION['biaya163'] = $biaya163;
+    $_SESSION['biaya164'] = $biaya164;
+    $_SESSION['biaya165'] = $biaya165;
+    $_SESSION['biaya166'] = $biaya166;
+    $_SESSION['biaya167'] = $biaya167;
+    $_SESSION['biaya168'] = $biaya168;
+    $_SESSION['biaya169'] = $biaya169;
+    $_SESSION['biaya170'] = $biaya170;
+    $_SESSION['biaya171'] = $biaya171;
+    $_SESSION['biaya172'] = $biaya172;
+    $_SESSION['biaya173'] = $biaya173;
+    $_SESSION['biaya174'] = $biaya174;
+    $_SESSION['biaya175'] = $biaya175;
+    $_SESSION['biaya176'] = $biaya176;
+    $_SESSION['biaya177'] = $biaya177;
+    $_SESSION['biaya178'] = $biaya178;
+    $_SESSION['biaya179'] = $biaya179;
+    $_SESSION['biaya180'] = $biaya180;
+    $_SESSION['biaya181'] = $biaya181;
+    $_SESSION['biaya182'] = $biaya182;
+    $_SESSION['biaya183'] = $biaya183;
+    $_SESSION['biaya184'] = $biaya184;
+    $_SESSION['biaya185'] = $biaya185;
+    $_SESSION['biaya186'] = $biaya186;
+    $_SESSION['biaya187'] = $biaya187;
+    $_SESSION['biaya188'] = $biaya188;
+    $_SESSION['biaya189'] = $biaya189;
+    $_SESSION['biaya190'] = $biaya190;
+    $_SESSION['biaya191'] = $biaya191;
+    $_SESSION['biaya192'] = $biaya192;
+    $_SESSION['biaya193'] = $biaya193;
+    $_SESSION['biaya194'] = $biaya194;
+    $_SESSION['biaya195'] = $biaya195;
+    $_SESSION['biaya196'] = $biaya196;
+    $_SESSION['biaya197'] = $biaya197;
+    $_SESSION['biaya198'] = $biaya198;
+    $_SESSION['biaya199'] = $biaya199;
+    $_SESSION['biaya200'] = $biaya200;
+    $_SESSION['biaya201'] = $biaya201;
+    $_SESSION['biaya202'] = $biaya202;
+    $_SESSION['biaya203'] = $biaya203;
+    $_SESSION['biaya204'] = $biaya204;
+    $_SESSION['biaya205'] = $biaya205;
+    $_SESSION['biaya206'] = $biaya206;
+    $_SESSION['biaya207'] = $biaya207;
+    $_SESSION['biaya208'] = $biaya208;
+    $_SESSION['biaya209'] = $biaya209;
+    $_SESSION['biaya210'] = $biaya210;
+    $_SESSION['biaya211'] = $biaya211;
+    $_SESSION['biaya212'] = $biaya212;
+    $_SESSION['biaya213'] = $biaya213;
+    $_SESSION['biaya214'] = $biaya214;
+    $_SESSION['biaya215'] = $biaya215;
+    $_SESSION['biaya216'] = $biaya216;
+    $_SESSION['biaya217'] = $biaya217;
+    $_SESSION['biaya218'] = $biaya218;
+    $_SESSION['biaya219'] = $biaya219;
+    $_SESSION['biaya220'] = $biaya220;
+    $_SESSION['biaya221'] = $biaya221;
+    $_SESSION['biaya222'] = $biaya222;
+    $_SESSION['biaya223'] = $biaya223;
+    $_SESSION['biaya224'] = $biaya224;
+    $_SESSION['biaya225'] = $biaya225;
+    $_SESSION['biaya226'] = $biaya226;
+    $_SESSION['biaya227'] = $biaya227;
+    $_SESSION['biaya228'] = $biaya228;
+    $_SESSION['biaya229'] = $biaya229;
+    $_SESSION['biaya230'] = $biaya230;
+    $_SESSION['biaya231'] = $biaya231;
+    $_SESSION['biaya232'] = $biaya232;
+    $_SESSION['biaya233'] = $biaya233;
+    $_SESSION['biaya234'] = $biaya234;
+    $_SESSION['biaya235'] = $biaya235;
+    $_SESSION['biaya236'] = $biaya236;
+    $_SESSION['biaya237'] = $biaya237;
+    $_SESSION['biaya238'] = $biaya238;
+    $_SESSION['biaya239'] = $biaya239;
+    $_SESSION['biaya240'] = $biaya240;
+    $_SESSION['biaya241'] = $biaya241;
+    $_SESSION['biaya242'] = $biaya242;
+    $_SESSION['biaya243'] = $biaya243;
+    $_SESSION['biaya244'] = $biaya244;
+    $_SESSION['biaya245'] = $biaya245;
+    $_SESSION['biaya246'] = $biaya246;
+    $_SESSION['biaya247'] = $biaya247;
+    $_SESSION['biaya248'] = $biaya248;
+    $_SESSION['biaya249'] = $biaya249;
+    $_SESSION['biaya250'] = $biaya250;
+    $_SESSION['biaya251'] = $biaya251;
+    $_SESSION['biaya252'] = $biaya252;
+    $_SESSION['biaya253'] = $biaya253;
+    $_SESSION['biaya254'] = $biaya254;
+    $_SESSION['biaya255'] = $biaya255;
+    $_SESSION['biaya256'] = $biaya256;
+    $_SESSION['biaya257'] = $biaya257;
+    $_SESSION['biaya258'] = $biaya258;
+    $_SESSION['biaya259'] = $biaya259;
+    $_SESSION['biaya260'] = $biaya260;
+    $_SESSION['biaya261'] = $biaya261;
+    $_SESSION['biaya262'] = $biaya262;
+    $_SESSION['biaya263'] = $biaya263;
+    $_SESSION['biaya264'] = $biaya264;
 
     if ($row) {
         // Prepare and execute an SQL statement to update the checkbox values
-        $stmt = $pdo->prepare("UPDATE checkbox_save SET biaya1 = ?, biaya2 = ?, biaya3 = ?, biaya4 = ?, biaya5 = ?, biaya6 = ?, biaya7 = ?, biaya8 = ?, biaya9 = ?, biaya10 = ?, biaya11 = ?, biaya12 = ?");
-        $stmt->execute([$biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12]);
+        $stmt = $pdo->prepare("UPDATE checkbox_save SET 
+        biaya1 = ?, biaya2 = ?, biaya3 = ?, biaya4 = ?, biaya5 = ?, biaya6 = ?, biaya7 = ?, biaya8 = ?, biaya9 = ?, biaya10 = ?, biaya11 = ?, biaya12 = ?,
+        biaya13 = ?, biaya14 = ?, biaya15 = ?, biaya16 = ?, biaya17 = ?, biaya18 = ?, biaya19 = ?, biaya20 = ?, biaya21 = ?, biaya22 = ?, biaya23 = ?, biaya24 = ?,
+        biaya25 = ?, biaya26 = ?, biaya27 = ?, biaya28 = ?, biaya29 = ?, biaya30 = ?, biaya31 = ?, biaya32 = ?, biaya33 = ?, biaya34 = ?, biaya35 = ?, biaya36 = ?,
+        biaya37 = ?, biaya38 = ?, biaya39 = ?, biaya40 = ?, biaya41 = ?, biaya42 = ?, biaya43 = ?, biaya44 = ?, biaya45 = ?, biaya46 = ?, biaya47 = ?, biaya48 = ?,
+        biaya49 = ?, biaya50 = ?, biaya51 = ?, biaya52 = ?, biaya53 = ?, biaya54 = ?, biaya55 = ?, biaya56 = ?, biaya57 = ?, biaya58 = ?, biaya59 = ?, biaya60 = ?,
+        biaya61 = ?, biaya62 = ?, biaya63 = ?, biaya64 = ?, biaya65 = ?, biaya66 = ?, biaya67 = ?, biaya68 = ?, biaya69 = ?, biaya70 = ?, biaya71 = ?, biaya72 = ?,
+        biaya73 = ?, biaya74 = ?, biaya75 = ?, biaya76 = ?, biaya77 = ?, biaya78 = ?, biaya79 = ?, biaya80 = ?, biaya81 = ?, biaya82 = ?, biaya83 = ?, biaya84 = ?,
+        biaya85 = ?, biaya86 = ?, biaya87 = ?, biaya88 = ?, biaya89 = ?, biaya90 = ?, biaya91 = ?, biaya92 = ?, biaya93 = ?, biaya94 = ?, biaya95 = ?, biaya96 = ?,
+        biaya97 = ?, biaya98 = ?, biaya99 = ?, biaya100 = ?, biaya101 = ?, biaya102 = ?, biaya103 = ?, biaya104 = ?, biaya105 = ?, biay106 = ?, biaya107 = ?, biaya108 = ?,
+        biaya109 = ?, biaya110 = ?, biaya111 = ?, biaya112 = ?, biaya113 = ?, biaya114 = ?, biaya115 = ?, biaya116 = ?, biaya117 = ?, biay118 = ?, biaya119 = ?, biaya120 = ?,
+        biaya121 = ?, biaya122 = ?, biaya123 = ?, biaya124 = ?, biaya125 = ?, biaya126 = ?, biaya127 = ?, biaya128 = ?, biaya129 = ?, biay130 = ?, biaya131 = ?, biaya132 = ?,
+        biaya133 = ?, biaya134 = ?, biaya135 = ?, biaya136 = ?, biaya137 = ?, biaya138 = ?, biaya139 = ?, biaya140 = ?, biaya141 = ?, biay142 = ?, biaya143 = ?, biaya144 = ?,
+        biaya145 = ?, biaya146 = ?, biaya147 = ?, biaya148 = ?, biaya149 = ?, biaya150 = ?, biaya151 = ?, biaya152 = ?, biaya153 = ?, biay154 = ?, biaya155 = ?, biaya156 = ?,
+        biaya157 = ?, biaya158 = ?, biaya159 = ?, biaya160 = ?, biaya161 = ?, biaya162 = ?, biaya163 = ?, biaya164 = ?, biaya165 = ?, biay166 = ?, biaya167 = ?, biaya168 = ?,
+        biaya169 = ?, biaya170 = ?, biaya171 = ?, biaya172 = ?, biaya173 = ?, biaya174 = ?, biaya175 = ?, biaya176 = ?, biaya177 = ?, biay178 = ?, biaya179 = ?, biaya180 = ?,
+        biaya181 = ?, biaya182 = ?, biaya183 = ?, biaya184 = ?, biaya185 = ?, biaya186 = ?, biaya187 = ?, biaya188 = ?, biaya189 = ?, biay190 = ?, biaya191 = ?, biaya192 = ?,
+        biaya193 = ?, biaya194 = ?, biaya195 = ?, biaya196 = ?, biaya197 = ?, biaya198 = ?, biaya199 = ?, biaya200 = ?, biaya201 = ?, biay202 = ?, biaya203 = ?, biaya204 = ?,
+        biaya205 = ?, biaya206 = ?, biaya207 = ?, biaya208 = ?, biaya209 = ?, biaya210 = ?, biaya211 = ?, biaya212 = ?, biaya213 = ?, biay214 = ?, biaya215 = ?, biaya216 = ?,
+        biaya217 = ?, biaya218 = ?, biaya219 = ?, biaya220 = ?, biaya221 = ?, biaya222 = ?, biaya223 = ?, biaya224 = ?, biaya225 = ?, biay226 = ?, biaya227 = ?, biaya228 = ?,
+        biaya229 = ?, biaya230 = ?, biaya231 = ?, biaya232 = ?, biaya233 = ?, biaya234 = ?, biaya235 = ?, biaya236 = ?, biaya237 = ?, biay238 = ?, biaya239 = ?, biaya240 = ?,
+        biaya241 = ?, biaya242 = ?, biaya243 = ?, biaya244 = ?, biaya245 = ?, biaya246 = ?, biaya247 = ?, biaya248 = ?, biaya249 = ?, biay250 = ?, biaya251 = ?, biaya252 = ?,
+        biaya253 = ?, biaya254 = ?, biaya255 = ?, biaya256 = ?, biaya257 = ?, biaya258 = ?, biaya259 = ?, biaya260 = ?, biaya261 = ?, biay262 = ?, biaya263 = ?, biaya264 = ?
+        ");
+        $stmt->execute([
+            $biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12,
+            $biaya13, $biaya14, $biaya15, $biaya16, $biaya17, $biaya18, $biaya19, $biaya20, $biaya21, $biaya22, $biaya23, $biaya24,
+            $biaya25, $biaya26, $biaya27, $biaya28, $biaya29, $biaya30, $biaya31, $biaya32, $biaya33, $biaya34, $biaya35, $biaya36,
+            $biaya37, $biaya38, $biaya39, $biaya40, $biaya41, $biaya42, $biaya43, $biaya44, $biaya45, $biaya46, $biaya47, $biaya48,
+            $biaya49, $biaya50, $biaya51, $biaya52, $biaya53, $biaya54, $biaya55, $biaya56, $biaya57, $biaya58, $biaya59, $biaya60,
+            $biaya61, $biaya62, $biaya63, $biaya64, $biaya65, $biaya66, $biaya67, $biaya68, $biaya69, $biaya70, $biaya71, $biaya72,
+            $biaya73, $biaya74, $biaya75, $biaya76, $biaya77, $biaya78, $biaya79, $biaya80, $biaya81, $biaya82, $biaya83, $biaya84,
+            $biaya85, $biaya86, $biaya87, $biaya88, $biaya89, $biaya90, $biaya91, $biaya92, $biaya93, $biaya94, $biaya95, $biaya96,
+            $biaya97, $biaya98, $biaya99, $biaya100, $biaya101, $biaya102, $biaya103, $biaya104, $biaya105, $biaya106, $biaya107, $biaya108,
+            $biaya109, $biaya110, $biaya111, $biaya112, $biaya113, $biaya114, $biaya115, $biaya116, $biaya117, $biaya118, $biaya119, $biaya120,
+            $biaya121, $biaya122, $biaya123, $biaya124, $biaya125, $biaya126, $biaya127, $biaya128, $biaya129, $biaya130, $biaya131, $biaya132,
+            $biaya133, $biaya134, $biaya135, $biaya136, $biaya137, $biaya138, $biaya139, $biaya140, $biaya141, $biaya142, $biaya143, $biaya144,
+            $biaya145, $biaya146, $biaya147, $biaya148, $biaya149, $biaya150, $biaya151, $biaya152, $biaya153, $biaya154, $biaya155, $biaya156,
+            $biaya157, $biaya158, $biaya159, $biaya160, $biaya161, $biaya162, $biaya163, $biaya164, $biaya165, $biaya166, $biaya167, $biaya168,
+            $biaya169, $biaya170, $biaya171, $biaya172, $biaya173, $biaya174, $biaya175, $biaya176, $biaya177, $biaya178, $biaya179, $biaya180,
+            $biaya181, $biaya182, $biaya183, $biaya184, $biaya185, $biaya186, $biaya187, $biaya188, $biaya189, $biaya190, $biaya191, $biaya192,
+            $biaya193, $biaya194, $biaya195, $biaya196, $biaya197, $biaya198, $biaya199, $biaya200, $biaya201, $biaya202, $biaya203, $biaya204,
+            $biaya205, $biaya206, $biaya207, $biaya208, $biaya209, $biaya210, $biaya211, $biaya212, $biaya213, $biaya214, $biaya215, $biaya216,
+            $biaya217, $biaya218, $biaya219, $biaya220, $biaya221, $biaya222, $biaya223, $biaya224, $biaya225, $biaya226, $biaya227, $biaya228,
+            $biaya229, $biaya230, $biaya231, $biaya232, $biaya233, $biaya234, $biaya235, $biaya236, $biaya237, $biaya238, $biaya239, $biaya240,
+            $biaya241, $biaya242, $biaya243, $biaya244, $biaya245, $biaya246, $biaya247, $biaya248, $biaya249, $biaya250, $biaya251, $biaya252,
+            $biaya253, $biaya254, $biaya255, $biaya256, $biaya257, $biaya258, $biaya259, $biaya260, $biaya261, $biaya262, $biaya263, $biaya264
+
+        ]);
     } else {
         // Prepare and execute an SQL statement to insert the checkbox values
-        $stmt = $pdo->prepare("INSERT INTO checkbox_save (biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?)");
-        $stmt->execute([$biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12]);
+        $stmt = $pdo->prepare("INSERT INTO checkbox_save (
+            biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
+            biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
+            biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
+            biaya37, biaya38, biaya39, biaya40, biaya41, biaya42, biaya43, biaya44, biaya45, biaya46, biaya47, biaya48,
+            biaya49, biaya50, biaya51, biaya52, biaya53, biaya54, biaya55, biaya56, biaya57, biaya58, biaya59, biaya60,
+            biaya61, biaya62, biaya63, biaya64, biaya65, biaya66, biaya67, biaya68, biaya69, biaya70, biaya71, biaya72,
+            biaya73, biaya74, biaya75, biaya76, biaya77, biaya78, biaya79, biaya80, biaya81, biaya82, biaya83, biaya84,
+            biaya85, biaya86, biaya87, biaya88, biaya89, biaya90, biaya91, biaya92, biaya93, biaya94, biaya95, biaya96,
+            biaya97, biaya98, biaya99, biaya100, biaya101, biaya102, biaya103, biaya104, biaya105, biaya106, biaya107, biaya108,
+            biaya109, biaya110, biaya111, biaya112, biaya113, biaya114, biaya115, biaya116, biaya117, biaya118, biaya119, biaya120,
+            biaya121, biaya122, biaya123, biaya124, biaya125, biaya126, biaya127, biaya128, biaya129, biaya130, biaya131, biaya132,
+            biaya133, biaya134, biaya135, biaya136, biaya137, biaya138, biaya139, biaya140, biaya141, biaya142, biaya143, biaya144,
+            biaya145, biaya146, biaya147, biaya148, biaya149, biaya150, biaya151, biaya152, biaya153, biaya154, biaya155, biaya156,
+            biaya157, biaya158, biaya159, biaya160, biaya161, biaya162, biaya163, biaya164, biaya165, biaya166, biaya167, biaya168,
+            biaya169, biaya170, biaya171, biaya172, biaya173, biaya174, biaya175, biaya176, biaya177, biaya178, biaya179, biaya180,
+            biaya181, biaya182, biaya183, biaya184, biaya185, biaya186, biaya187, biaya188, biaya189, biaya190, biaya191, biaya192,
+            biaya193, biaya194, biaya195, biaya196, biaya197, biaya198, biaya199, biaya200, biaya201, biaya202, biaya203, biaya204,
+            biaya205, biaya206, biaya207, biaya208, biaya209, biaya210, biaya211, biaya212, biaya213, biaya214, biaya215, biaya216,
+            biaya217, biaya218, biaya219, biaya220, biaya221, biaya222, biaya223, biaya224, biaya225, biaya226, biaya227, biaya228,
+            biaya229, biaya230, biaya231, biaya232, biaya233, biaya234, biaya235, biaya236, biaya237, biaya238, biaya239, biaya240,
+            biaya241, biaya242, biaya243, biaya244, biaya245, biaya246, biaya247, biaya248, biaya249, biaya250, biaya251, biaya252,
+            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264
+            ) VALUES (
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?
+                )");
+        $stmt->execute([
+            $biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12,
+            $biaya13, $biaya14, $biaya15, $biaya16, $biaya17, $biaya18, $biaya19, $biaya20, $biaya21, $biaya22, $biaya23, $biaya24,
+            $biaya25, $biaya26, $biaya27, $biaya28, $biaya29, $biaya30, $biaya31, $biaya32, $biaya33, $biaya34, $biaya35, $biaya36,
+            $biaya37, $biaya38, $biaya39, $biaya40, $biaya41, $biaya42, $biaya43, $biaya44, $biaya45, $biaya46, $biaya47, $biaya48,
+            $biaya49, $biaya50, $biaya51, $biaya52, $biaya53, $biaya54, $biaya55, $biaya56, $biaya57, $biaya58, $biaya59, $biaya60,
+            $biaya61, $biaya62, $biaya63, $biaya64, $biaya65, $biaya66, $biaya67, $biaya68, $biaya69, $biaya70, $biaya71, $biaya72,
+            $biaya73, $biaya74, $biaya75, $biaya76, $biaya77, $biaya78, $biaya79, $biaya80, $biaya81, $biaya82, $biaya83, $biaya84,
+            $biaya85, $biaya86, $biaya87, $biaya88, $biaya89, $biaya90, $biaya91, $biaya92, $biaya93, $biaya94, $biaya95, $biaya96,
+            $biaya97, $biaya98, $biaya99, $biaya100, $biaya101, $biaya102, $biaya103, $biaya104, $biaya105, $biaya106, $biaya107, $biaya108,
+            $biaya109, $biaya110, $biaya111, $biaya112, $biaya113, $biaya114, $biaya115, $biaya116, $biaya117, $biaya118, $biaya119, $biaya120,
+            $biaya121, $biaya122, $biaya123, $biaya124, $biaya125, $biaya126, $biaya127, $biaya128, $biaya129, $biaya130, $biaya131, $biaya132,
+            $biaya133, $biaya134, $biaya135, $biaya136, $biaya137, $biaya138, $biaya139, $biaya140, $biaya141, $biaya142, $biaya143, $biaya144,
+            $biaya145, $biaya146, $biaya147, $biaya148, $biaya149, $biaya150, $biaya151, $biaya152, $biaya153, $biaya154, $biaya155, $biaya156,
+            $biaya157, $biaya158, $biaya159, $biaya160, $biaya161, $biaya162, $biaya163, $biaya164, $biaya165, $biaya166, $biaya167, $biaya168,
+            $biaya169, $biaya170, $biaya171, $biaya172, $biaya173, $biaya174, $biaya175, $biaya176, $biaya177, $biaya178, $biaya179, $biaya180,
+            $biaya181, $biaya182, $biaya183, $biaya184, $biaya185, $biaya186, $biaya187, $biaya188, $biaya189, $biaya190, $biaya191, $biaya192,
+            $biaya193, $biaya194, $biaya195, $biaya196, $biaya197, $biaya198, $biaya199, $biaya200, $biaya201, $biaya202, $biaya203, $biaya204,
+            $biaya205, $biaya206, $biaya207, $biaya208, $biaya209, $biaya210, $biaya211, $biaya212, $biaya213, $biaya214, $biaya215, $biaya216,
+            $biaya217, $biaya218, $biaya219, $biaya220, $biaya221, $biaya222, $biaya223, $biaya224, $biaya225, $biaya226, $biaya227, $biaya228,
+            $biaya229, $biaya230, $biaya231, $biaya232, $biaya233, $biaya234, $biaya235, $biaya236, $biaya237, $biaya238, $biaya239, $biaya240,
+            $biaya241, $biaya242, $biaya243, $biaya244, $biaya245, $biaya246, $biaya247, $biaya248, $biaya249, $biaya250, $biaya251, $biaya252,
+            $biaya253, $biaya254, $biaya255, $biaya256, $biaya257, $biaya258, $biaya259, $biaya260, $biaya261, $biaya262, $biaya263, $biaya264
+        ]);
     }
 
     // Redirect back to index.php
@@ -91,7 +841,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit();
 } elseif (!$row) {
     // If no checkbox data is found in the database, insert default values
-    $stmt = $pdo->prepare("INSERT INTO checkbox_save (biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12) VALUES (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)");
+    $stmt = $pdo->prepare("INSERT INTO checkbox_save (
+        biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
+        biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
+            biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
+            biaya37, biaya38, biaya39, biaya40, biaya41, biaya42, biaya43, biaya44, biaya45, biaya46, biaya47, biaya48,
+            biaya49, biaya50, biaya51, biaya52, biaya53, biaya54, biaya55, biaya56, biaya57, biaya58, biaya59, biaya60,
+            biaya61, biaya62, biaya63, biaya64, biaya65, biaya66, biaya67, biaya68, biaya69, biaya70, biaya71, biaya72,
+            biaya73, biaya74, biaya75, biaya76, biaya77, biaya78, biaya79, biaya80, biaya81, biaya82, biaya83, biaya84,
+            biaya85, biaya86, biaya87, biaya88, biaya89, biaya90, biaya91, biaya92, biaya93, biaya94, biaya95, biaya96,
+            biaya97, biaya98, biaya99, biaya100, biaya101, biaya102, biaya103, biaya104, biaya105, biaya106, biaya107, biaya108,
+            biaya109, biaya110, biaya111, biaya112, biaya113, biaya114, biaya115, biaya116, biaya117, biaya118, biaya119, biaya120,
+            biaya121, biaya122, biaya123, biaya124, biaya125, biaya126, biaya127, biaya128, biaya129, biaya130, biaya131, biaya132,
+            biaya133, biaya134, biaya135, biaya136, biaya137, biaya138, biaya139, biaya140, biaya141, biaya142, biaya143, biaya144,
+            biaya145, biaya146, biaya147, biaya148, biaya149, biaya150, biaya151, biaya152, biaya153, biaya154, biaya155, biaya156,
+            biaya157, biaya158, biaya159, biaya160, biaya161, biaya162, biaya163, biaya164, biaya165, biaya166, biaya167, biaya168,
+            biaya169, biaya170, biaya171, biaya172, biaya173, biaya174, biaya175, biaya176, biaya177, biaya178, biaya179, biaya180,
+            biaya181, biaya182, biaya183, biaya184, biaya185, biaya186, biaya187, biaya188, biaya189, biaya190, biaya191, biaya192,
+            biaya193, biaya194, biaya195, biaya196, biaya197, biaya198, biaya199, biaya200, biaya201, biaya202, biaya203, biaya204,
+            biaya205, biaya206, biaya207, biaya208, biaya209, biaya210, biaya211, biaya212, biaya213, biaya214, biaya215, biaya216,
+            biaya217, biaya218, biaya219, biaya220, biaya221, biaya222, biaya223, biaya224, biaya225, biaya226, biaya227, biaya228,
+            biaya229, biaya230, biaya231, biaya232, biaya233, biaya234, biaya235, biaya236, biaya237, biaya238, biaya239, biaya240,
+            biaya241, biaya242, biaya243, biaya244, biaya245, biaya246, biaya247, biaya248, biaya249, biaya250, biaya251, biaya252,
+            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264
+        ) VALUES (
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            )");
     $stmt->execute();
 }
 ?>
@@ -2272,7 +3068,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <th style="text-align:center;">ICD 10</th>
                                                 <th style="text-align:center;">ICD 9</th>
                                                 <th style="text-align:center;">Kelas BPJS</th>
-                                                
+
                                             </tr>
                                         </thead>
 
@@ -2303,23 +3099,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td style="text-align:center;"><?php echo $tanggalmasuk; ?></td>
                                                 <td style="text-align:center;"><?php echo $tanggalkeluar; ?></td>
                                                 <td style="text-align:center;">
-                                                    <select class="form-control">
+                                                    <select class="form-control" id="selectOption">
                                                         <option>-</option>
-                                                        <option>cerebral infarction (i63.9)</option>
-                                                        <option>intracerebral haemorrhage(I61.9)</option>
-                                                    </select></th>
+                                                        <option id="cerebral-infarction">cerebral infarction (i63.9)</option>
+                                                        <option id="intracerebral-haemorrhage">intracerebral haemorrhage(I61.9)</option>
+                                                    </select>
+
                                                 </td>
+
                                                 <td style="text-align:center;">
-                                                    <select class="form-control">
+                                                    <select class="form-control" id="selectOption2">
                                                         <option>-</option>
-                                                        <option>hemiplegi(G81)</option>
-                                                        <option>Congestive heart failure (I50.0)</option>
+                                                        <option id="hemiplegi">hemiplegi(G81)</option>
+                                                        <option id="congestive-heart-failure">Congestive heart failure (I50.0)</option>
                                                     </select></th>
                                                 </td>
                                                 <td style="text-align:center;"><?php echo $dxmedis; ?></td>
                                                 <td style="text-align:center;">-</td>
                                                 <td style="text-align:center;">1</td>
-                                                
+
                                             </tr>
                                     </table>
                                 </div>
@@ -4425,7 +5223,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <th colspan="9" class="text-center"></th>
                                                     <th class="text-center">KLAIM INA CBGS</th>
-                                                    <th class="text-center">Rp. 0</th>
+                                                    <td>
+
+                                                        <p id="klaiminacbg"></p>
+
+                                                    </td>
 
 
                                                 </tr>
@@ -4508,6 +5310,71 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         });
     </script>
+
+    <!-- Maksimal harga DX Medis -->
+    <script>
+        // Get the select element and the p element
+        var selectOption = document.getElementById('selectOption');
+        var totalSum = document.getElementById('totalSum');
+
+        // Add an event listener to the select element
+        selectOption.addEventListener('change', function() {
+            // Get the selected option id
+            var selectedOptionId = this.options[this.selectedIndex].id;
+            var totalValue;
+
+            // Check the selected option id and assign the corresponding value
+            switch (selectedOptionId) {
+                case 'cerebral-infarction':
+                    totalValue = '5000000';
+                    break;
+                case 'intracerebral-haemorrhage':
+                    totalValue = '123.123.123';
+                    break;
+                default:
+                    totalValue = '';
+                    break;
+            }
+
+            // Update the p element with the calculated value
+            var hasil = formatRupiah(totalValue);
+            klaiminacbg.textContent = hasil;
+
+        });
+    </script>
+
+    <script>
+        // Get the select element and the p element
+        var selectOption = document.getElementById('selectOption2');
+        var totalSum = document.getElementById('totalSum');
+
+        // Add an event listener to the select element
+        selectOption.addEventListener('change', function() {
+            // Get the selected option id
+            var selectedOptionId = this.options[this.selectedIndex].id;
+            var totalValue;
+
+            // Check the selected option id and assign the corresponding value
+            switch (selectedOptionId) {
+
+                case 'hemiplegi':
+                    totalValue = '3000000';
+                    break;
+                case 'congestive-heart-failure':
+                    totalValue = '2000000';
+                    break;
+                default:
+                    totalValue = '';
+                    break;
+            }
+
+            // Update the p element with the calculated value
+            var hasil = formatRupiah(totalValue);
+            klaiminacbg.textContent = hasil;
+
+        });
+    </script>
+
 </body>
 
 </html>

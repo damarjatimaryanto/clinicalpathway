@@ -2,13 +2,13 @@
 session_start(); // Memulai session
 
 // Database connection settings
-$servername = "192.168.1.178";
+$servername = "localhost";
 $username = "root";
-$password = "takonbudi";
-$database = "simrs";
+$password = "";
+$dbname = "neurotech";
 
 // Membuat koneksi ke database
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Memeriksa koneksi
 if ($conn->connect_error) {
@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Melakukan query untuk memeriksa apakah username dan password cocok
-    $sql = "SELECT * FROM master_login2 WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
     $result = $conn->query($sql);
 
     // Memeriksa apakah terdapat satu baris hasil dari query
