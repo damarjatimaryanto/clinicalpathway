@@ -3799,37 +3799,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>Asering</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6211" name="biaya187" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6211" name="biaya187" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6211" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6212" name="biaya188" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6212" name="biaya188" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6212" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6213" name="biaya189" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6213" name="biaya189" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6213" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6214" name="biaya190" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6214" name="biaya190" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6214" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6215" name="biaya191" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6215" name="biaya191" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6215" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6216" name="biaya192" value="" onchange="hitungTotal31()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6216" name="biaya192" value="10500" onchange="hitungTotal31()">
                                                             <label for="customCheckbox6216" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
@@ -3845,37 +3845,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>Manitol</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6221" name="biaya193" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6221" name="biaya193" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6221" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6222" name="biaya194" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6222" name="biaya194" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6222" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6223" name="biaya195" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6223" name="biaya195" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6223" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6224" name="biaya196" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6224" name="biaya196" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6224" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6225" name="biaya197" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6225" name="biaya197" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6225" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6226" name="biaya198" value="" onchange="hitungTotal32()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6226" name="biaya198" value="29221" onchange="hitungTotal32()">
                                                             <label for="customCheckbox6226" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
@@ -3984,37 +3984,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>Amlodipin/Candesartan</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6331" name="biaya211" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6331" name="biaya211" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6331" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6332" name="biaya212" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6332" name="biaya212" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6332" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6333" name="biaya213" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6333" name="biaya213" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6333" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6334" name="biaya214" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6334" name="biaya214" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6334" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6335" name="biaya215" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6335" name="biaya215" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6335" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6336" name="biaya216" value="" onchange="hitungTotal35()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox6336" name="biaya216" value="352" onchange="hitungTotal35()">
                                                             <label for="customCheckbox6336" class="custom-control-label"></label>
                                                         </div>
                                                     </td>
