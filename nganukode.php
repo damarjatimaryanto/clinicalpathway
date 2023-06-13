@@ -42,5 +42,27 @@ function generateBiayaCode($start, $end)
     }
     return $code;
 }
-$generatedCode = generateBiayaCode(138, 264);
+$generatedCode = generateBiayaCode(1, 118);
 echo $generatedCode;
+
+// function generateCreateTableQuery()
+// {
+//     $tableName = "t_clinicalpathway"; // Replace with your desired table name
+//     $columnCount = 264; // Number of biaya columns
+
+//     $query = "CREATE TABLE $tableName (
+//         id INT NOT NULL AUTO_INCREMENT,
+//     ";
+
+//     // Generate biaya columns
+//     for ($i = 1; $i <= $columnCount; $i++) {
+//         $query .= "biaya$i INT, ";
+//     }
+
+//     $query .= "PRIMARY KEY (id)
+//     );";
+
+//     return $query;
+// }
+
+// echo generateCreateTableQuery();

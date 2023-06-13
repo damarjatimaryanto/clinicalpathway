@@ -1,6 +1,8 @@
 <?php
 // require_once 'auth.php';
 
+
+
 session_start();
 
 // Check if the user is not logged in
@@ -9,12 +11,12 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 require_once 'db_connection.php';
-
+$NOMR = $_GET["nomr"];
 // Establish database connection
-$host = 'localhost';
-$db   = 'neurotech';
+$host = '192.168.1.178';
+$db   = 'simrs';
 $user = 'root';
-$pass = '';
+$pass = 'takonbudi';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -31,8 +33,11 @@ try {
 }
 
 // Retrieve checkbox values from the database
-$stmt = $pdo->query("SELECT * FROM checkbox_save LIMIT 1");
+$stmt = $pdo->query("SELECT * FROM t_clinicalpathway
+ LIMIT 1");
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
 
 $biaya1 = isset($_SESSION['biaya1']) ? $_SESSION['biaya1'] : $row['biaya1'];
 $biaya2 = isset($_SESSION['biaya2']) ? $_SESSION['biaya2'] : $row['biaya2'];
@@ -316,6 +321,148 @@ $biaya264 = isset($_SESSION['biaya264']) ? $_SESSION['biaya264'] : $row['biaya26
 
 // Update checkbox values when the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $NOMOR_MR = $_GET["nomr"];
+
+    $biaya1 = isset($_POST['biaya1']) ? $_POST['biaya1'] : 0;
+    $biaya2 = isset($_POST['biaya2']) ? $_POST['biaya2'] : 0;
+    $biaya3 = isset($_POST['biaya3']) ? $_POST['biaya3'] : 0;
+    $biaya4 = isset($_POST['biaya4']) ? $_POST['biaya4'] : 0;
+    $biaya5 = isset($_POST['biaya5']) ? $_POST['biaya5'] : 0;
+    $biaya6 = isset($_POST['biaya6']) ? $_POST['biaya6'] : 0;
+    $biaya7 = isset($_POST['biaya7']) ? $_POST['biaya7'] : 0;
+    $biaya8 = isset($_POST['biaya8']) ? $_POST['biaya8'] : 0;
+    $biaya9 = isset($_POST['biaya9']) ? $_POST['biaya9'] : 0;
+    $biaya10 = isset($_POST['biaya10']) ? $_POST['biaya10'] : 0;
+    $biaya11 = isset($_POST['biaya11']) ? $_POST['biaya11'] : 0;
+    $biaya12 = isset($_POST['biaya12']) ? $_POST['biaya12'] : 0;
+    $biaya13 = isset($_POST['biaya13']) ? $_POST['biaya13'] : 0;
+    $biaya14 = isset($_POST['biaya14']) ? $_POST['biaya14'] : 0;
+    $biaya15 = isset($_POST['biaya15']) ? $_POST['biaya15'] : 0;
+    $biaya16 = isset($_POST['biaya16']) ? $_POST['biaya16'] : 0;
+    $biaya17 = isset($_POST['biaya17']) ? $_POST['biaya17'] : 0;
+    $biaya18 = isset($_POST['biaya18']) ? $_POST['biaya18'] : 0;
+    $biaya19 = isset($_POST['biaya19']) ? $_POST['biaya19'] : 0;
+    $biaya20 = isset($_POST['biaya20']) ? $_POST['biaya20'] : 0;
+    $biaya21 = isset($_POST['biaya21']) ? $_POST['biaya21'] : 0;
+    $biaya22 = isset($_POST['biaya22']) ? $_POST['biaya22'] : 0;
+    $biaya23 = isset($_POST['biaya23']) ? $_POST['biaya23'] : 0;
+    $biaya24 = isset($_POST['biaya24']) ? $_POST['biaya24'] : 0;
+    $biaya25 = isset($_POST['biaya25']) ? $_POST['biaya25'] : 0;
+    $biaya26 = isset($_POST['biaya26']) ? $_POST['biaya26'] : 0;
+    $biaya27 = isset($_POST['biaya27']) ? $_POST['biaya27'] : 0;
+    $biaya28 = isset($_POST['biaya28']) ? $_POST['biaya28'] : 0;
+    $biaya29 = isset($_POST['biaya29']) ? $_POST['biaya29'] : 0;
+    $biaya30 = isset($_POST['biaya30']) ? $_POST['biaya30'] : 0;
+    $biaya31 = isset($_POST['biaya31']) ? $_POST['biaya31'] : 0;
+    $biaya32 = isset($_POST['biaya32']) ? $_POST['biaya32'] : 0;
+    $biaya33 = isset($_POST['biaya33']) ? $_POST['biaya33'] : 0;
+    $biaya34 = isset($_POST['biaya34']) ? $_POST['biaya34'] : 0;
+    $biaya35 = isset($_POST['biaya35']) ? $_POST['biaya35'] : 0;
+    $biaya36 = isset($_POST['biaya36']) ? $_POST['biaya36'] : 0;
+    $biaya37 = isset($_POST['biaya37']) ? $_POST['biaya37'] : 0;
+    $biaya38 = isset($_POST['biaya38']) ? $_POST['biaya38'] : 0;
+    $biaya39 = isset($_POST['biaya39']) ? $_POST['biaya39'] : 0;
+    $biaya40 = isset($_POST['biaya40']) ? $_POST['biaya40'] : 0;
+    $biaya41 = isset($_POST['biaya41']) ? $_POST['biaya41'] : 0;
+    $biaya42 = isset($_POST['biaya42']) ? $_POST['biaya42'] : 0;
+    $biaya43 = isset($_POST['biaya43']) ? $_POST['biaya43'] : 0;
+    $biaya44 = isset($_POST['biaya44']) ? $_POST['biaya44'] : 0;
+    $biaya45 = isset($_POST['biaya45']) ? $_POST['biaya45'] : 0;
+    $biaya46 = isset($_POST['biaya46']) ? $_POST['biaya46'] : 0;
+    $biaya47 = isset($_POST['biaya47']) ? $_POST['biaya47'] : 0;
+    $biaya48 = isset($_POST['biaya48']) ? $_POST['biaya48'] : 0;
+    $biaya49 = isset($_POST['biaya49']) ? $_POST['biaya49'] : 0;
+    $biaya50 = isset($_POST['biaya50']) ? $_POST['biaya50'] : 0;
+    $biaya51 = isset($_POST['biaya51']) ? $_POST['biaya51'] : 0;
+    $biaya52 = isset($_POST['biaya52']) ? $_POST['biaya52'] : 0;
+    $biaya53 = isset($_POST['biaya53']) ? $_POST['biaya53'] : 0;
+    $biaya54 = isset($_POST['biaya54']) ? $_POST['biaya54'] : 0;
+    $biaya55 = isset($_POST['biaya55']) ? $_POST['biaya55'] : 0;
+    $biaya56 = isset($_POST['biaya56']) ? $_POST['biaya56'] : 0;
+    $biaya57 = isset($_POST['biaya57']) ? $_POST['biaya57'] : 0;
+    $biaya58 = isset($_POST['biaya58']) ? $_POST['biaya58'] : 0;
+    $biaya59 = isset($_POST['biaya59']) ? $_POST['biaya59'] : 0;
+    $biaya60 = isset($_POST['biaya60']) ? $_POST['biaya60'] : 0;
+    $biaya61 = isset($_POST['biaya61']) ? $_POST['biaya61'] : 0;
+    $biaya62 = isset($_POST['biaya62']) ? $_POST['biaya62'] : 0;
+    $biaya63 = isset($_POST['biaya63']) ? $_POST['biaya63'] : 0;
+    $biaya64 = isset($_POST['biaya64']) ? $_POST['biaya64'] : 0;
+    $biaya65 = isset($_POST['biaya65']) ? $_POST['biaya65'] : 0;
+    $biaya66 = isset($_POST['biaya66']) ? $_POST['biaya66'] : 0;
+    $biaya67 = isset($_POST['biaya67']) ? $_POST['biaya67'] : 0;
+    $biaya68 = isset($_POST['biaya68']) ? $_POST['biaya68'] : 0;
+    $biaya69 = isset($_POST['biaya69']) ? $_POST['biaya69'] : 0;
+    $biaya70 = isset($_POST['biaya70']) ? $_POST['biaya70'] : 0;
+    $biaya71 = isset($_POST['biaya71']) ? $_POST['biaya71'] : 0;
+    $biaya72 = isset($_POST['biaya72']) ? $_POST['biaya72'] : 0;
+    $biaya73 = isset($_POST['biaya73']) ? $_POST['biaya73'] : 0;
+    $biaya74 = isset($_POST['biaya74']) ? $_POST['biaya74'] : 0;
+    $biaya75 = isset($_POST['biaya75']) ? $_POST['biaya75'] : 0;
+    $biaya76 = isset($_POST['biaya76']) ? $_POST['biaya76'] : 0;
+    $biaya77 = isset($_POST['biaya77']) ? $_POST['biaya77'] : 0;
+    $biaya78 = isset($_POST['biaya78']) ? $_POST['biaya78'] : 0;
+    $biaya79 = isset($_POST['biaya79']) ? $_POST['biaya79'] : 0;
+    $biaya80 = isset($_POST['biaya80']) ? $_POST['biaya80'] : 0;
+    $biaya81 = isset($_POST['biaya81']) ? $_POST['biaya81'] : 0;
+    $biaya82 = isset($_POST['biaya82']) ? $_POST['biaya82'] : 0;
+    $biaya83 = isset($_POST['biaya83']) ? $_POST['biaya83'] : 0;
+    $biaya84 = isset($_POST['biaya84']) ? $_POST['biaya84'] : 0;
+    $biaya85 = isset($_POST['biaya85']) ? $_POST['biaya85'] : 0;
+    $biaya86 = isset($_POST['biaya86']) ? $_POST['biaya86'] : 0;
+    $biaya87 = isset($_POST['biaya87']) ? $_POST['biaya87'] : 0;
+    $biaya88 = isset($_POST['biaya88']) ? $_POST['biaya88'] : 0;
+    $biaya89 = isset($_POST['biaya89']) ? $_POST['biaya89'] : 0;
+    $biaya90 = isset($_POST['biaya90']) ? $_POST['biaya90'] : 0;
+    $biaya91 = isset($_POST['biaya91']) ? $_POST['biaya91'] : 0;
+    $biaya92 = isset($_POST['biaya92']) ? $_POST['biaya92'] : 0;
+    $biaya93 = isset($_POST['biaya93']) ? $_POST['biaya93'] : 0;
+    $biaya94 = isset($_POST['biaya94']) ? $_POST['biaya94'] : 0;
+    $biaya95 = isset($_POST['biaya95']) ? $_POST['biaya95'] : 0;
+    $biaya96 = isset($_POST['biaya96']) ? $_POST['biaya96'] : 0;
+    $biaya97 = isset($_POST['biaya97']) ? $_POST['biaya97'] : 0;
+    $biaya98 = isset($_POST['biaya98']) ? $_POST['biaya98'] : 0;
+    $biaya99 = isset($_POST['biaya99']) ? $_POST['biaya99'] : 0;
+    $biaya100 = isset($_POST['biaya100']) ? $_POST['biaya100'] : 0;
+    $biaya101 = isset($_POST['biaya101']) ? $_POST['biaya101'] : 0;
+    $biaya102 = isset($_POST['biaya102']) ? $_POST['biaya102'] : 0;
+    $biaya103 = isset($_POST['biaya103']) ? $_POST['biaya103'] : 0;
+    $biaya104 = isset($_POST['biaya104']) ? $_POST['biaya104'] : 0;
+    $biaya105 = isset($_POST['biaya105']) ? $_POST['biaya105'] : 0;
+    $biaya106 = isset($_POST['biaya106']) ? $_POST['biaya106'] : 0;
+    $biaya107 = isset($_POST['biaya107']) ? $_POST['biaya107'] : 0;
+    $biaya108 = isset($_POST['biaya108']) ? $_POST['biaya108'] : 0;
+    $biaya109 = isset($_POST['biaya109']) ? $_POST['biaya109'] : 0;
+    $biaya110 = isset($_POST['biaya110']) ? $_POST['biaya110'] : 0;
+    $biaya111 = isset($_POST['biaya111']) ? $_POST['biaya111'] : 0;
+    $biaya112 = isset($_POST['biaya112']) ? $_POST['biaya112'] : 0;
+    $biaya113 = isset($_POST['biaya113']) ? $_POST['biaya113'] : 0;
+    $biaya114 = isset($_POST['biaya114']) ? $_POST['biaya114'] : 0;
+    $biaya115 = isset($_POST['biaya115']) ? $_POST['biaya115'] : 0;
+    $biaya116 = isset($_POST['biaya116']) ? $_POST['biaya116'] : 0;
+    $biaya117 = isset($_POST['biaya117']) ? $_POST['biaya117'] : 0;
+    $biaya118 = isset($_POST['biaya118']) ? $_POST['biaya118'] : 0;
+    $biaya119 = isset($_POST['biaya119']) ? $_POST['biaya119'] : 0;
+    $biaya117 = isset($_POST['biaya117']) ? $_POST['biaya117'] : 0;
+    $biaya118 = isset($_POST['biaya118']) ? $_POST['biaya118'] : 0;
+    $biaya119 = isset($_POST['biaya119']) ? $_POST['biaya119'] : 0;
+    $biaya120 = isset($_POST['biaya120']) ? $_POST['biaya120'] : 0;
+    $biaya121 = isset($_POST['biaya121']) ? $_POST['biaya121'] : 0;
+    $biaya122 = isset($_POST['biaya122']) ? $_POST['biaya122'] : 0;
+    $biaya123 = isset($_POST['biaya123']) ? $_POST['biaya123'] : 0;
+    $biaya124 = isset($_POST['biaya124']) ? $_POST['biaya124'] : 0;
+    $biaya125 = isset($_POST['biaya125']) ? $_POST['biaya125'] : 0;
+    $biaya126 = isset($_POST['biaya126']) ? $_POST['biaya126'] : 0;
+    $biaya127 = isset($_POST['biaya127']) ? $_POST['biaya127'] : 0;
+    $biaya128 = isset($_POST['biaya128']) ? $_POST['biaya128'] : 0;
+    $biaya129 = isset($_POST['biaya129']) ? $_POST['biaya129'] : 0;
+    $biaya130 = isset($_POST['biaya130']) ? $_POST['biaya130'] : 0;
+    $biaya131 = isset($_POST['biaya131']) ? $_POST['biaya131'] : 0;
+    $biaya132 = isset($_POST['biaya132']) ? $_POST['biaya132'] : 0;
+    $biaya133 = isset($_POST['biaya133']) ? $_POST['biaya133'] : 0;
+    $biaya134 = isset($_POST['biaya134']) ? $_POST['biaya134'] : 0;
+    $biaya135 = isset($_POST['biaya135']) ? $_POST['biaya135'] : 0;
+    $biaya136 = isset($_POST['biaya136']) ? $_POST['biaya136'] : 0;
+    $biaya137 = isset($_POST['biaya137']) ? $_POST['biaya137'] : 0;
     $biaya138 = isset($_POST['biaya138']) ? $_POST['biaya138'] : 0;
     $biaya139 = isset($_POST['biaya139']) ? $_POST['biaya139'] : 0;
     $biaya140 = isset($_POST['biaya140']) ? $_POST['biaya140'] : 0;
@@ -712,7 +859,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($row) {
         // Prepare and execute an SQL statement to update the checkbox values
-        $stmt = $pdo->prepare("UPDATE checkbox_save SET 
+        $stmt = $pdo->prepare("UPDATE t_clinicalpathway SET 
         biaya1 = ?, biaya2 = ?, biaya3 = ?, biaya4 = ?, biaya5 = ?, biaya6 = ?, biaya7 = ?, biaya8 = ?, biaya9 = ?, biaya10 = ?, biaya11 = ?, biaya12 = ?,
         biaya13 = ?, biaya14 = ?, biaya15 = ?, biaya16 = ?, biaya17 = ?, biaya18 = ?, biaya19 = ?, biaya20 = ?, biaya21 = ?, biaya22 = ?, biaya23 = ?, biaya24 = ?,
         biaya25 = ?, biaya26 = ?, biaya27 = ?, biaya28 = ?, biaya29 = ?, biaya30 = ?, biaya31 = ?, biaya32 = ?, biaya33 = ?, biaya34 = ?, biaya35 = ?, biaya36 = ?,
@@ -721,20 +868,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         biaya61 = ?, biaya62 = ?, biaya63 = ?, biaya64 = ?, biaya65 = ?, biaya66 = ?, biaya67 = ?, biaya68 = ?, biaya69 = ?, biaya70 = ?, biaya71 = ?, biaya72 = ?,
         biaya73 = ?, biaya74 = ?, biaya75 = ?, biaya76 = ?, biaya77 = ?, biaya78 = ?, biaya79 = ?, biaya80 = ?, biaya81 = ?, biaya82 = ?, biaya83 = ?, biaya84 = ?,
         biaya85 = ?, biaya86 = ?, biaya87 = ?, biaya88 = ?, biaya89 = ?, biaya90 = ?, biaya91 = ?, biaya92 = ?, biaya93 = ?, biaya94 = ?, biaya95 = ?, biaya96 = ?,
-        biaya97 = ?, biaya98 = ?, biaya99 = ?, biaya100 = ?, biaya101 = ?, biaya102 = ?, biaya103 = ?, biaya104 = ?, biaya105 = ?, biay106 = ?, biaya107 = ?, biaya108 = ?,
-        biaya109 = ?, biaya110 = ?, biaya111 = ?, biaya112 = ?, biaya113 = ?, biaya114 = ?, biaya115 = ?, biaya116 = ?, biaya117 = ?, biay118 = ?, biaya119 = ?, biaya120 = ?,
-        biaya121 = ?, biaya122 = ?, biaya123 = ?, biaya124 = ?, biaya125 = ?, biaya126 = ?, biaya127 = ?, biaya128 = ?, biaya129 = ?, biay130 = ?, biaya131 = ?, biaya132 = ?,
-        biaya133 = ?, biaya134 = ?, biaya135 = ?, biaya136 = ?, biaya137 = ?, biaya138 = ?, biaya139 = ?, biaya140 = ?, biaya141 = ?, biay142 = ?, biaya143 = ?, biaya144 = ?,
-        biaya145 = ?, biaya146 = ?, biaya147 = ?, biaya148 = ?, biaya149 = ?, biaya150 = ?, biaya151 = ?, biaya152 = ?, biaya153 = ?, biay154 = ?, biaya155 = ?, biaya156 = ?,
-        biaya157 = ?, biaya158 = ?, biaya159 = ?, biaya160 = ?, biaya161 = ?, biaya162 = ?, biaya163 = ?, biaya164 = ?, biaya165 = ?, biay166 = ?, biaya167 = ?, biaya168 = ?,
-        biaya169 = ?, biaya170 = ?, biaya171 = ?, biaya172 = ?, biaya173 = ?, biaya174 = ?, biaya175 = ?, biaya176 = ?, biaya177 = ?, biay178 = ?, biaya179 = ?, biaya180 = ?,
-        biaya181 = ?, biaya182 = ?, biaya183 = ?, biaya184 = ?, biaya185 = ?, biaya186 = ?, biaya187 = ?, biaya188 = ?, biaya189 = ?, biay190 = ?, biaya191 = ?, biaya192 = ?,
-        biaya193 = ?, biaya194 = ?, biaya195 = ?, biaya196 = ?, biaya197 = ?, biaya198 = ?, biaya199 = ?, biaya200 = ?, biaya201 = ?, biay202 = ?, biaya203 = ?, biaya204 = ?,
-        biaya205 = ?, biaya206 = ?, biaya207 = ?, biaya208 = ?, biaya209 = ?, biaya210 = ?, biaya211 = ?, biaya212 = ?, biaya213 = ?, biay214 = ?, biaya215 = ?, biaya216 = ?,
-        biaya217 = ?, biaya218 = ?, biaya219 = ?, biaya220 = ?, biaya221 = ?, biaya222 = ?, biaya223 = ?, biaya224 = ?, biaya225 = ?, biay226 = ?, biaya227 = ?, biaya228 = ?,
-        biaya229 = ?, biaya230 = ?, biaya231 = ?, biaya232 = ?, biaya233 = ?, biaya234 = ?, biaya235 = ?, biaya236 = ?, biaya237 = ?, biay238 = ?, biaya239 = ?, biaya240 = ?,
-        biaya241 = ?, biaya242 = ?, biaya243 = ?, biaya244 = ?, biaya245 = ?, biaya246 = ?, biaya247 = ?, biaya248 = ?, biaya249 = ?, biay250 = ?, biaya251 = ?, biaya252 = ?,
-        biaya253 = ?, biaya254 = ?, biaya255 = ?, biaya256 = ?, biaya257 = ?, biaya258 = ?, biaya259 = ?, biaya260 = ?, biaya261 = ?, biay262 = ?, biaya263 = ?, biaya264 = ?
+        biaya97 = ?, biaya98 = ?, biaya99 = ?, biaya100 = ?, biaya101 = ?, biaya102 = ?, biaya103 = ?, biaya104 = ?, biaya105 = ?, biaya106 = ?, biaya107 = ?, biaya108 = ?,
+        biaya109 = ?, biaya110 = ?, biaya111 = ?, biaya112 = ?, biaya113 = ?, biaya114 = ?, biaya115 = ?, biaya116 = ?, biaya117 = ?, biaya118 = ?, biaya119 = ?, biaya120 = ?,
+        biaya121 = ?, biaya122 = ?, biaya123 = ?, biaya124 = ?, biaya125 = ?, biaya126 = ?, biaya127 = ?, biaya128 = ?, biaya129 = ?, biaya130 = ?, biaya131 = ?, biaya132 = ?,
+        biaya133 = ?, biaya134 = ?, biaya135 = ?, biaya136 = ?, biaya137 = ?, biaya138 = ?, biaya139 = ?, biaya140 = ?, biaya141 = ?, biaya142 = ?, biaya143 = ?, biaya144 = ?,
+        biaya145 = ?, biaya146 = ?, biaya147 = ?, biaya148 = ?, biaya149 = ?, biaya150 = ?, biaya151 = ?, biaya152 = ?, biaya153 = ?, biaya154 = ?, biaya155 = ?, biaya156 = ?,
+        biaya157 = ?, biaya158 = ?, biaya159 = ?, biaya160 = ?, biaya161 = ?, biaya162 = ?, biaya163 = ?, biaya164 = ?, biaya165 = ?, biaya166 = ?, biaya167 = ?, biaya168 = ?,
+        biaya169 = ?, biaya170 = ?, biaya171 = ?, biaya172 = ?, biaya173 = ?, biaya174 = ?, biaya175 = ?, biaya176 = ?, biaya177 = ?, biaya178 = ?, biaya179 = ?, biaya180 = ?,
+        biaya181 = ?, biaya182 = ?, biaya183 = ?, biaya184 = ?, biaya185 = ?, biaya186 = ?, biaya187 = ?, biaya188 = ?, biaya189 = ?, biaya190 = ?, biaya191 = ?, biaya192 = ?,
+        biaya193 = ?, biaya194 = ?, biaya195 = ?, biaya196 = ?, biaya197 = ?, biaya198 = ?, biaya199 = ?, biaya200 = ?, biaya201 = ?, biaya202 = ?, biaya203 = ?, biaya204 = ?,
+        biaya205 = ?, biaya206 = ?, biaya207 = ?, biaya208 = ?, biaya209 = ?, biaya210 = ?, biaya211 = ?, biaya212 = ?, biaya213 = ?, biaya214 = ?, biaya215 = ?, biaya216 = ?,
+        biaya217 = ?, biaya218 = ?, biaya219 = ?, biaya220 = ?, biaya221 = ?, biaya222 = ?, biaya223 = ?, biaya224 = ?, biaya225 = ?, biaya226 = ?, biaya227 = ?, biaya228 = ?,
+        biaya229 = ?, biaya230 = ?, biaya231 = ?, biaya232 = ?, biaya233 = ?, biaya234 = ?, biaya235 = ?, biaya236 = ?, biaya237 = ?, biaya238 = ?, biaya239 = ?, biaya240 = ?,
+        biaya241 = ?, biaya242 = ?, biaya243 = ?, biaya244 = ?, biaya245 = ?, biaya246 = ?, biaya247 = ?, biaya248 = ?, biaya249 = ?, biaya250 = ?, biaya251 = ?, biaya252 = ?,
+        biaya253 = ?, biaya254 = ?, biaya255 = ?, biaya256 = ?, biaya257 = ?, biaya258 = ?, biaya259 = ?, biaya260 = ?, biaya261 = ?, biaya262 = ?, biaya263 = ?, biaya264 = ?
         ");
         $stmt->execute([
             $biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12,
@@ -763,7 +910,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]);
     } else {
         // Prepare and execute an SQL statement to insert the checkbox values
-        $stmt = $pdo->prepare("INSERT INTO checkbox_save (
+        $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway (
             biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
             biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
@@ -837,11 +984,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Redirect back to index.php
-    header("Location: detailkelas1.php?nomr=echo $nomr");
+    echo "<script>alert('data berhasil disimpan');</script>";
+    header("Location: detailkelas1.php?nomr= $nomr");
+
     exit();
 } elseif (!$row) {
     // If no checkbox data is found in the database, insert default values
-    $stmt = $pdo->prepare("INSERT INTO checkbox_save (
+    $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway (
         biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
         biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
@@ -886,10 +1035,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
             )");
     $stmt->execute();
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -2674,7 +2825,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
         var totalRupiah = formatRupiah(totalSum);
+
         document.getElementById("totalSum").innerHTML = "" + totalRupiah;
+
+        // if (totalSum >= 5000000) {
+        //     alert("Total sum has reached 5000000!");
+        // }
     }
 
 
@@ -3130,7 +3286,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                     <h3 class="card-title">Detail Data Pasien</h3>
                                 </div> -->
-                                <form method="POST" action="detailkelas1.php?">
+                                <!-- <form method="POST" action="detailkelas1.php?"> -->
+                                <form method="POST">
 
                                     <!-- /.card-header -->
                                     <div class="card-body">
@@ -5235,10 +5392,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         </table>
                                         <td>
                                             <!-- <input type=button value="Proses" onclick="proses()"> -->
-                                            <button type="submit" value="Save" name="submit" class="btn btn-block bg-gradient-primary btn-lg">SIMPAN</button>
+                                            <button type="submit" value="Save" name="simpan" class="btn btn-block bg-gradient-primary btn-lg">SIMPAN</button>
                                         </td>
                                     </div>
                                 </form>
+
+
 
                                 <!-- /.card-body -->
                             </div>
@@ -5285,6 +5444,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
     <!-- AdminLTE App -->
     <script src="assets/dist/js/adminlte.min.js"></script>
@@ -5313,67 +5475,152 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- Maksimal harga DX Medis -->
     <script>
-        // Get the select element and the p element
+        var nilai; // Declare the variable outside the event listener to make it accessible in both functions
+
+        // Get the select element
         var selectOption = document.getElementById('selectOption');
-        var totalSum = document.getElementById('totalSum');
 
         // Add an event listener to the select element
         selectOption.addEventListener('change', function() {
             // Get the selected option id
             var selectedOptionId = this.options[this.selectedIndex].id;
-            var totalValue;
 
-            // Check the selected option id and assign the corresponding value
+            // Check the selected option id and assign the corresponding value to the 'nilai' variable
             switch (selectedOptionId) {
                 case 'cerebral-infarction':
-                    totalValue = '5000000';
+                    nilai = 4000000;
                     break;
                 case 'intracerebral-haemorrhage':
-                    totalValue = '123.123.123';
+                    nilai = 4000000;
                     break;
                 default:
-                    totalValue = '';
+                    nilai = 0;
                     break;
             }
 
             // Update the p element with the calculated value
-            var hasil = formatRupiah(totalValue);
-            klaiminacbg.textContent = hasil;
+            var klaiminacbg = document.getElementById('klaiminacbg');
+            klaiminacbg.textContent = formatRupiah(nilai);
 
+            // Call the calculateSum function to update the totalSum and check if it has reached the 'nilai' value
+            calculateSum();
         });
+
+        // Function to calculate the total sum and display an alert if it reaches the 'nilai' value
+        function calculateSum() {
+            var checkboxes = document.getElementsByTagName("input");
+            var totalSum = 0;
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    var biaya = parseInt(checkboxes[i].value);
+                    totalSum += biaya;
+                }
+            }
+
+            totalSum -= 2; // Subtract 2 from totalSum
+
+            var totalRupiah = formatRupiah(totalSum);
+
+            document.getElementById("totalSum").innerHTML = "" + totalRupiah;
+
+            // if (totalSum >= nilai) {
+            //     alert("Total biaya sudah mencapai Klaim INA CBGS" + formatRupiah(nilai) + "!");
+            // }
+            if (totalSum >= nilai) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Total biaya sudah mencapai Klaim INA CBGS ' + formatRupiah(nilai) + '!',
+                    text: '',
+                    confirmButtonText: 'OK'
+                });
+            }
+
+
+
+        }
+
+        // Function to format the value as Rupiah
+        function formatRupiah(value) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR'
+            }).format(value);
+        }
     </script>
 
+
     <script>
-        // Get the select element and the p element
+        var nilai; // Declare the variable outside the event listener to make it accessible in both functions
+
+        // Get the select element
         var selectOption = document.getElementById('selectOption2');
-        var totalSum = document.getElementById('totalSum');
 
         // Add an event listener to the select element
         selectOption.addEventListener('change', function() {
             // Get the selected option id
             var selectedOptionId = this.options[this.selectedIndex].id;
-            var totalValue;
 
-            // Check the selected option id and assign the corresponding value
+            // Check the selected option id and assign the corresponding value to the 'nilai' variable
             switch (selectedOptionId) {
-
                 case 'hemiplegi':
-                    totalValue = '3000000';
+                    nilai = 6000000;
                     break;
                 case 'congestive-heart-failure':
-                    totalValue = '2000000';
+                    nilai = 6000000;
                     break;
                 default:
-                    totalValue = '';
+                    nilai = 0;
                     break;
             }
 
             // Update the p element with the calculated value
-            var hasil = formatRupiah(totalValue);
-            klaiminacbg.textContent = hasil;
+            var klaiminacbg = document.getElementById('klaiminacbg');
+            klaiminacbg.textContent = formatRupiah(nilai);
 
+            // Call the calculateSum function to update the totalSum and check if it has reached the 'nilai' value
+            calculateSum();
         });
+
+        // Function to calculate the total sum and display an alert if it reaches the 'nilai' value
+        function calculateSum() {
+            var checkboxes = document.getElementsByTagName("input");
+            var totalSum = 0;
+
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    var biaya = parseInt(checkboxes[i].value);
+                    totalSum += biaya;
+                }
+            }
+
+            totalSum -= 2; // Subtract 2 from totalSum
+
+            var totalRupiah = formatRupiah(totalSum);
+
+            document.getElementById("totalSum").innerHTML = "" + totalRupiah;
+
+            if (totalSum >= nilai) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Total biaya sudah mencapai Klaim INA CBGS ' + formatRupiah(nilai) + '!',
+                    text: '',
+                    confirmButtonText: 'OK'
+                });
+            }
+        }
+
+        // Function to format the value as Rupiah
+        function formatRupiah(value) {
+            return new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR'
+            }).format(value);
+        }
     </script>
+
+
+
 
 </body>
 
