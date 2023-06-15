@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         // Login berhasil
         $_SESSION['username'] = $username;
-        header("Location: pasien.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
+        header("Location: kelas1.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
         exit();
     } else {
         // Login gagal
@@ -63,9 +63,9 @@ $conn->close();
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-        <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
+            <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
                 <img src="img/Logo.png" alt="SINAPS LOGO" class="" style="opacity: .8; height:200px;">
-                
+
             </a>
             <div class="card-header text-center mh-auto">
                 <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
@@ -75,7 +75,7 @@ $conn->close();
 
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <div class="input-group mb-3">
-                    
+
                         <input type="text" id="username" name="username" required class="form-control" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
@@ -110,8 +110,8 @@ $conn->close();
 
                 </form>
                 <?php if (isset($error)) {
-        echo "<p>$error</p>";
-    } ?>
+                    echo "<p>$error</p>";
+                } ?>
 
 
                 <!-- /.social-auth-links -->
@@ -156,4 +156,3 @@ $conn->close();
 </body>
 
 </html>
-

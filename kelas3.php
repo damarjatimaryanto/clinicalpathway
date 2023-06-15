@@ -214,7 +214,8 @@ require_once 'db_connection.php';
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
+
+                        <!-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -242,7 +243,8 @@ require_once 'db_connection.php';
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+
                         <!-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
@@ -432,7 +434,7 @@ require_once 'db_connection.php';
     <!-- AdminLTE App -->
     <script src="assets/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="assets/dist/js/demo.js"></script>
+
     <!-- Page specific script -->
     <script>
         $(function() {

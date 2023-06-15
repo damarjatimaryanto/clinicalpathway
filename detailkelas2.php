@@ -14,38 +14,38 @@ require_once 'db_connection.php';
 <!DOCTYPE html>
 <html lang="en">
 
-    <script>
-        function formatRupiah(angka) {
-            var bilangan = angka.toString().replace(/[^,\d]/g, '');
-            var split = bilangan.split(',');
-            var sisa = split[0].length % 3;
-            var rupiah = split[0].substr(0, sisa);
-            var ribuan = split[0].substr(sisa).match(/\d{3}/gi);
+<script>
+    function formatRupiah(angka) {
+        var bilangan = angka.toString().replace(/[^,\d]/g, '');
+        var split = bilangan.split(',');
+        var sisa = split[0].length % 3;
+        var rupiah = split[0].substr(0, sisa);
+        var ribuan = split[0].substr(sisa).match(/\d{3}/gi);
 
-            if (ribuan) {
-                separator = sisa ? '.' : '';
-                rupiah += separator + ribuan.join('.');
-            }
-
-            rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
-            return 'Rp' + rupiah;
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
         }
 
-        function hitungTotal() {
-            var checkboxes = document.getElementsByName("biaya");
-            var total = 0;
+        rupiah = split[1] !== undefined ? rupiah + ',' + split[1] : rupiah;
+        return 'Rp' + rupiah;
+    }
 
-            for (var i = 0; i < checkboxes.length; i++) {
-                if (checkboxes[i].checked) {
-                    var biaya = parseInt(checkboxes[i].value);
-                    total += biaya;
-                }
+    function hitungTotal() {
+        var checkboxes = document.getElementsByName("biaya");
+        var total = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total += biaya;
             }
-
-            var totalRupiah = formatRupiah(total);
-            document.getElementById("total").innerHTML = "" + totalRupiah;
         }
-    </script>
+
+        var totalRupiah = formatRupiah(total);
+        document.getElementById("total").innerHTML = "" + totalRupiah;
+    }
+</script>
 
 
 <head>
@@ -245,7 +245,8 @@ require_once 'db_connection.php';
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
+
+                        <!-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -273,7 +274,8 @@ require_once 'db_connection.php';
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
+
                         <!-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
@@ -379,18 +381,18 @@ require_once 'db_connection.php';
 
 
                                         <tbody>
-                                        <?php
-                                        $nomr = $_GET["nomr"];
+                                            <?php
+                                            $nomr = $_GET["nomr"];
                                             // Assuming you have established a database connection
-                                            $sql = mysqli_query($conn,"SELECT * FROM simrs2012.m_pasien a
+                                            $sql = mysqli_query($conn, "SELECT * FROM simrs2012.m_pasien a
                                             left join simrs2012.t_pendaftaran b ON simrs2012.a.NOMR = simrs2012.b.NOMR
                                             where simrs2012.a.NOMR='$nomr' group by TGLREG desc limit 1");
                                             $result = mysqli_fetch_array($sql);
 
                                             $nama = $result["NAMA"];
-                                                    $nomr = $result["NOMR"];
-                                                    $alamat = $result["ALAMAT"];
-                                                    $tanggalreg = $result["TGLREG"];
+                                            $nomr = $result["NOMR"];
+                                            $alamat = $result["ALAMAT"];
+                                            $tanggalreg = $result["TGLREG"];
 
                                             // Check if there are any rows returned from the query
                                             // print_r($result);
@@ -2221,7 +2223,7 @@ require_once 'db_connection.php';
     <!-- AdminLTE App -->
     <script src="assets/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="assets/dist/js/demo.js"></script>
+
     <!-- Page specific script -->
     <script>
         $(function() {
