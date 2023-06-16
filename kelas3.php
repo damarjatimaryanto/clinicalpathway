@@ -345,12 +345,11 @@ require_once 'db_connection.php';
                                         <tbody>
                                             <?php
                                             // Assuming you have established a database connection
-                                            $sql = "SELECT * FROM simrs2012.m_pasien a
+                                            $sql = "SELECT a.NAMA, a.NOMR, a.ALAMAT, b.kelas_rawat FROM simrs2012.m_pasien a
                                             LEFT JOIN simrs2012.t_sep b ON a.NOMR = b.NOMR
                                             WHERE b.kelas_rawat = 3 && b.jenis_layanan = 1
-                                            -- GROUP BY b.kelas_rawat DESC 
-                                            -- order by id desc
-                                            LIMIT 1000";
+                                            -- GROUP BY b.kelas_rawat DESC
+                                            LIMIT 10000";
                                             $result = mysqli_query($conn, $sql);
 
                                             // Check if there are any rows returned from the query
@@ -368,7 +367,7 @@ require_once 'db_connection.php';
                                                         <td><?php echo $alamat; ?></td>
                                                         <td><?php echo $kelas_rawat; ?></td>
                                                         <td>
-                                                            <a href="detailkelas1.php?nomr=<?php echo $nomr ?>" class="nav-link">
+                                                            <a href="detailkelas3.php?nomr=<?php echo $nomr ?>" class="nav-link">
                                                                 <button type="button" class="btn btn-block bg-gradient-primary btn-sm">Detail</button>
                                                             </a>
                                                         </td>

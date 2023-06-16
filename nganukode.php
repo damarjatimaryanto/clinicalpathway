@@ -1,9 +1,10 @@
 <?php
-
-for ($i = 1; $i <= 264; $i++) {
-    $biaya = '$biaya' . $i;
-    ${$biaya} = $row['biaya' . $i];
+function generatePattern()
+{
+    for ($i = 1; $i <= 264; $i++) {
+        $sessionVariable = 'biaya' . $i;
+        echo "unset(\$_SESSION[\"$sessionVariable\"]);\n";
+    }
 }
 
-
-echo $biaya1;
+generatePattern();

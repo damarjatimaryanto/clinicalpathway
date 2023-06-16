@@ -39,12 +39,17 @@ try {
 // $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // Retrieve checkbox values from the database
-$stmt = $pdo->query("SELECT a.NAMA, a.NOMR, b.masukrs, b.keluarrs
-FROM simrs2012.m_pasien a
-LEFT JOIN simrs2012.t_admission b ON a.NOMR = b.NOMR
-LEFT JOIN simrs2012.t_Sep c ON a.NOMR = c.NOMR
--- LEFT JOIN simrs.t_clinicalpathway d ON a.NOMR = d.NOMR
-WHERE a.NOMR = $NOMR");
+// $stmt = $pdo->query("SELECT * 
+// FROM simrs2012.m_pasien a
+// LEFT JOIN simrs2012.t_admission b ON a.NOMR = b.NOMR
+// LEFT JOIN simrs2012.t_sep c ON a.NOMR = c.NOMR
+// LEFT JOIN simrs.t_clinicalpathway d ON a.NOMR = d.NOMR
+// WHERE c.kelas_rawat = 1 && c.jenis_layanan = 1 && a.NOMR = $NOMR
+// ");
+
+$stmt = $pdo->query("SELECT * 
+FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR
+");
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
@@ -998,6 +1003,270 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "<script>alert('data berhasil disimpan');</script>";
     header("Location: detailkelas1.php?nomr=$NOMR");
     // header("Location: kelas1.php");
+    unset($_SESSION["biaya1"]);
+    unset($_SESSION["biaya2"]);
+    unset($_SESSION["biaya3"]);
+    unset($_SESSION["biaya4"]);
+    unset($_SESSION["biaya5"]);
+    unset($_SESSION["biaya6"]);
+    unset($_SESSION["biaya7"]);
+    unset($_SESSION["biaya8"]);
+    unset($_SESSION["biaya9"]);
+    unset($_SESSION["biaya10"]);
+    unset($_SESSION["biaya11"]);
+    unset($_SESSION["biaya12"]);
+    unset($_SESSION["biaya13"]);
+    unset($_SESSION["biaya14"]);
+    unset($_SESSION["biaya15"]);
+    unset($_SESSION["biaya16"]);
+    unset($_SESSION["biaya17"]);
+    unset($_SESSION["biaya18"]);
+    unset($_SESSION["biaya19"]);
+    unset($_SESSION["biaya20"]);
+    unset($_SESSION["biaya21"]);
+    unset($_SESSION["biaya22"]);
+    unset($_SESSION["biaya23"]);
+    unset($_SESSION["biaya24"]);
+    unset($_SESSION["biaya25"]);
+    unset($_SESSION["biaya26"]);
+    unset($_SESSION["biaya27"]);
+    unset($_SESSION["biaya28"]);
+    unset($_SESSION["biaya29"]);
+    unset($_SESSION["biaya30"]);
+    unset($_SESSION["biaya31"]);
+    unset($_SESSION["biaya32"]);
+    unset($_SESSION["biaya33"]);
+    unset($_SESSION["biaya34"]);
+    unset($_SESSION["biaya35"]);
+    unset($_SESSION["biaya36"]);
+    unset($_SESSION["biaya37"]);
+    unset($_SESSION["biaya38"]);
+    unset($_SESSION["biaya39"]);
+    unset($_SESSION["biaya40"]);
+    unset($_SESSION["biaya41"]);
+    unset($_SESSION["biaya42"]);
+    unset($_SESSION["biaya43"]);
+    unset($_SESSION["biaya44"]);
+    unset($_SESSION["biaya45"]);
+    unset($_SESSION["biaya46"]);
+    unset($_SESSION["biaya47"]);
+    unset($_SESSION["biaya48"]);
+    unset($_SESSION["biaya49"]);
+    unset($_SESSION["biaya50"]);
+    unset($_SESSION["biaya51"]);
+    unset($_SESSION["biaya52"]);
+    unset($_SESSION["biaya53"]);
+    unset($_SESSION["biaya54"]);
+    unset($_SESSION["biaya55"]);
+    unset($_SESSION["biaya56"]);
+    unset($_SESSION["biaya57"]);
+    unset($_SESSION["biaya58"]);
+    unset($_SESSION["biaya59"]);
+    unset($_SESSION["biaya60"]);
+    unset($_SESSION["biaya61"]);
+    unset($_SESSION["biaya62"]);
+    unset($_SESSION["biaya63"]);
+    unset($_SESSION["biaya64"]);
+    unset($_SESSION["biaya65"]);
+    unset($_SESSION["biaya66"]);
+    unset($_SESSION["biaya67"]);
+    unset($_SESSION["biaya68"]);
+    unset($_SESSION["biaya69"]);
+    unset($_SESSION["biaya70"]);
+    unset($_SESSION["biaya71"]);
+    unset($_SESSION["biaya72"]);
+    unset($_SESSION["biaya73"]);
+    unset($_SESSION["biaya74"]);
+    unset($_SESSION["biaya75"]);
+    unset($_SESSION["biaya76"]);
+    unset($_SESSION["biaya77"]);
+    unset($_SESSION["biaya78"]);
+    unset($_SESSION["biaya79"]);
+    unset($_SESSION["biaya80"]);
+    unset($_SESSION["biaya81"]);
+    unset($_SESSION["biaya82"]);
+    unset($_SESSION["biaya83"]);
+    unset($_SESSION["biaya84"]);
+    unset($_SESSION["biaya85"]);
+    unset($_SESSION["biaya86"]);
+    unset($_SESSION["biaya87"]);
+    unset($_SESSION["biaya88"]);
+    unset($_SESSION["biaya89"]);
+    unset($_SESSION["biaya90"]);
+    unset($_SESSION["biaya91"]);
+    unset($_SESSION["biaya92"]);
+    unset($_SESSION["biaya93"]);
+    unset($_SESSION["biaya94"]);
+    unset($_SESSION["biaya95"]);
+    unset($_SESSION["biaya96"]);
+    unset($_SESSION["biaya97"]);
+    unset($_SESSION["biaya98"]);
+    unset($_SESSION["biaya99"]);
+    unset($_SESSION["biaya100"]);
+    unset($_SESSION["biaya101"]);
+    unset($_SESSION["biaya102"]);
+    unset($_SESSION["biaya103"]);
+    unset($_SESSION["biaya104"]);
+    unset($_SESSION["biaya105"]);
+    unset($_SESSION["biaya106"]);
+    unset($_SESSION["biaya107"]);
+    unset($_SESSION["biaya108"]);
+    unset($_SESSION["biaya109"]);
+    unset($_SESSION["biaya110"]);
+    unset($_SESSION["biaya111"]);
+    unset($_SESSION["biaya112"]);
+    unset($_SESSION["biaya113"]);
+    unset($_SESSION["biaya114"]);
+    unset($_SESSION["biaya115"]);
+    unset($_SESSION["biaya116"]);
+    unset($_SESSION["biaya117"]);
+    unset($_SESSION["biaya118"]);
+    unset($_SESSION["biaya119"]);
+    unset($_SESSION["biaya120"]);
+    unset($_SESSION["biaya121"]);
+    unset($_SESSION["biaya122"]);
+    unset($_SESSION["biaya123"]);
+    unset($_SESSION["biaya124"]);
+    unset($_SESSION["biaya125"]);
+    unset($_SESSION["biaya126"]);
+    unset($_SESSION["biaya127"]);
+    unset($_SESSION["biaya128"]);
+    unset($_SESSION["biaya129"]);
+    unset($_SESSION["biaya130"]);
+    unset($_SESSION["biaya131"]);
+    unset($_SESSION["biaya132"]);
+    unset($_SESSION["biaya133"]);
+    unset($_SESSION["biaya134"]);
+    unset($_SESSION["biaya135"]);
+    unset($_SESSION["biaya136"]);
+    unset($_SESSION["biaya137"]);
+    unset($_SESSION["biaya138"]);
+    unset($_SESSION["biaya139"]);
+    unset($_SESSION["biaya140"]);
+    unset($_SESSION["biaya141"]);
+    unset($_SESSION["biaya142"]);
+    unset($_SESSION["biaya143"]);
+    unset($_SESSION["biaya144"]);
+    unset($_SESSION["biaya145"]);
+    unset($_SESSION["biaya146"]);
+    unset($_SESSION["biaya147"]);
+    unset($_SESSION["biaya148"]);
+    unset($_SESSION["biaya149"]);
+    unset($_SESSION["biaya150"]);
+    unset($_SESSION["biaya151"]);
+    unset($_SESSION["biaya152"]);
+    unset($_SESSION["biaya153"]);
+    unset($_SESSION["biaya154"]);
+    unset($_SESSION["biaya155"]);
+    unset($_SESSION["biaya156"]);
+    unset($_SESSION["biaya157"]);
+    unset($_SESSION["biaya158"]);
+    unset($_SESSION["biaya159"]);
+    unset($_SESSION["biaya160"]);
+    unset($_SESSION["biaya161"]);
+    unset($_SESSION["biaya162"]);
+    unset($_SESSION["biaya163"]);
+    unset($_SESSION["biaya164"]);
+    unset($_SESSION["biaya165"]);
+    unset($_SESSION["biaya166"]);
+    unset($_SESSION["biaya167"]);
+    unset($_SESSION["biaya168"]);
+    unset($_SESSION["biaya169"]);
+    unset($_SESSION["biaya170"]);
+    unset($_SESSION["biaya171"]);
+    unset($_SESSION["biaya172"]);
+    unset($_SESSION["biaya173"]);
+    unset($_SESSION["biaya174"]);
+    unset($_SESSION["biaya175"]);
+    unset($_SESSION["biaya176"]);
+    unset($_SESSION["biaya177"]);
+    unset($_SESSION["biaya178"]);
+    unset($_SESSION["biaya179"]);
+    unset($_SESSION["biaya180"]);
+    unset($_SESSION["biaya181"]);
+    unset($_SESSION["biaya182"]);
+    unset($_SESSION["biaya183"]);
+    unset($_SESSION["biaya184"]);
+    unset($_SESSION["biaya185"]);
+    unset($_SESSION["biaya186"]);
+    unset($_SESSION["biaya187"]);
+    unset($_SESSION["biaya188"]);
+    unset($_SESSION["biaya189"]);
+    unset($_SESSION["biaya190"]);
+    unset($_SESSION["biaya191"]);
+    unset($_SESSION["biaya192"]);
+    unset($_SESSION["biaya193"]);
+    unset($_SESSION["biaya194"]);
+    unset($_SESSION["biaya195"]);
+    unset($_SESSION["biaya196"]);
+    unset($_SESSION["biaya197"]);
+    unset($_SESSION["biaya198"]);
+    unset($_SESSION["biaya199"]);
+    unset($_SESSION["biaya200"]);
+    unset($_SESSION["biaya201"]);
+    unset($_SESSION["biaya202"]);
+    unset($_SESSION["biaya203"]);
+    unset($_SESSION["biaya204"]);
+    unset($_SESSION["biaya205"]);
+    unset($_SESSION["biaya206"]);
+    unset($_SESSION["biaya207"]);
+    unset($_SESSION["biaya208"]);
+    unset($_SESSION["biaya209"]);
+    unset($_SESSION["biaya210"]);
+    unset($_SESSION["biaya211"]);
+    unset($_SESSION["biaya212"]);
+    unset($_SESSION["biaya213"]);
+    unset($_SESSION["biaya214"]);
+    unset($_SESSION["biaya215"]);
+    unset($_SESSION["biaya216"]);
+    unset($_SESSION["biaya217"]);
+    unset($_SESSION["biaya218"]);
+    unset($_SESSION["biaya219"]);
+    unset($_SESSION["biaya220"]);
+    unset($_SESSION["biaya221"]);
+    unset($_SESSION["biaya222"]);
+    unset($_SESSION["biaya223"]);
+    unset($_SESSION["biaya224"]);
+    unset($_SESSION["biaya225"]);
+    unset($_SESSION["biaya226"]);
+    unset($_SESSION["biaya227"]);
+    unset($_SESSION["biaya228"]);
+    unset($_SESSION["biaya229"]);
+    unset($_SESSION["biaya230"]);
+    unset($_SESSION["biaya231"]);
+    unset($_SESSION["biaya232"]);
+    unset($_SESSION["biaya233"]);
+    unset($_SESSION["biaya234"]);
+    unset($_SESSION["biaya235"]);
+    unset($_SESSION["biaya236"]);
+    unset($_SESSION["biaya237"]);
+    unset($_SESSION["biaya238"]);
+    unset($_SESSION["biaya239"]);
+    unset($_SESSION["biaya240"]);
+    unset($_SESSION["biaya241"]);
+    unset($_SESSION["biaya242"]);
+    unset($_SESSION["biaya243"]);
+    unset($_SESSION["biaya244"]);
+    unset($_SESSION["biaya245"]);
+    unset($_SESSION["biaya246"]);
+    unset($_SESSION["biaya247"]);
+    unset($_SESSION["biaya248"]);
+    unset($_SESSION["biaya249"]);
+    unset($_SESSION["biaya250"]);
+    unset($_SESSION["biaya251"]);
+    unset($_SESSION["biaya252"]);
+    unset($_SESSION["biaya253"]);
+    unset($_SESSION["biaya254"]);
+    unset($_SESSION["biaya255"]);
+    unset($_SESSION["biaya256"]);
+    unset($_SESSION["biaya257"]);
+    unset($_SESSION["biaya258"]);
+    unset($_SESSION["biaya259"]);
+    unset($_SESSION["biaya260"]);
+    unset($_SESSION["biaya261"]);
+    unset($_SESSION["biaya262"]);
+    unset($_SESSION["biaya263"]);
+    unset($_SESSION["biaya264"]);
 
 
     exit();
@@ -3247,10 +3516,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             <?php
                                             $nomr = $_GET["nomr"];
                                             // Assuming you have established a database connection
-                                            $sql = mysqli_query($conn, "SELECT * FROM simrs2012.m_pasien a
+                                            $sql = mysqli_query($conn, "SELECT a.NOMR, a.NAMA, a.ALAMAT, b.masukrs, b.keluarrs
+                                            FROM simrs2012.m_pasien a
                                             left join simrs2012.t_admission b
                                             ON simrs2012.a.NOMR = simrs2012.b.NOMR
-                                            left join simrs2012.t_Sep c ON simrs2012.a.NOMR = simrs2012.c.NOMR
+                                        
                                             where simrs2012.a.NOMR='$nomr'");
                                             $result = mysqli_fetch_array($sql);
 
@@ -3259,7 +3529,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $alamat = $result["ALAMAT"];
                                             $tanggalmasuk = $result["masukrs"];
                                             $tanggalkeluar = $result["keluarrs"];
-                                            $dxmedis = $result["kode_diagnosaawal"]
+                                            // $dxmedis = $result["kode_diagnosaawal"]
 
                                             // Check if there are any rows returned from the query
                                             // print_r($result);
@@ -3285,7 +3555,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         <option id="congestive-heart-failure">Congestive heart failure (I50.0)</option>
                                                     </select></th>
                                                 </td>
-                                                <td style="text-align:center;"><?php echo $dxmedis; ?></td>
+                                                <td style="text-align:center;">-</td>
                                                 <td style="text-align:center;">-</td>
                                                 <td style="text-align:center;">1</td>
 
