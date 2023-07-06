@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         // Login berhasil
         $_SESSION['username'] = $username;
-        header("Location: kelas1.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
+        header("Location: cendrawasihatas.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
         exit();
     } else {
         // Login gagal

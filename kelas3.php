@@ -349,7 +349,7 @@ require_once 'db_connection.php';
                                             LEFT JOIN simrs2012.t_sep b ON a.NOMR = b.NOMR
                                             WHERE b.kelas_rawat = 3 && b.jenis_layanan = 1
                                             -- GROUP BY b.kelas_rawat DESC
-                                            LIMIT 10000";
+                                            LIMIT 100000";
                                             $result = mysqli_query($conn, $sql);
 
                                             // Check if there are any rows returned from the query

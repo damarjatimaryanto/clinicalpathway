@@ -1,5 +1,3 @@
-
-
 <?php
 session_start(); // Memulai session
 
@@ -29,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         // Login berhasil
         $_SESSION['username'] = $username;
-        header("Location: kelas1.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
+        header("Location: cendraatas.php"); // Mengarahkan pengguna ke halaman dashboard atau halaman yang diizinkan setelah login
         exit();
     } else {
         // Login gagal
@@ -42,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Check if the user is not logged in
 if (isset($_SESSION['username'])) {
-    header("Location: kelas1.php"); // Redirect the user to the login page if not authenticated
+    header("Location: cendraatas.php"); // Redirect the user to the login page if not authenticated
     exit();
 }
 
@@ -74,19 +72,19 @@ $conn->close();
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-        <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
+            <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
                 <img src="img/Logo.png" alt="SINAPS LOGO" class="" style="opacity: .8; height:200px;">
-                
+
             </a>
             <div class="card-header text-center">
-            <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
+                <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
 
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <div class="input-group mb-3">
-                    
+
                         <input type="text" id="username" name="username" required class="form-control" placeholder="Email">
                         <div class="input-group-append">
                             <div class="input-group-text">
@@ -121,8 +119,8 @@ $conn->close();
 
                 </form>
                 <?php if (isset($error)) {
-        echo "<p>$error</p>";
-    } ?>
+                    echo "<p>$error</p>";
+                } ?>
 
 
                 <!-- /.social-auth-links -->
@@ -161,10 +159,9 @@ $conn->close();
     <!-- AdminLTE App -->
     <script src="assets/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="assets/dist/js/demo.js"></script>
+    <!-- <script src="assets/dist/js/demo.js"></script> -->
     <!-- Page specific script -->
 
 </body>
 
 </html>
-

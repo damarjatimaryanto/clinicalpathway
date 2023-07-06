@@ -15,22 +15,22 @@ require_once 'db_connection.php';
 $NOMR = $_GET["nomr"];
 // Establish database connection
 $host = '192.168.1.178';
-$db   = 'simrs';
+$db = 'simrs';
 $user = 'root';
 $pass = 'takonbudi';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
-    PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::ATTR_EMULATE_PREPARES   => false,
+    PDO::ATTR_EMULATE_PREPARES => false,
 ];
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (\PDOException $e) {
-    throw new \PDOException($e->getMessage(), (int)$e->getCode());
+    throw new \PDOException($e->getMessage(), (int) $e->getCode());
 }
 
 // Retrieve checkbox values from the database
@@ -331,8 +331,68 @@ $biaya261 = isset($_SESSION['biaya261']) ? $_SESSION['biaya261'] : $row['biaya26
 $biaya262 = isset($_SESSION['biaya262']) ? $_SESSION['biaya262'] : $row['biaya262'];
 $biaya263 = isset($_SESSION['biaya263']) ? $_SESSION['biaya263'] : $row['biaya263'];
 $biaya264 = isset($_SESSION['biaya264']) ? $_SESSION['biaya264'] : $row['biaya264'];
+$biaya265 = isset($_SESSION['biaya265']) ? $_SESSION['biaya265'] : $row['biaya265'];
+$biaya266 = isset($_SESSION['biaya266']) ? $_SESSION['biaya266'] : $row['biaya266'];
+$biaya267 = isset($_SESSION['biaya267']) ? $_SESSION['biaya267'] : $row['biaya267'];
+$biaya268 = isset($_SESSION['biaya268']) ? $_SESSION['biaya268'] : $row['biaya268'];
+$biaya269 = isset($_SESSION['biaya269']) ? $_SESSION['biaya269'] : $row['biaya269'];
+$biaya270 = isset($_SESSION['biaya270']) ? $_SESSION['biaya270'] : $row['biaya270'];
 
+$biaya271 = isset($_SESSION['biaya271']) ? $_SESSION['biaya271'] : $row['biaya271'];
+$biaya272 = isset($_SESSION['biaya272']) ? $_SESSION['biaya272'] : $row['biaya272'];
+$biaya273 = isset($_SESSION['biaya273']) ? $_SESSION['biaya273'] : $row['biaya273'];
+$biaya274 = isset($_SESSION['biaya274']) ? $_SESSION['biaya274'] : $row['biaya274'];
+$biaya275 = isset($_SESSION['biaya275']) ? $_SESSION['biaya275'] : $row['biaya275'];
+$biaya276 = isset($_SESSION['biaya276']) ? $_SESSION['biaya276'] : $row['biaya276'];
+$biaya277 = isset($_SESSION['biaya277']) ? $_SESSION['biaya277'] : $row['biaya277'];
+$biaya278 = isset($_SESSION['biaya278']) ? $_SESSION['biaya278'] : $row['biaya278'];
+$biaya279 = isset($_SESSION['biaya279']) ? $_SESSION['biaya279'] : $row['biaya279'];
+$biaya280 = isset($_SESSION['biaya280']) ? $_SESSION['biaya280'] : $row['biaya280'];
+$biaya281 = isset($_SESSION['biaya281']) ? $_SESSION['biaya281'] : $row['biaya281'];
+$biaya282 = isset($_SESSION['biaya282']) ? $_SESSION['biaya282'] : $row['biaya282'];
+$biaya283 = isset($_SESSION['biaya283']) ? $_SESSION['biaya283'] : $row['biaya283'];
+$biaya284 = isset($_SESSION['biaya284']) ? $_SESSION['biaya284'] : $row['biaya284'];
+$biaya285 = isset($_SESSION['biaya285']) ? $_SESSION['biaya285'] : $row['biaya285'];
+$biaya286 = isset($_SESSION['biaya286']) ? $_SESSION['biaya286'] : $row['biaya286'];
+$biaya287 = isset($_SESSION['biaya287']) ? $_SESSION['biaya287'] : $row['biaya287'];
+$biaya288 = isset($_SESSION['biaya288']) ? $_SESSION['biaya288'] : $row['biaya288'];
+$biaya289 = isset($_SESSION['biaya289']) ? $_SESSION['biaya289'] : $row['biaya289'];
+$biaya290 = isset($_SESSION['biaya290']) ? $_SESSION['biaya290'] : $row['biaya290'];
+$biaya291 = isset($_SESSION['biaya291']) ? $_SESSION['biaya291'] : $row['biaya291'];
+$biaya292 = isset($_SESSION['biaya292']) ? $_SESSION['biaya292'] : $row['biaya292'];
+$biaya293 = isset($_SESSION['biaya293']) ? $_SESSION['biaya293'] : $row['biaya293'];
+$biaya294 = isset($_SESSION['biaya294']) ? $_SESSION['biaya294'] : $row['biaya294'];
+$biaya295 = isset($_SESSION['biaya295']) ? $_SESSION['biaya295'] : $row['biaya295'];
+$biaya296 = isset($_SESSION['biaya296']) ? $_SESSION['biaya296'] : $row['biaya296'];
+$biaya297 = isset($_SESSION['biaya297']) ? $_SESSION['biaya297'] : $row['biaya297'];
+$biaya298 = isset($_SESSION['biaya298']) ? $_SESSION['biaya298'] : $row['biaya298'];
+$biaya299 = isset($_SESSION['biaya299']) ? $_SESSION['biaya299'] : $row['biaya299'];
+$biaya300 = isset($_SESSION['biaya300']) ? $_SESSION['biaya300'] : $row['biaya300'];
+$biaya301 = isset($_SESSION['biaya301']) ? $_SESSION['biaya301'] : $row['biaya301'];
+$biaya302 = isset($_SESSION['biaya302']) ? $_SESSION['biaya302'] : $row['biaya302'];
+$biaya303 = isset($_SESSION['biaya303']) ? $_SESSION['biaya303'] : $row['biaya303'];
+$biaya304 = isset($_SESSION['biaya304']) ? $_SESSION['biaya304'] : $row['biaya304'];
+$biaya305 = isset($_SESSION['biaya305']) ? $_SESSION['biaya305'] : $row['biaya305'];
+$biaya306 = isset($_SESSION['biaya306']) ? $_SESSION['biaya306'] : $row['biaya306'];
+$biaya307 = isset($_SESSION['biaya307']) ? $_SESSION['biaya307'] : $row['biaya307'];
+$biaya308 = isset($_SESSION['biaya308']) ? $_SESSION['biaya308'] : $row['biaya308'];
+$biaya309 = isset($_SESSION['biaya309']) ? $_SESSION['biaya309'] : $row['biaya309'];
+$biaya310 = isset($_SESSION['biaya310']) ? $_SESSION['biaya310'] : $row['biaya310'];
+$biaya311 = isset($_SESSION['biaya311']) ? $_SESSION['biaya311'] : $row['biaya311'];
+$biaya312 = isset($_SESSION['biaya312']) ? $_SESSION['biaya312'] : $row['biaya312'];
 
+$biaya313 = isset($_SESSION['biaya313']) ? $_SESSION['biaya313'] : $row['biaya313'];
+$biaya314 = isset($_SESSION['biaya314']) ? $_SESSION['biaya314'] : $row['biaya314'];
+$biaya315 = isset($_SESSION['biaya315']) ? $_SESSION['biaya315'] : $row['biaya315'];
+$biaya316 = isset($_SESSION['biaya316']) ? $_SESSION['biaya316'] : $row['biaya316'];
+$biaya317 = isset($_SESSION['biaya317']) ? $_SESSION['biaya317'] : $row['biaya317'];
+$biaya318 = isset($_SESSION['biaya318']) ? $_SESSION['biaya318'] : $row['biaya318'];
+$biaya319 = isset($_SESSION['biaya319']) ? $_SESSION['biaya319'] : $row['biaya319'];
+$biaya320 = isset($_SESSION['biaya320']) ? $_SESSION['biaya320'] : $row['biaya320'];
+$biaya321 = isset($_SESSION['biaya321']) ? $_SESSION['biaya321'] : $row['biaya321'];
+$biaya322 = isset($_SESSION['biaya322']) ? $_SESSION['biaya322'] : $row['biaya322'];
+$biaya323 = isset($_SESSION['biaya323']) ? $_SESSION['biaya323'] : $row['biaya323'];
+$biaya324 = isset($_SESSION['biaya324']) ? $_SESSION['biaya324'] : $row['biaya324'];
 
 
 // Update checkbox values when the form is submitted
@@ -606,6 +666,68 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $biaya262 = isset($_POST['biaya262']) ? $_POST['biaya262'] : 0;
     $biaya263 = isset($_POST['biaya263']) ? $_POST['biaya263'] : 0;
     $biaya264 = isset($_POST['biaya264']) ? $_POST['biaya264'] : 0;
+    $biaya265 = isset($_POST['biaya265']) ? $_POST['biaya265'] : 0;
+    $biaya266 = isset($_POST['biaya266']) ? $_POST['biaya266'] : 0;
+    $biaya267 = isset($_POST['biaya267']) ? $_POST['biaya267'] : 0;
+    $biaya268 = isset($_POST['biaya268']) ? $_POST['biaya268'] : 0;
+    $biaya269 = isset($_POST['biaya269']) ? $_POST['biaya269'] : 0;
+    $biaya270 = isset($_POST['biaya270']) ? $_POST['biaya270'] : 0;
+
+    $biaya271 = isset($_POST['biaya271']) ? $_POST['biaya271'] : 0;
+    $biaya272 = isset($_POST['biaya272']) ? $_POST['biaya272'] : 0;
+    $biaya273 = isset($_POST['biaya273']) ? $_POST['biaya273'] : 0;
+    $biaya274 = isset($_POST['biaya274']) ? $_POST['biaya274'] : 0;
+    $biaya275 = isset($_POST['biaya275']) ? $_POST['biaya275'] : 0;
+    $biaya276 = isset($_POST['biaya276']) ? $_POST['biaya276'] : 0;
+    $biaya277 = isset($_POST['biaya277']) ? $_POST['biaya277'] : 0;
+    $biaya278 = isset($_POST['biaya278']) ? $_POST['biaya278'] : 0;
+    $biaya279 = isset($_POST['biaya279']) ? $_POST['biaya279'] : 0;
+    $biaya280 = isset($_POST['biaya280']) ? $_POST['biaya280'] : 0;
+    $biaya281 = isset($_POST['biaya281']) ? $_POST['biaya281'] : 0;
+    $biaya282 = isset($_POST['biaya282']) ? $_POST['biaya282'] : 0;
+    $biaya283 = isset($_POST['biaya283']) ? $_POST['biaya283'] : 0;
+    $biaya284 = isset($_POST['biaya284']) ? $_POST['biaya284'] : 0;
+    $biaya285 = isset($_POST['biaya285']) ? $_POST['biaya285'] : 0;
+    $biaya286 = isset($_POST['biaya286']) ? $_POST['biaya286'] : 0;
+    $biaya287 = isset($_POST['biaya287']) ? $_POST['biaya287'] : 0;
+    $biaya288 = isset($_POST['biaya288']) ? $_POST['biaya288'] : 0;
+    $biaya289 = isset($_POST['biaya289']) ? $_POST['biaya289'] : 0;
+    $biaya290 = isset($_POST['biaya290']) ? $_POST['biaya290'] : 0;
+    $biaya291 = isset($_POST['biaya291']) ? $_POST['biaya291'] : 0;
+    $biaya292 = isset($_POST['biaya292']) ? $_POST['biaya292'] : 0;
+    $biaya293 = isset($_POST['biaya293']) ? $_POST['biaya293'] : 0;
+    $biaya294 = isset($_POST['biaya294']) ? $_POST['biaya294'] : 0;
+    $biaya295 = isset($_POST['biaya295']) ? $_POST['biaya295'] : 0;
+    $biaya296 = isset($_POST['biaya296']) ? $_POST['biaya296'] : 0;
+    $biaya297 = isset($_POST['biaya297']) ? $_POST['biaya297'] : 0;
+    $biaya298 = isset($_POST['biaya298']) ? $_POST['biaya298'] : 0;
+    $biaya299 = isset($_POST['biaya299']) ? $_POST['biaya299'] : 0;
+    $biaya300 = isset($_POST['biaya300']) ? $_POST['biaya300'] : 0;
+    $biaya301 = isset($_POST['biaya301']) ? $_POST['biaya301'] : 0;
+    $biaya302 = isset($_POST['biaya302']) ? $_POST['biaya302'] : 0;
+    $biaya303 = isset($_POST['biaya303']) ? $_POST['biaya303'] : 0;
+    $biaya304 = isset($_POST['biaya304']) ? $_POST['biaya304'] : 0;
+    $biaya305 = isset($_POST['biaya305']) ? $_POST['biaya305'] : 0;
+    $biaya306 = isset($_POST['biaya306']) ? $_POST['biaya306'] : 0;
+    $biaya307 = isset($_POST['biaya307']) ? $_POST['biaya307'] : 0;
+    $biaya308 = isset($_POST['biaya308']) ? $_POST['biaya308'] : 0;
+    $biaya309 = isset($_POST['biaya309']) ? $_POST['biaya309'] : 0;
+    $biaya310 = isset($_POST['biaya310']) ? $_POST['biaya310'] : 0;
+    $biaya311 = isset($_POST['biaya311']) ? $_POST['biaya311'] : 0;
+    $biaya312 = isset($_POST['biaya312']) ? $_POST['biaya312'] : 0;
+
+    $biaya313 = isset($_POST['biaya313']) ? $_POST['biaya313'] : 0;
+    $biaya314 = isset($_POST['biaya314']) ? $_POST['biaya314'] : 0;
+    $biaya315 = isset($_POST['biaya315']) ? $_POST['biaya315'] : 0;
+    $biaya316 = isset($_POST['biaya316']) ? $_POST['biaya316'] : 0;
+    $biaya317 = isset($_POST['biaya317']) ? $_POST['biaya317'] : 0;
+    $biaya318 = isset($_POST['biaya318']) ? $_POST['biaya318'] : 0;
+    $biaya319 = isset($_POST['biaya319']) ? $_POST['biaya319'] : 0;
+    $biaya320 = isset($_POST['biaya320']) ? $_POST['biaya320'] : 0;
+    $biaya321 = isset($_POST['biaya321']) ? $_POST['biaya321'] : 0;
+    $biaya322 = isset($_POST['biaya322']) ? $_POST['biaya322'] : 0;
+    $biaya323 = isset($_POST['biaya323']) ? $_POST['biaya323'] : 0;
+    $biaya324 = isset($_POST['biaya324']) ? $_POST['biaya324'] : 0;
 
     // Update session variables with checkbox values
     $_SESSION['biaya1'] = $biaya1;
@@ -872,6 +994,68 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['biaya262'] = $biaya262;
     $_SESSION['biaya263'] = $biaya263;
     $_SESSION['biaya264'] = $biaya264;
+    $_SESSION['biaya265'] = $biaya265;
+    $_SESSION['biaya266'] = $biaya266;
+    $_SESSION['biaya267'] = $biaya267;
+    $_SESSION['biaya268'] = $biaya268;
+    $_SESSION['biaya269'] = $biaya269;
+    $_SESSION['biaya270'] = $biaya270;
+
+    $_SESSION['biaya271'] = $biaya271;
+    $_SESSION['biaya272'] = $biaya272;
+    $_SESSION['biaya273'] = $biaya273;
+    $_SESSION['biaya274'] = $biaya274;
+    $_SESSION['biaya275'] = $biaya275;
+    $_SESSION['biaya276'] = $biaya276;
+    $_SESSION['biaya277'] = $biaya277;
+    $_SESSION['biaya278'] = $biaya278;
+    $_SESSION['biaya279'] = $biaya279;
+    $_SESSION['biaya280'] = $biaya280;
+    $_SESSION['biaya281'] = $biaya281;
+    $_SESSION['biaya282'] = $biaya282;
+    $_SESSION['biaya283'] = $biaya283;
+    $_SESSION['biaya284'] = $biaya284;
+    $_SESSION['biaya285'] = $biaya285;
+    $_SESSION['biaya286'] = $biaya286;
+    $_SESSION['biaya287'] = $biaya287;
+    $_SESSION['biaya288'] = $biaya288;
+    $_SESSION['biaya289'] = $biaya289;
+    $_SESSION['biaya290'] = $biaya290;
+    $_SESSION['biaya291'] = $biaya291;
+    $_SESSION['biaya292'] = $biaya292;
+    $_SESSION['biaya293'] = $biaya293;
+    $_SESSION['biaya294'] = $biaya294;
+    $_SESSION['biaya295'] = $biaya295;
+    $_SESSION['biaya296'] = $biaya296;
+    $_SESSION['biaya297'] = $biaya297;
+    $_SESSION['biaya298'] = $biaya298;
+    $_SESSION['biaya299'] = $biaya299;
+    $_SESSION['biaya300'] = $biaya300;
+    $_SESSION['biaya301'] = $biaya301;
+    $_SESSION['biaya302'] = $biaya302;
+    $_SESSION['biaya303'] = $biaya303;
+    $_SESSION['biaya304'] = $biaya304;
+    $_SESSION['biaya305'] = $biaya305;
+    $_SESSION['biaya306'] = $biaya306;
+    $_SESSION['biaya307'] = $biaya307;
+    $_SESSION['biaya308'] = $biaya308;
+    $_SESSION['biaya309'] = $biaya309;
+    $_SESSION['biaya310'] = $biaya310;
+    $_SESSION['biaya311'] = $biaya311;
+    $_SESSION['biaya312'] = $biaya312;
+
+    $_SESSION['biaya313'] = $biaya313;
+    $_SESSION['biaya314'] = $biaya314;
+    $_SESSION['biaya315'] = $biaya315;
+    $_SESSION['biaya316'] = $biaya316;
+    $_SESSION['biaya317'] = $biaya317;
+    $_SESSION['biaya318'] = $biaya318;
+    $_SESSION['biaya319'] = $biaya319;
+    $_SESSION['biaya320'] = $biaya320;
+    $_SESSION['biaya321'] = $biaya321;
+    $_SESSION['biaya322'] = $biaya322;
+    $_SESSION['biaya323'] = $biaya323;
+    $_SESSION['biaya324'] = $biaya324;
 
     if ($row) {
         // Prepare and execute an SQL statement to update the checkbox values
@@ -897,31 +1081,340 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         biaya217 = ?, biaya218 = ?, biaya219 = ?, biaya220 = ?, biaya221 = ?, biaya222 = ?, biaya223 = ?, biaya224 = ?, biaya225 = ?, biaya226 = ?, biaya227 = ?, biaya228 = ?,
         biaya229 = ?, biaya230 = ?, biaya231 = ?, biaya232 = ?, biaya233 = ?, biaya234 = ?, biaya235 = ?, biaya236 = ?, biaya237 = ?, biaya238 = ?, biaya239 = ?, biaya240 = ?,
         biaya241 = ?, biaya242 = ?, biaya243 = ?, biaya244 = ?, biaya245 = ?, biaya246 = ?, biaya247 = ?, biaya248 = ?, biaya249 = ?, biaya250 = ?, biaya251 = ?, biaya252 = ?,
-        biaya253 = ?, biaya254 = ?, biaya255 = ?, biaya256 = ?, biaya257 = ?, biaya258 = ?, biaya259 = ?, biaya260 = ?, biaya261 = ?, biaya262 = ?, biaya263 = ?, biaya264 = ?
+        biaya253 = ?, biaya254 = ?, biaya255 = ?, biaya256 = ?, biaya257 = ?, biaya258 = ?, biaya259 = ?, biaya260 = ?, biaya261 = ?, biaya262 = ?, biaya263 = ?, biaya264 = ?,
+        biaya265 = ?, biaya266 = ?, biaya267 = ?, biaya268 = ?, biaya269 = ?, biaya270 = ?, biaya271 = ?, biaya272 = ?, biaya273 = ?, biaya274 = ?, biaya275 = ?, biaya276 = ?,
+        biaya277 = ?, biaya278 = ?, biaya279 = ?, biaya280 = ?, biaya281 = ?, biaya282 = ?, biaya283 = ?, biaya284 = ?, biaya285 = ?, biaya286 = ?, biaya287 = ?, biaya288 = ?,
+        biaya289 = ?, biaya290 = ?, biaya291 = ?, biaya292 = ?, biaya293 = ?, biaya294 = ?, biaya295 = ?, biaya296 = ?, biaya297 = ?, biaya298 = ?, biaya299 = ?, biaya300 = ?,
+        biaya301 = ?, biaya302 = ?, biaya303 = ?, biaya304 = ?, biaya305 = ?, biaya306 = ?, biaya307 = ?, biaya308 = ?, biaya309 = ?, biaya310 = ?, biaya311 = ?, biaya312 = ?,
+        biaya313 = ?, biaya314 = ?, biaya315 = ?, biaya316 = ?, biaya317 = ?, biaya318 = ?, biaya319 = ?, biaya320 = ?, biaya321 = ?, biaya322 = ?, biaya323 = ?, biaya324 = ?
         where nomr = $NOMR ");
         $stmt->execute([
-            $biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12,
-            $biaya13, $biaya14, $biaya15, $biaya16, $biaya17, $biaya18, $biaya19, $biaya20, $biaya21, $biaya22, $biaya23, $biaya24,
-            $biaya25, $biaya26, $biaya27, $biaya28, $biaya29, $biaya30, $biaya31, $biaya32, $biaya33, $biaya34, $biaya35, $biaya36,
-            $biaya37, $biaya38, $biaya39, $biaya40, $biaya41, $biaya42, $biaya43, $biaya44, $biaya45, $biaya46, $biaya47, $biaya48,
-            $biaya49, $biaya50, $biaya51, $biaya52, $biaya53, $biaya54, $biaya55, $biaya56, $biaya57, $biaya58, $biaya59, $biaya60,
-            $biaya61, $biaya62, $biaya63, $biaya64, $biaya65, $biaya66, $biaya67, $biaya68, $biaya69, $biaya70, $biaya71, $biaya72,
-            $biaya73, $biaya74, $biaya75, $biaya76, $biaya77, $biaya78, $biaya79, $biaya80, $biaya81, $biaya82, $biaya83, $biaya84,
-            $biaya85, $biaya86, $biaya87, $biaya88, $biaya89, $biaya90, $biaya91, $biaya92, $biaya93, $biaya94, $biaya95, $biaya96,
-            $biaya97, $biaya98, $biaya99, $biaya100, $biaya101, $biaya102, $biaya103, $biaya104, $biaya105, $biaya106, $biaya107, $biaya108,
-            $biaya109, $biaya110, $biaya111, $biaya112, $biaya113, $biaya114, $biaya115, $biaya116, $biaya117, $biaya118, $biaya119, $biaya120,
-            $biaya121, $biaya122, $biaya123, $biaya124, $biaya125, $biaya126, $biaya127, $biaya128, $biaya129, $biaya130, $biaya131, $biaya132,
-            $biaya133, $biaya134, $biaya135, $biaya136, $biaya137, $biaya138, $biaya139, $biaya140, $biaya141, $biaya142, $biaya143, $biaya144,
-            $biaya145, $biaya146, $biaya147, $biaya148, $biaya149, $biaya150, $biaya151, $biaya152, $biaya153, $biaya154, $biaya155, $biaya156,
-            $biaya157, $biaya158, $biaya159, $biaya160, $biaya161, $biaya162, $biaya163, $biaya164, $biaya165, $biaya166, $biaya167, $biaya168,
-            $biaya169, $biaya170, $biaya171, $biaya172, $biaya173, $biaya174, $biaya175, $biaya176, $biaya177, $biaya178, $biaya179, $biaya180,
-            $biaya181, $biaya182, $biaya183, $biaya184, $biaya185, $biaya186, $biaya187, $biaya188, $biaya189, $biaya190, $biaya191, $biaya192,
-            $biaya193, $biaya194, $biaya195, $biaya196, $biaya197, $biaya198, $biaya199, $biaya200, $biaya201, $biaya202, $biaya203, $biaya204,
-            $biaya205, $biaya206, $biaya207, $biaya208, $biaya209, $biaya210, $biaya211, $biaya212, $biaya213, $biaya214, $biaya215, $biaya216,
-            $biaya217, $biaya218, $biaya219, $biaya220, $biaya221, $biaya222, $biaya223, $biaya224, $biaya225, $biaya226, $biaya227, $biaya228,
-            $biaya229, $biaya230, $biaya231, $biaya232, $biaya233, $biaya234, $biaya235, $biaya236, $biaya237, $biaya238, $biaya239, $biaya240,
-            $biaya241, $biaya242, $biaya243, $biaya244, $biaya245, $biaya246, $biaya247, $biaya248, $biaya249, $biaya250, $biaya251, $biaya252,
-            $biaya253, $biaya254, $biaya255, $biaya256, $biaya257, $biaya258, $biaya259, $biaya260, $biaya261, $biaya262, $biaya263, $biaya264
+            $biaya1,
+            $biaya2,
+            $biaya3,
+            $biaya4,
+            $biaya5,
+            $biaya6,
+            $biaya7,
+            $biaya8,
+            $biaya9,
+            $biaya10,
+            $biaya11,
+            $biaya12,
+            $biaya13,
+            $biaya14,
+            $biaya15,
+            $biaya16,
+            $biaya17,
+            $biaya18,
+            $biaya19,
+            $biaya20,
+            $biaya21,
+            $biaya22,
+            $biaya23,
+            $biaya24,
+            $biaya25,
+            $biaya26,
+            $biaya27,
+            $biaya28,
+            $biaya29,
+            $biaya30,
+            $biaya31,
+            $biaya32,
+            $biaya33,
+            $biaya34,
+            $biaya35,
+            $biaya36,
+            $biaya37,
+            $biaya38,
+            $biaya39,
+            $biaya40,
+            $biaya41,
+            $biaya42,
+            $biaya43,
+            $biaya44,
+            $biaya45,
+            $biaya46,
+            $biaya47,
+            $biaya48,
+            $biaya49,
+            $biaya50,
+            $biaya51,
+            $biaya52,
+            $biaya53,
+            $biaya54,
+            $biaya55,
+            $biaya56,
+            $biaya57,
+            $biaya58,
+            $biaya59,
+            $biaya60,
+            $biaya61,
+            $biaya62,
+            $biaya63,
+            $biaya64,
+            $biaya65,
+            $biaya66,
+            $biaya67,
+            $biaya68,
+            $biaya69,
+            $biaya70,
+            $biaya71,
+            $biaya72,
+            $biaya73,
+            $biaya74,
+            $biaya75,
+            $biaya76,
+            $biaya77,
+            $biaya78,
+            $biaya79,
+            $biaya80,
+            $biaya81,
+            $biaya82,
+            $biaya83,
+            $biaya84,
+            $biaya85,
+            $biaya86,
+            $biaya87,
+            $biaya88,
+            $biaya89,
+            $biaya90,
+            $biaya91,
+            $biaya92,
+            $biaya93,
+            $biaya94,
+            $biaya95,
+            $biaya96,
+            $biaya97,
+            $biaya98,
+            $biaya99,
+            $biaya100,
+            $biaya101,
+            $biaya102,
+            $biaya103,
+            $biaya104,
+            $biaya105,
+            $biaya106,
+            $biaya107,
+            $biaya108,
+            $biaya109,
+            $biaya110,
+            $biaya111,
+            $biaya112,
+            $biaya113,
+            $biaya114,
+            $biaya115,
+            $biaya116,
+            $biaya117,
+            $biaya118,
+            $biaya119,
+            $biaya120,
+            $biaya121,
+            $biaya122,
+            $biaya123,
+            $biaya124,
+            $biaya125,
+            $biaya126,
+            $biaya127,
+            $biaya128,
+            $biaya129,
+            $biaya130,
+            $biaya131,
+            $biaya132,
+            $biaya133,
+            $biaya134,
+            $biaya135,
+            $biaya136,
+            $biaya137,
+            $biaya138,
+            $biaya139,
+            $biaya140,
+            $biaya141,
+            $biaya142,
+            $biaya143,
+            $biaya144,
+            $biaya145,
+            $biaya146,
+            $biaya147,
+            $biaya148,
+            $biaya149,
+            $biaya150,
+            $biaya151,
+            $biaya152,
+            $biaya153,
+            $biaya154,
+            $biaya155,
+            $biaya156,
+            $biaya157,
+            $biaya158,
+            $biaya159,
+            $biaya160,
+            $biaya161,
+            $biaya162,
+            $biaya163,
+            $biaya164,
+            $biaya165,
+            $biaya166,
+            $biaya167,
+            $biaya168,
+            $biaya169,
+            $biaya170,
+            $biaya171,
+            $biaya172,
+            $biaya173,
+            $biaya174,
+            $biaya175,
+            $biaya176,
+            $biaya177,
+            $biaya178,
+            $biaya179,
+            $biaya180,
+            $biaya181,
+            $biaya182,
+            $biaya183,
+            $biaya184,
+            $biaya185,
+            $biaya186,
+            $biaya187,
+            $biaya188,
+            $biaya189,
+            $biaya190,
+            $biaya191,
+            $biaya192,
+            $biaya193,
+            $biaya194,
+            $biaya195,
+            $biaya196,
+            $biaya197,
+            $biaya198,
+            $biaya199,
+            $biaya200,
+            $biaya201,
+            $biaya202,
+            $biaya203,
+            $biaya204,
+            $biaya205,
+            $biaya206,
+            $biaya207,
+            $biaya208,
+            $biaya209,
+            $biaya210,
+            $biaya211,
+            $biaya212,
+            $biaya213,
+            $biaya214,
+            $biaya215,
+            $biaya216,
+            $biaya217,
+            $biaya218,
+            $biaya219,
+            $biaya220,
+            $biaya221,
+            $biaya222,
+            $biaya223,
+            $biaya224,
+            $biaya225,
+            $biaya226,
+            $biaya227,
+            $biaya228,
+            $biaya229,
+            $biaya230,
+            $biaya231,
+            $biaya232,
+            $biaya233,
+            $biaya234,
+            $biaya235,
+            $biaya236,
+            $biaya237,
+            $biaya238,
+            $biaya239,
+            $biaya240,
+            $biaya241,
+            $biaya242,
+            $biaya243,
+            $biaya244,
+            $biaya245,
+            $biaya246,
+            $biaya247,
+            $biaya248,
+            $biaya249,
+            $biaya250,
+            $biaya251,
+            $biaya252,
+            $biaya253,
+            $biaya254,
+            $biaya255,
+            $biaya256,
+            $biaya257,
+            $biaya258,
+            $biaya259,
+            $biaya260,
+            $biaya261,
+            $biaya262,
+            $biaya263,
+            $biaya264,
+            $biaya265,
+            $biaya266,
+            $biaya267,
+            $biaya268,
+            $biaya269,
+            $biaya270,
+
+            $biaya271,
+            $biaya272,
+            $biaya273,
+            $biaya274,
+            $biaya275,
+            $biaya276,
+            $biaya277,
+            $biaya278,
+            $biaya279,
+            $biaya280,
+            $biaya281,
+            $biaya282,
+            $biaya283,
+            $biaya284,
+            $biaya285,
+            $biaya286,
+            $biaya287,
+            $biaya288,
+            $biaya289,
+            $biaya290,
+            $biaya291,
+            $biaya292,
+            $biaya293,
+            $biaya294,
+            $biaya295,
+            $biaya296,
+            $biaya297,
+            $biaya298,
+            $biaya299,
+            $biaya300,
+            $biaya301,
+            $biaya302,
+            $biaya303,
+            $biaya304,
+            $biaya305,
+            $biaya306,
+            $biaya307,
+            $biaya308,
+            $biaya309,
+            $biaya310,
+            $biaya311,
+            $biaya312,
+
+            $biaya313,
+            $biaya314,
+            $biaya315,
+            $biaya316,
+            $biaya317,
+            $biaya318,
+            $biaya319,
+            $biaya320,
+            $biaya321,
+            $biaya322,
+            $biaya323,
+            $biaya324
 
         ]);
     } else {
@@ -937,6 +1430,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             biaya85, biaya86, biaya87, biaya88, biaya89, biaya90, biaya91, biaya92, biaya93, biaya94, biaya95, biaya96,
             biaya97, biaya98, biaya99, biaya100, biaya101, biaya102, biaya103, biaya104, biaya105, biaya106, biaya107, biaya108,
             biaya109, biaya110, biaya111, biaya112, biaya113, biaya114, biaya115, biaya116, biaya117, biaya118, biaya119, biaya120,
+            
             biaya121, biaya122, biaya123, biaya124, biaya125, biaya126, biaya127, biaya128, biaya129, biaya130, biaya131, biaya132,
             biaya133, biaya134, biaya135, biaya136, biaya137, biaya138, biaya139, biaya140, biaya141, biaya142, biaya143, biaya144,
             biaya145, biaya146, biaya147, biaya148, biaya149, biaya150, biaya151, biaya152, biaya153, biaya154, biaya155, biaya156,
@@ -947,8 +1441,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             biaya205, biaya206, biaya207, biaya208, biaya209, biaya210, biaya211, biaya212, biaya213, biaya214, biaya215, biaya216,
             biaya217, biaya218, biaya219, biaya220, biaya221, biaya222, biaya223, biaya224, biaya225, biaya226, biaya227, biaya228,
             biaya229, biaya230, biaya231, biaya232, biaya233, biaya234, biaya235, biaya236, biaya237, biaya238, biaya239, biaya240,
+            
             biaya241, biaya242, biaya243, biaya244, biaya245, biaya246, biaya247, biaya248, biaya249, biaya250, biaya251, biaya252,
-            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264
+            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264,
+            biaya265, biaya266, biaya267, biaya268, biaya269, biaya270, biaya271, biaya272, biaya273, biaya274, biaya275, biaya276,
+            biaya277, biaya278, biaya279, biaya280, biaya281, biaya282, biaya283, biaya284, biaya285, biaya286, biaya287, biaya288,
+            biaya289, biaya290, biaya291, biaya292, biaya293, biaya294, biaya295, biaya296, biaya297, biaya298, biaya299, biaya300,
+            biaya301, biaya302, biaya303, biaya304, biaya305, biaya306, biaya307, biaya308, biaya309, biaya310, biaya311, biaya312,
+            biaya313, biaya314, biaya315, biaya316, biaya317, biaya318, biaya319, biaya320, biaya321, biaya322, biaya323, biaya324
             ) VALUES (
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
@@ -960,11 +1460,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+                ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
+
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
@@ -974,34 +1481,340 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?
                 )");
         $stmt->execute([
-            $biaya1, $biaya2, $biaya3, $biaya4, $biaya5, $biaya6, $biaya7, $biaya8, $biaya9, $biaya10, $biaya11, $biaya12,
-            $biaya13, $biaya14, $biaya15, $biaya16, $biaya17, $biaya18, $biaya19, $biaya20, $biaya21, $biaya22, $biaya23, $biaya24,
-            $biaya25, $biaya26, $biaya27, $biaya28, $biaya29, $biaya30, $biaya31, $biaya32, $biaya33, $biaya34, $biaya35, $biaya36,
-            $biaya37, $biaya38, $biaya39, $biaya40, $biaya41, $biaya42, $biaya43, $biaya44, $biaya45, $biaya46, $biaya47, $biaya48,
-            $biaya49, $biaya50, $biaya51, $biaya52, $biaya53, $biaya54, $biaya55, $biaya56, $biaya57, $biaya58, $biaya59, $biaya60,
-            $biaya61, $biaya62, $biaya63, $biaya64, $biaya65, $biaya66, $biaya67, $biaya68, $biaya69, $biaya70, $biaya71, $biaya72,
-            $biaya73, $biaya74, $biaya75, $biaya76, $biaya77, $biaya78, $biaya79, $biaya80, $biaya81, $biaya82, $biaya83, $biaya84,
-            $biaya85, $biaya86, $biaya87, $biaya88, $biaya89, $biaya90, $biaya91, $biaya92, $biaya93, $biaya94, $biaya95, $biaya96,
-            $biaya97, $biaya98, $biaya99, $biaya100, $biaya101, $biaya102, $biaya103, $biaya104, $biaya105, $biaya106, $biaya107, $biaya108,
-            $biaya109, $biaya110, $biaya111, $biaya112, $biaya113, $biaya114, $biaya115, $biaya116, $biaya117, $biaya118, $biaya119, $biaya120,
-            $biaya121, $biaya122, $biaya123, $biaya124, $biaya125, $biaya126, $biaya127, $biaya128, $biaya129, $biaya130, $biaya131, $biaya132,
-            $biaya133, $biaya134, $biaya135, $biaya136, $biaya137, $biaya138, $biaya139, $biaya140, $biaya141, $biaya142, $biaya143, $biaya144,
-            $biaya145, $biaya146, $biaya147, $biaya148, $biaya149, $biaya150, $biaya151, $biaya152, $biaya153, $biaya154, $biaya155, $biaya156,
-            $biaya157, $biaya158, $biaya159, $biaya160, $biaya161, $biaya162, $biaya163, $biaya164, $biaya165, $biaya166, $biaya167, $biaya168,
-            $biaya169, $biaya170, $biaya171, $biaya172, $biaya173, $biaya174, $biaya175, $biaya176, $biaya177, $biaya178, $biaya179, $biaya180,
-            $biaya181, $biaya182, $biaya183, $biaya184, $biaya185, $biaya186, $biaya187, $biaya188, $biaya189, $biaya190, $biaya191, $biaya192,
-            $biaya193, $biaya194, $biaya195, $biaya196, $biaya197, $biaya198, $biaya199, $biaya200, $biaya201, $biaya202, $biaya203, $biaya204,
-            $biaya205, $biaya206, $biaya207, $biaya208, $biaya209, $biaya210, $biaya211, $biaya212, $biaya213, $biaya214, $biaya215, $biaya216,
-            $biaya217, $biaya218, $biaya219, $biaya220, $biaya221, $biaya222, $biaya223, $biaya224, $biaya225, $biaya226, $biaya227, $biaya228,
-            $biaya229, $biaya230, $biaya231, $biaya232, $biaya233, $biaya234, $biaya235, $biaya236, $biaya237, $biaya238, $biaya239, $biaya240,
-            $biaya241, $biaya242, $biaya243, $biaya244, $biaya245, $biaya246, $biaya247, $biaya248, $biaya249, $biaya250, $biaya251, $biaya252,
-            $biaya253, $biaya254, $biaya255, $biaya256, $biaya257, $biaya258, $biaya259, $biaya260, $biaya261, $biaya262, $biaya263, $biaya264
+            $biaya1,
+            $biaya2,
+            $biaya3,
+            $biaya4,
+            $biaya5,
+            $biaya6,
+            $biaya7,
+            $biaya8,
+            $biaya9,
+            $biaya10,
+            $biaya11,
+            $biaya12,
+            $biaya13,
+            $biaya14,
+            $biaya15,
+            $biaya16,
+            $biaya17,
+            $biaya18,
+            $biaya19,
+            $biaya20,
+            $biaya21,
+            $biaya22,
+            $biaya23,
+            $biaya24,
+            $biaya25,
+            $biaya26,
+            $biaya27,
+            $biaya28,
+            $biaya29,
+            $biaya30,
+            $biaya31,
+            $biaya32,
+            $biaya33,
+            $biaya34,
+            $biaya35,
+            $biaya36,
+            $biaya37,
+            $biaya38,
+            $biaya39,
+            $biaya40,
+            $biaya41,
+            $biaya42,
+            $biaya43,
+            $biaya44,
+            $biaya45,
+            $biaya46,
+            $biaya47,
+            $biaya48,
+            $biaya49,
+            $biaya50,
+            $biaya51,
+            $biaya52,
+            $biaya53,
+            $biaya54,
+            $biaya55,
+            $biaya56,
+            $biaya57,
+            $biaya58,
+            $biaya59,
+            $biaya60,
+            $biaya61,
+            $biaya62,
+            $biaya63,
+            $biaya64,
+            $biaya65,
+            $biaya66,
+            $biaya67,
+            $biaya68,
+            $biaya69,
+            $biaya70,
+            $biaya71,
+            $biaya72,
+            $biaya73,
+            $biaya74,
+            $biaya75,
+            $biaya76,
+            $biaya77,
+            $biaya78,
+            $biaya79,
+            $biaya80,
+            $biaya81,
+            $biaya82,
+            $biaya83,
+            $biaya84,
+            $biaya85,
+            $biaya86,
+            $biaya87,
+            $biaya88,
+            $biaya89,
+            $biaya90,
+            $biaya91,
+            $biaya92,
+            $biaya93,
+            $biaya94,
+            $biaya95,
+            $biaya96,
+            $biaya97,
+            $biaya98,
+            $biaya99,
+            $biaya100,
+            $biaya101,
+            $biaya102,
+            $biaya103,
+            $biaya104,
+            $biaya105,
+            $biaya106,
+            $biaya107,
+            $biaya108,
+            $biaya109,
+            $biaya110,
+            $biaya111,
+            $biaya112,
+            $biaya113,
+            $biaya114,
+            $biaya115,
+            $biaya116,
+            $biaya117,
+            $biaya118,
+            $biaya119,
+            $biaya120,
+            $biaya121,
+            $biaya122,
+            $biaya123,
+            $biaya124,
+            $biaya125,
+            $biaya126,
+            $biaya127,
+            $biaya128,
+            $biaya129,
+            $biaya130,
+            $biaya131,
+            $biaya132,
+            $biaya133,
+            $biaya134,
+            $biaya135,
+            $biaya136,
+            $biaya137,
+            $biaya138,
+            $biaya139,
+            $biaya140,
+            $biaya141,
+            $biaya142,
+            $biaya143,
+            $biaya144,
+            $biaya145,
+            $biaya146,
+            $biaya147,
+            $biaya148,
+            $biaya149,
+            $biaya150,
+            $biaya151,
+            $biaya152,
+            $biaya153,
+            $biaya154,
+            $biaya155,
+            $biaya156,
+            $biaya157,
+            $biaya158,
+            $biaya159,
+            $biaya160,
+            $biaya161,
+            $biaya162,
+            $biaya163,
+            $biaya164,
+            $biaya165,
+            $biaya166,
+            $biaya167,
+            $biaya168,
+            $biaya169,
+            $biaya170,
+            $biaya171,
+            $biaya172,
+            $biaya173,
+            $biaya174,
+            $biaya175,
+            $biaya176,
+            $biaya177,
+            $biaya178,
+            $biaya179,
+            $biaya180,
+            $biaya181,
+            $biaya182,
+            $biaya183,
+            $biaya184,
+            $biaya185,
+            $biaya186,
+            $biaya187,
+            $biaya188,
+            $biaya189,
+            $biaya190,
+            $biaya191,
+            $biaya192,
+            $biaya193,
+            $biaya194,
+            $biaya195,
+            $biaya196,
+            $biaya197,
+            $biaya198,
+            $biaya199,
+            $biaya200,
+            $biaya201,
+            $biaya202,
+            $biaya203,
+            $biaya204,
+            $biaya205,
+            $biaya206,
+            $biaya207,
+            $biaya208,
+            $biaya209,
+            $biaya210,
+            $biaya211,
+            $biaya212,
+            $biaya213,
+            $biaya214,
+            $biaya215,
+            $biaya216,
+            $biaya217,
+            $biaya218,
+            $biaya219,
+            $biaya220,
+            $biaya221,
+            $biaya222,
+            $biaya223,
+            $biaya224,
+            $biaya225,
+            $biaya226,
+            $biaya227,
+            $biaya228,
+            $biaya229,
+            $biaya230,
+            $biaya231,
+            $biaya232,
+            $biaya233,
+            $biaya234,
+            $biaya235,
+            $biaya236,
+            $biaya237,
+            $biaya238,
+            $biaya239,
+            $biaya240,
+            $biaya241,
+            $biaya242,
+            $biaya243,
+            $biaya244,
+            $biaya245,
+            $biaya246,
+            $biaya247,
+            $biaya248,
+            $biaya249,
+            $biaya250,
+            $biaya251,
+            $biaya252,
+            $biaya253,
+            $biaya254,
+            $biaya255,
+            $biaya256,
+            $biaya257,
+            $biaya258,
+            $biaya259,
+            $biaya260,
+            $biaya261,
+            $biaya262,
+            $biaya263,
+            $biaya264,
+            $biaya265,
+            $biaya266,
+            $biaya267,
+            $biaya268,
+            $biaya269,
+            $biaya270,
+
+            $biaya271,
+            $biaya272,
+            $biaya273,
+            $biaya274,
+            $biaya275,
+            $biaya276,
+            $biaya277,
+            $biaya278,
+            $biaya279,
+            $biaya280,
+            $biaya281,
+            $biaya282,
+            $biaya283,
+            $biaya284,
+            $biaya285,
+            $biaya286,
+            $biaya287,
+            $biaya288,
+            $biaya289,
+            $biaya290,
+            $biaya291,
+            $biaya292,
+            $biaya293,
+            $biaya294,
+            $biaya295,
+            $biaya296,
+            $biaya297,
+            $biaya298,
+            $biaya299,
+            $biaya300,
+            $biaya301,
+            $biaya302,
+            $biaya303,
+            $biaya304,
+            $biaya305,
+            $biaya306,
+            $biaya307,
+            $biaya308,
+            $biaya309,
+            $biaya310,
+            $biaya311,
+            $biaya312,
+
+            $biaya313,
+            $biaya314,
+            $biaya315,
+            $biaya316,
+            $biaya317,
+            $biaya318,
+            $biaya319,
+            $biaya320,
+            $biaya321,
+            $biaya322,
+            $biaya323,
+            $biaya324
         ]);
     }
 
     // Redirect back to index.php
-    echo "<script>alert('data berhasil disimpan');</script>";
     header("Location: detailkelas1.php?nomr=$NOMR");
+    echo "<script>alert('data berhasil disimpan');</script>";
+
+
     // header("Location: kelas1.php");
     unset($_SESSION["biaya1"]);
     unset($_SESSION["biaya2"]);
@@ -1267,57 +2080,141 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     unset($_SESSION["biaya262"]);
     unset($_SESSION["biaya263"]);
     unset($_SESSION["biaya264"]);
+    unset($_SESSION["biaya265"]);
+    unset($_SESSION["biaya266"]);
+    unset($_SESSION["biaya267"]);
+    unset($_SESSION["biaya268"]);
+    unset($_SESSION["biaya269"]);
+    unset($_SESSION["biaya270"]);
+
+    unset($_SESSION["biaya271"]);
+    unset($_SESSION["biaya272"]);
+    unset($_SESSION["biaya273"]);
+    unset($_SESSION["biaya274"]);
+    unset($_SESSION["biaya275"]);
+    unset($_SESSION["biaya276"]);
+    unset($_SESSION["biaya277"]);
+    unset($_SESSION["biaya278"]);
+    unset($_SESSION["biaya279"]);
+    unset($_SESSION["biaya280"]);
+    unset($_SESSION["biaya281"]);
+    unset($_SESSION["biaya282"]);
+    unset($_SESSION["biaya283"]);
+    unset($_SESSION["biaya284"]);
+    unset($_SESSION["biaya285"]);
+    unset($_SESSION["biaya286"]);
+    unset($_SESSION["biaya287"]);
+    unset($_SESSION["biaya288"]);
+    unset($_SESSION["biaya289"]);
+    unset($_SESSION["biaya290"]);
+    unset($_SESSION["biaya291"]);
+    unset($_SESSION["biaya292"]);
+    unset($_SESSION["biaya293"]);
+    unset($_SESSION["biaya294"]);
+    unset($_SESSION["biaya295"]);
+    unset($_SESSION["biaya296"]);
+    unset($_SESSION["biaya297"]);
+    unset($_SESSION["biaya298"]);
+    unset($_SESSION["biaya299"]);
+    unset($_SESSION["biaya300"]);
+    unset($_SESSION["biaya301"]);
+    unset($_SESSION["biaya302"]);
+    unset($_SESSION["biaya303"]);
+    unset($_SESSION["biaya304"]);
+    unset($_SESSION["biaya305"]);
+    unset($_SESSION["biaya306"]);
+    unset($_SESSION["biaya307"]);
+    unset($_SESSION["biaya308"]);
+    unset($_SESSION["biaya309"]);
+    unset($_SESSION["biaya310"]);
+    unset($_SESSION["biaya311"]);
+    unset($_SESSION["biaya312"]);
+
+    unset($_SESSION["biaya313"]);
+    unset($_SESSION["biaya314"]);
+    unset($_SESSION["biaya315"]);
+    unset($_SESSION["biaya316"]);
+    unset($_SESSION["biaya317"]);
+    unset($_SESSION["biaya318"]);
+    unset($_SESSION["biaya319"]);
+    unset($_SESSION["biaya320"]);
+    unset($_SESSION["biaya321"]);
+    unset($_SESSION["biaya322"]);
+    unset($_SESSION["biaya323"]);
+    unset($_SESSION["biaya324"]);
 
 
     exit();
 } elseif (!$row) {
     // If no checkbox data is found in the database, insert default values
     $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway (
-        biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
-        biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
+            biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
+            biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
             biaya37, biaya38, biaya39, biaya40, biaya41, biaya42, biaya43, biaya44, biaya45, biaya46, biaya47, biaya48,
             biaya49, biaya50, biaya51, biaya52, biaya53, biaya54, biaya55, biaya56, biaya57, biaya58, biaya59, biaya60,
+
             biaya61, biaya62, biaya63, biaya64, biaya65, biaya66, biaya67, biaya68, biaya69, biaya70, biaya71, biaya72,
             biaya73, biaya74, biaya75, biaya76, biaya77, biaya78, biaya79, biaya80, biaya81, biaya82, biaya83, biaya84,
             biaya85, biaya86, biaya87, biaya88, biaya89, biaya90, biaya91, biaya92, biaya93, biaya94, biaya95, biaya96,
             biaya97, biaya98, biaya99, biaya100, biaya101, biaya102, biaya103, biaya104, biaya105, biaya106, biaya107, biaya108,
             biaya109, biaya110, biaya111, biaya112, biaya113, biaya114, biaya115, biaya116, biaya117, biaya118, biaya119, biaya120,
+
             biaya121, biaya122, biaya123, biaya124, biaya125, biaya126, biaya127, biaya128, biaya129, biaya130, biaya131, biaya132,
             biaya133, biaya134, biaya135, biaya136, biaya137, biaya138, biaya139, biaya140, biaya141, biaya142, biaya143, biaya144,
             biaya145, biaya146, biaya147, biaya148, biaya149, biaya150, biaya151, biaya152, biaya153, biaya154, biaya155, biaya156,
             biaya157, biaya158, biaya159, biaya160, biaya161, biaya162, biaya163, biaya164, biaya165, biaya166, biaya167, biaya168,
             biaya169, biaya170, biaya171, biaya172, biaya173, biaya174, biaya175, biaya176, biaya177, biaya178, biaya179, biaya180,
+
             biaya181, biaya182, biaya183, biaya184, biaya185, biaya186, biaya187, biaya188, biaya189, biaya190, biaya191, biaya192,
             biaya193, biaya194, biaya195, biaya196, biaya197, biaya198, biaya199, biaya200, biaya201, biaya202, biaya203, biaya204,
             biaya205, biaya206, biaya207, biaya208, biaya209, biaya210, biaya211, biaya212, biaya213, biaya214, biaya215, biaya216,
             biaya217, biaya218, biaya219, biaya220, biaya221, biaya222, biaya223, biaya224, biaya225, biaya226, biaya227, biaya228,
             biaya229, biaya230, biaya231, biaya232, biaya233, biaya234, biaya235, biaya236, biaya237, biaya238, biaya239, biaya240,
+
             biaya241, biaya242, biaya243, biaya244, biaya245, biaya246, biaya247, biaya248, biaya249, biaya250, biaya251, biaya252,
-            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264
+            biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264,
+            biaya265, biaya266, biaya267, biaya268, biaya269, biaya270, biaya271, biaya272, biaya273, biaya274, biaya275, biaya276,
+            biaya277, biaya278, biaya279, biaya280, biaya281, biaya282, biaya283, biaya284, biaya285, biaya286, biaya287, biaya288,
+            biaya289, biaya290, biaya291, biaya292, biaya293, biaya294, biaya295, biaya296, biaya297, biaya298, biaya299, biaya300,
+
+            biaya301, biaya302, biaya303, biaya304, biaya305, biaya306, biaya307, biaya308, biaya309, biaya310, biaya311, biaya312,
+            biaya313, biaya314, biaya315, biaya316, biaya317, biaya318, biaya319, biaya320, biaya321, biaya322, biaya323, biaya324
+
         ) VALUES (
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+            
             )");
     $stmt->execute();
 }
@@ -1392,6 +2289,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         document.getElementById("total").innerHTML = "" + totalRupiah;
 
         calculateSum();
+
     }
 
     function hitungTotal2() {
@@ -3091,6 +3989,406 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         calculateSum();
     }
 
+    function hitungTotal44() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total44 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya265" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+            if (checkboxes[i].name === "biaya266" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+            if (checkboxes[i].name === "biaya267" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+            if (checkboxes[i].name === "biaya268" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+            if (checkboxes[i].name === "biaya269" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+            if (checkboxes[i].name === "biaya270" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total44 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total44);
+        document.getElementById("total44").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal45() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total45 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya271" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+            if (checkboxes[i].name === "biaya272" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+            if (checkboxes[i].name === "biaya273" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+            if (checkboxes[i].name === "biaya274" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+            if (checkboxes[i].name === "biaya275" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+            if (checkboxes[i].name === "biaya276" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total45 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total45);
+        document.getElementById("total45").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal46() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total46 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya277" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+            if (checkboxes[i].name === "biaya278" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+            if (checkboxes[i].name === "biaya279" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+            if (checkboxes[i].name === "biaya280" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+            if (checkboxes[i].name === "biaya281" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+            if (checkboxes[i].name === "biaya282" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total46 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total46);
+        document.getElementById("total46").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal47() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total47 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya283" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+            if (checkboxes[i].name === "biaya284" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+            if (checkboxes[i].name === "biaya285" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+            if (checkboxes[i].name === "biaya286" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+            if (checkboxes[i].name === "biaya287" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+            if (checkboxes[i].name === "biaya288" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total47 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total47);
+        document.getElementById("total47").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal48() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total48 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya289" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+            if (checkboxes[i].name === "biaya290" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+            if (checkboxes[i].name === "biaya291" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+            if (checkboxes[i].name === "biaya292" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+            if (checkboxes[i].name === "biaya293" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+            if (checkboxes[i].name === "biaya294" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total48 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total48);
+        document.getElementById("total48").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal49() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total49 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya295" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+            if (checkboxes[i].name === "biaya296" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+            if (checkboxes[i].name === "biaya297" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+            if (checkboxes[i].name === "biaya298" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+            if (checkboxes[i].name === "biaya299" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+            if (checkboxes[i].name === "biaya300" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total49 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total49);
+        document.getElementById("total49").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal50() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total50 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya301" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+            if (checkboxes[i].name === "biaya302" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+            if (checkboxes[i].name === "biaya303" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+            if (checkboxes[i].name === "biaya304" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+            if (checkboxes[i].name === "biaya305" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+            if (checkboxes[i].name === "biaya306" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total50 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total50);
+        document.getElementById("total50").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal51() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total51 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya307" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+            if (checkboxes[i].name === "biaya308" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+            if (checkboxes[i].name === "biaya309" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+            if (checkboxes[i].name === "biaya310" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+            if (checkboxes[i].name === "biaya311" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+            if (checkboxes[i].name === "biaya312" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total51 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total51);
+        document.getElementById("total51").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal52() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total52 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya313" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+            if (checkboxes[i].name === "biaya314" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+            if (checkboxes[i].name === "biaya315" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+            if (checkboxes[i].name === "biaya316" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+            if (checkboxes[i].name === "biaya317" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+            if (checkboxes[i].name === "biaya318" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total52 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total52);
+        document.getElementById("total52").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
+    function hitungTotal53() {
+        var checkboxes = document.getElementsByTagName("input");
+
+        var total53 = 0;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].name === "biaya319" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+            if (checkboxes[i].name === "biaya320" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+            if (checkboxes[i].name === "biaya321" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+            if (checkboxes[i].name === "biaya322" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+            if (checkboxes[i].name === "biaya323" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+            if (checkboxes[i].name === "biaya324" && checkboxes[i].checked) {
+                var biaya = parseInt(checkboxes[i].value);
+                total53 += biaya;
+            }
+
+
+        }
+
+        var totalRupiah = formatRupiah(total53);
+        document.getElementById("total53").innerHTML = "" + totalRupiah;
+
+        calculateSum();
+    }
+
 
     function calculateSum() {
         var checkboxes = document.getElementsByTagName("input");
@@ -3163,6 +4461,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
 
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>
@@ -3194,6 +4497,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         });
     </script>
+    <style>
+        body {
+            font-size: 14px;
+        }
+    </style>
 
 </head>
 
@@ -3220,7 +4528,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <!-- Navbar Search -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
                     </a>
@@ -3239,17 +4547,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </form>
                     </div>
-                </li>
+                </li> -->
 
                 <!-- Messages Dropdown Menu -->
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-comments"></i>
                         <span class="badge badge-danger navbar-badge">3</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
+                           
                             <div class="media">
                                 <img src="assets/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
@@ -3261,11 +4569,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
+                           
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
+                            
                             <div class="media">
                                 <img src="assets/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
@@ -3277,11 +4585,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
+                           
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
+                            
                             <div class="media">
                                 <img src="assets/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
@@ -3293,14 +4601,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
+                            
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                     </div>
-                </li>
-                <!-- Notifications Dropdown Menu -->
-                <li class="nav-item dropdown">
+                </li> -->
+
+                <!-- <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-bell"></i>
                         <span class="badge badge-warning navbar-badge">15</span>
@@ -3325,8 +4633,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
                     </div>
-                </li>
-                <li class="nav-item">
+                </li> -->
+                <!-- <li class="nav-item">
                     <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                         <i class="fas fa-expand-arrows-alt"></i>
                     </a>
@@ -3335,7 +4643,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
                         <i class="fas fa-th-large"></i>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -3343,7 +4651,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="assets/index3.html" class="brand-link">
+            <a href="#" class="brand-link">
                 <img src="img/Logo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">SINAPS</span>
             </a>
@@ -3353,10 +4661,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        <img src="assets/dist/img/user2.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">User</a>
+                        <a href="#" class="d-block">Admin</a>
                     </div>
                 </div>
 
@@ -3418,30 +4726,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </a>
                         </li> -->
                         <li class="nav-item">
-                            <a href="kelas1.php" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                            <a href="cendraatas.php" class="nav-link">
+                                <i class="nav-icon fas fa-bed"></i>
                                 <p>
-                                    Pasien Kelas I
+                                    Cendrawasih Atas
 
                                 </p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="kelas2.php" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                            <a href="cendrabawah.php" class="nav-link">
+                                <i class="nav-icon fas fa-bed"></i>
                                 <p>
-                                    Pasien Kelas II
+                                    Cendrawasih Bawah
 
                                 </p>
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="kelas3.php" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
+                            <a href="kenariatas.php" class="nav-link">
+                                <i class="nav-icon fas fa-bed"></i>
                                 <p>
-                                    Pasien Kelas III
+                                    Kenari Atas
+
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="camarbawah.php" class="nav-link">
+                                <i class="nav-icon fas fa-bed"></i>
+                                <p>
+                                    Camar Bawah
 
                                 </p>
                             </a>
@@ -3468,12 +4786,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>DataTables</h1>
+                            <!-- <h1>DataTables</h1> -->
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">DataTables</li>
+                                <!-- <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active">DataTables</li> -->
                             </ol>
                         </div>
                     </div>
@@ -3516,29 +4834,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             <?php
                                             $nomr = $_GET["nomr"];
                                             // Assuming you have established a database connection
-                                            $sql = mysqli_query($conn, "SELECT a.NOMR, a.NAMA, a.ALAMAT, b.masukrs, b.keluarrs
-                                            FROM simrs2012.m_pasien a
-                                            left join simrs2012.t_admission b
-                                            ON simrs2012.a.NOMR = simrs2012.b.NOMR
-                                        
-                                            where simrs2012.a.NOMR='$nomr'");
+                                            // $sql = mysqli_query($conn, "SELECT a.NOMR, a.NAMA, a.ALAMAT, b.masukrs, b.keluarrs
+                                            // FROM simrs2012.m_pasien a
+                                            // left join simrs2012.t_admission b
+                                            // ON simrs2012.a.NOMR = simrs2012.b.NOMR
+                                            // where simrs2012.a.NOMR='$nomr'");
+
+                                            $sql = mysqli_query($conn, "SELECT NOMR, nama_pasien, masuk_rs, ruangan, kelas_bpjs FROM simrs.t_clinicalpathway where simrs.t_clinicalpathway.NOMR='$nomr';");
+
                                             $result = mysqli_fetch_array($sql);
 
-                                            $nama = $result["NAMA"];
+                                            $nama_pasien = $result["nama_pasien"];
                                             $nomr = $result["NOMR"];
-                                            $alamat = $result["ALAMAT"];
-                                            $tanggalmasuk = $result["masukrs"];
-                                            $tanggalkeluar = $result["keluarrs"];
+
+                                            $masuk_rs = $result["masuk_rs"];
+
                                             // $dxmedis = $result["kode_diagnosaawal"]
 
                                             // Check if there are any rows returned from the query
                                             // print_r($result);
                                             ?>
                                             <tr>
-                                                <td style="text-align:center;"><?php echo $nama; ?></td>
+                                                <td style="text-align:center;"><?php echo $nama_pasien; ?></td>
                                                 <td style="text-align:center;"><?php echo $nomr; ?></td>
-                                                <td style="text-align:center;"><?php echo $tanggalmasuk; ?></td>
-                                                <td style="text-align:center;"><?php echo $tanggalkeluar; ?></td>
+                                                <td style="text-align:center;"><?php echo $masuk_rs; ?></td>
+                                                <td style="text-align:center;"></td>
                                                 <td style="text-align:center;">
                                                     <select class="form-control" id="selectOption">
                                                         <option>Pilih DX Medis Utama</option>
@@ -3586,6 +4906,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <th colspan="6" class="text-center">Hari</th>
                                                     <!-- <th rowspan="2">Keterangan</th> -->
                                                     <th rowspan="2">Biaya</th>
+
                                                 </tr>
 
                                                 <tr>
@@ -3684,12 +5005,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya1,biaya2,biaya3,biaya4,biaya5,biaya6 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya1'] + $row['biaya2'] + $row['biaya3'] + $row['biaya4'] + $row['biaya5'] + $row['biaya6'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
 
 
+                                                    ?>
 
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total">Rp-</p>
+                                                        <p id="total">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
                                                 <tr>
 
@@ -3767,9 +5121,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya7,biaya8,biaya9,biaya10,biaya11,biaya12 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya7'] + $row['biaya8'] + $row['biaya9'] + $row['biaya10'] + $row['biaya11'] + $row['biaya12'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total2">Rp-</p>
+                                                        <p id="total2">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+                                                    <!-- <td>
+                                                        <p id="total2">Rp-</p>
+                                                    </td> -->
 
                                                 </tr>
 
@@ -3850,9 +5243,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya13,biaya14,biaya15,biaya16,biaya17,biaya18 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya13'] + $row['biaya14'] + $row['biaya15'] + $row['biaya16'] + $row['biaya17'] + $row['biaya18'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total3">Rp-</p>
+                                                        <p id="total3">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+                                                    <!-- <td>
+                                                        <p id="total3">Rp-</p>
+                                                    </td> -->
                                                 </tr>
 
                                                 <tr>
@@ -3932,10 +5363,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
-                                                    <td>
-                                                        <p id="total4">Rp-</p>
-                                                    </td>
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
 
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya19,biaya20,biaya21,biaya22,biaya23,biaya24 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya19'] + $row['biaya20'] + $row['biaya21'] + $row['biaya22'] + $row['biaya23'] + $row['biaya24'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total4">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
@@ -4014,10 +5479,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
-                                                    <td>
-                                                        <p id="total5">Rp-</p>
-                                                    </td>
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
 
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya25,biaya26,biaya27,biaya28,biaya29,biaya30 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya25'] + $row['biaya26'] + $row['biaya27'] + $row['biaya28'] + $row['biaya29'] + $row['biaya30'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total5">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
                                                 </tr>
 
                                                 <!-- Nomor 2 -->
@@ -4102,15 +5601,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
-                                                    <td>
-                                                        <p id="total6">Rp-</p>
-                                                    </td>
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
 
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya31,biaya32,biaya33,biaya34,biaya35,biaya36 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya31'] + $row['biaya32'] + $row['biaya33'] + $row['biaya34'] + $row['biaya35'] + $row['biaya36'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total6">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
 
-                                                    <td>Urenium Kriatin</td>
+                                                    <td>Ureum Kriatin</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya37 == 26500) { ?>
@@ -4184,9 +5717,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya37,biaya38,biaya39,biaya40,biaya41,biaya42 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya37'] + $row['biaya38'] + $row['biaya39'] + $row['biaya40'] + $row['biaya41'] + $row['biaya42'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total7">Rp-</p>
+                                                        <p id="total7">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+
 
                                                 </tr>
 
@@ -4266,9 +5836,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya43,biaya44,biaya45,biaya46,biaya47,biaya48 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya43'] + $row['biaya44'] + $row['biaya45'] + $row['biaya46'] + $row['biaya47'] + $row['biaya48'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total8">Rp-</p>
+                                                        <p id="total8">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+
 
                                                 </tr>
 
@@ -4348,9 +5955,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya49,biaya50,biaya51,biaya52,biaya53,biaya54 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya49'] + $row['biaya50'] + $row['biaya51'] + $row['biaya52'] + $row['biaya53'] + $row['biaya54'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total9">Rp-</p>
+                                                        <p id="total9">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+
 
                                                 </tr>
 
@@ -4430,8 +6074,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya55,biaya56,biaya57,biaya58,biaya59,biaya60 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya55'] + $row['biaya56'] + $row['biaya57'] + $row['biaya58'] + $row['biaya59'] + $row['biaya60'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total10">Rp-</p>
+                                                        <p id="total10">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -4512,9 +6191,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya61,biaya62,biaya63,biaya64,biaya65,biaya66 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya61'] + $row['biaya62'] + $row['biaya63'] + $row['biaya64'] + $row['biaya65'] + $row['biaya66'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total11">Rp-</p>
+                                                        <p id="total11">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+
 
                                                 </tr>
 
@@ -4594,8 +6310,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya67,biaya68,biaya69,biaya70,biaya71,biaya72 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya67'] + $row['biaya68'] + $row['biaya69'] + $row['biaya70'] + $row['biaya71'] + $row['biaya72'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total12">Rp-</p>
+                                                        <p id="total12">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -4676,8 +6427,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya73,biaya74,biaya75,biaya76,biaya77,biaya78 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya73'] + $row['biaya74'] + $row['biaya75'] + $row['biaya76'] + $row['biaya77'] + $row['biaya78'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total13">Rp-</p>
+                                                        <p id="total13">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -4758,8 +6544,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya79,biaya80,biaya81,biaya82,biaya83,biaya84 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya79'] + $row['biaya80'] + $row['biaya81'] + $row['biaya82'] + $row['biaya83'] + $row['biaya84'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total14">Rp-</p>
+                                                        <p id="total14">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -4840,8 +6661,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya85,biaya86,biaya87,biaya88,biaya89,biaya90 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya85'] + $row['biaya86'] + $row['biaya87'] + $row['biaya88'] + $row['biaya89'] + $row['biaya90'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total15">Rp-</p>
+                                                        <p id="total15">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -4922,8 +6778,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya91,biaya92,biaya93,biaya94,biaya95,biaya96 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya91'] + $row['biaya92'] + $row['biaya93'] + $row['biaya94'] + $row['biaya95'] + $row['biaya96'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total16">Rp-</p>
+                                                        <p id="total16">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5004,18 +6895,343 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya97,biaya98,biaya99,biaya100,biaya101,biaya102 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya97'] + $row['biaya98'] + $row['biaya99'] + $row['biaya100'] + $row['biaya101'] + $row['biaya102'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total17">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
+
+                                                </tr>
+
+
+
+                                                <!-- <tr>
+
+                                                    <td>
+                                                        <div class="col-md-12 text-center">
+                                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default">Tambah Obat</button>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <?php
+                                                        if (isset($_SESSION['listobat'])) {
+                                                            echo $_SESSION['username'];
+                                                        }
+
+                                                        ?>
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                    <td> -</td>
+                                                    <td>
+                                                        <p>Rp-</p>
+                                                    </td>
+                                                </tr> -->
+
+                                                <!-- <div class="modal fade" id="modal-default">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h4 class="modal-title">Default Modal</h4>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                            <div class="modal-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12"> -->
+                                                <!-- <form method="POST">
+                                                                            
+                                                                            <select class="form-control select2" style="height: 100px;" name="obat">
+                                                                                
+                                                                                <?php
+                                                                                $servername = "192.168.1.178";
+                                                                                $username = "root";
+                                                                                $password = "takonbudi";
+                                                                                $database = "simrs";
+
+                                                                                // Create a connection
+                                                                                $conn = new mysqli($servername, $username, $password, $database);
+
+                                                                                $query_obat = "SELECT id_obat, nama_obat FROM simrs.master_obat group by nama_obat asc";
+                                                                                $sql = mysqli_query($conn, $query_obat);
+                                                                                foreach ($sql as $key => $value) { ?>
+
+                                                                                    <option value="<?php echo $value['id_obat']; ?>"><?php echo $value['nama_obat']; ?>Pilih Obat</option>
+
+                                                                                <?php } ?>
+                                                                            </select>
+                                                                            
+                                                                    </div>
+                                                                </div>
+                                                                <label>Hari ke-1</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio1" value="1" name="hariKe1">
+                                                                            <label for="customRadio1" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio2" value="2" name="hariKe1">
+                                                                            <label for="customRadio2" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio3" value="3" name="hariKe1">
+                                                                            <label for="customRadio3" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <label>Hari ke-2</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio4" value="1" name="hariKe2">
+                                                                            <label for="customRadio4" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio5" value="2" name="hariKe2">
+                                                                            <label for="customRadio5" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio6" value="3" name="hariKe2">
+                                                                            <label for="customRadio6" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <label>Hari ke-3</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio7" value="1" name="hariKe3">
+                                                                            <label for="customRadio7" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio8" value="2" name="hariKe3">
+                                                                            <label for="customRadio8" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio9" value="3" name="hariKe3">
+                                                                            <label for="customRadio9" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <label>Hari ke-4</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio10" value="1" name="hariKe4">
+                                                                            <label for="customRadio10" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio11" value="2" name="hariKe4">
+                                                                            <label for="customRadio11" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio12" value="3" name="hariKe4">
+                                                                            <label for="customRadio12" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <label>Hari ke-5</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio13" value="1" name="hariKe5">
+                                                                            <label for="customRadio13" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio14" value="2" name="hariKe5">
+                                                                            <label for="customRadio14" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio15" value="3" name="hariKe5">
+                                                                            <label for="customRadio15" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <label>Hari ke-6</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio16" value="1" name="hariKe6">
+                                                                            <label for="customRadio16" class="custom-control-label">1x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio17" value="2" name="hariKe6">
+                                                                            <label for="customRadio17" class="custom-control-label">2x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="custom-control custom-radio">
+                                                                            <input class="custom-control-input" type="radio" id="customRadio18" value="3" name="hariKe6">
+                                                                            <label for="customRadio18" class="custom-control-label">3x</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="modal-footer justify-content-between">
+                                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                <button type="submit" name="tambah_obat" class="btn btn-primary">Save</button>
+                                                            </div>
+
+
+                                </form> -->
+                                                <!-- </div>
+                            
+                            <?php
+
+                            if (isset($_POST['tambah_obat'])) {
+
+                                $id_obat = $_POST['id_obat'];
+
+                                $_SESSION['listobat'] = $id_obat;
+
+                                echo "<script>location='detailkelas1.php';</script>";
+                            }
+                            ?>
+                        </div>
+                        
+                    </div> -->
+
+
+
+                                                <!-- <tr>
+
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Tambahan Obat</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                       <div class="form-group">
+                                                            <label>Biaya</label>
+                                                            <input type="text" class="form-control" placeholder="Enter ...">
+                                                        </div>
+                                                        </div>
+                                                    </td>
+                                                    <td> -</td>
                                                     <td>
                                                         <p id="total17">Rp-</p>
                                                     </td>
 
-                                                </tr>
+                                                </tr> -->
 
 
                                                 <!-- Nomor 3 -->
                                                 <tr>
                                                     <td rowspan="2">3</td>
                                                     <td rowspan="2">Radiologi / Imaging</td>
-                                                    <td>RTO Thorax</td>
+                                                    <td>RO Thorax</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya103 == 133500) { ?>
@@ -5160,8 +7376,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya103,biaya104,biaya105,biaya106,biaya107,biaya108,biaya109,biaya110,biaya111,biaya112,biaya113,biaya114 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya103'] + $row['biaya104'] + $row['biaya105'] + $row['biaya106'] + $row['biaya107'] + $row['biaya108'] + $row['biaya109'] + $row['biaya110'] + $row['biaya111'] + $row['biaya112'] + $row['biaya113'] + $row['biaya114'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total18">Rp-</p>
+                                                        <p id="total18">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5172,11 +7423,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya115 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3121" name="biaya115" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3121" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31211" name="biaya115" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31211" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3121" name="biaya115" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3121" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31211" name="biaya115" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31211" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya115 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31212" name="biaya115" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31212" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31212" name="biaya115" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31212" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
@@ -5184,11 +7445,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya116 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3122" name="biaya116" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3122" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31221" name="biaya116" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31221" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3122" name="biaya116" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3122" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31221" name="biaya116" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31221" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya116 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31222" name="biaya116" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31222" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31222" name="biaya116" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31222" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
@@ -5196,11 +7467,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya117 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3123" name="biaya117" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3123" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31231" name="biaya117" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31231" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3123" name="biaya117" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3123" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31231" name="biaya117" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31231" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya117 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31232" name="biaya117" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31232" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31232" name="biaya117" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31232" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
@@ -5208,11 +7489,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya118 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3124" name="biaya118" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3124" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31241" name="biaya118" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31241" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3124" name="biaya118" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3124" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31241" name="biaya118" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31241" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya118 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31242" name="biaya118" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31242" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31242" name="biaya118" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31242" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
@@ -5220,11 +7511,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya119 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3125" name="biaya119" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3125" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31251" name="biaya119" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31251" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3125" name="biaya119" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3125" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31251" name="biaya119" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31251" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya119 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31252" name="biaya119" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31252" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31252" name="biaya119" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31252" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
@@ -5232,19 +7533,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya120 == 670000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3126" name="biaya120" value="670000" onchange="hitungTotal19()" checked>
-                                                                <label for="customCheckbox3126" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31261" name="biaya120" value="670000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31261" class="custom-control-label">Non Kontras</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox3126" name="biaya120" value="670000" onchange="hitungTotal19()">
-                                                                <label for="customCheckbox3126" class="custom-control-label"></label>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31261" name="biaya120" value="670000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31261" class="custom-control-label">Non Kontras</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya120 == 500000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31262" name="biaya120" value="500000" onchange="hitungTotal19()" checked>
+                                                                <label for="customCheckbox31262" class="custom-control-label">Kontras</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox31262" name="biaya120" value="500000" onchange="hitungTotal19()">
+                                                                <label for="customCheckbox31262" class="custom-control-label">Kontras</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya115,biaya116,biaya117,biaya118,biaya119,biaya120 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya115'] + $row['biaya116'] + $row['biaya117'] + $row['biaya118'] + $row['biaya119'] + $row['biaya120'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total19">Rp-</p>
+                                                        <p id="total19">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
+
 
                                                 </tr>
 
@@ -5256,11 +7604,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>DPJP</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya121 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya121 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4111" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4111" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5268,11 +7616,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya122 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya122 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4112" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4112" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5280,11 +7628,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya123 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya123 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4113" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4113" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5292,11 +7640,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya124 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya124 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4114" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4114" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5304,11 +7652,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya125 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya125 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4115" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4115" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5316,19 +7664,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya126 == 17000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="17000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya126 == 27000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="27000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4116" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="17000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="27000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4116" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya121,biaya122,biaya123,biaya124,biaya125,biaya126 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya121'] + $row['biaya122'] + $row['biaya123'] + $row['biaya124'] + $row['biaya125'] + $row['biaya126'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total20">Rp-</p>
+                                                        <p id="total20">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
                                                 </tr>
 
@@ -5410,8 +7793,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya127,biaya128,biaya129,biaya130,biaya131,biaya132 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya127'] + $row['biaya128'] + $row['biaya129'] + $row['biaya130'] + $row['biaya131'] + $row['biaya132'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total21">Rp-</p>
+                                                        <p id="total21">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5421,11 +7839,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>b. Asesmen Keperawtan</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya133 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5121" name="biaya133" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya133 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5121" name="biaya133" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5121" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5121" name="biaya133" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5121" name="biaya133" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5121" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5433,11 +7851,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya134 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5122" name="biaya134" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya134 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5122" name="biaya134" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5122" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5122" name="biaya134" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5122" name="biaya134" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5122" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5445,11 +7863,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya135 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5123" name="biaya135" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya135 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5123" name="biaya135" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5123" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5123" name="biaya135" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5123" name="biaya135" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5123" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5457,11 +7875,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya136 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5124" name="biaya136" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya136 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5124" name="biaya136" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5124" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5124" name="biaya136" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5124" name="biaya136" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5124" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5469,11 +7887,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya137 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5125" name="biaya137" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya137 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5125" name="biaya137" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5125" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5125" name="biaya137" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5125" name="biaya137" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5125" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5481,19 +7899,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya138 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5126" name="biaya138" value="5750" onchange="hitungTotal22()" checked>
+                                                            <?php if ($biaya138 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5126" name="biaya138" value="13000" onchange="hitungTotal22()" checked>
                                                                 <label for="customCheckbox5126" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5126" name="biaya138" value="5750" onchange="hitungTotal22()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox5126" name="biaya138" value="13000" onchange="hitungTotal22()">
                                                                 <label for="customCheckbox5126" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya133,biaya134,biaya135,biaya136,biaya137,biaya138 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya133'] + $row['biaya134'] + $row['biaya135'] + $row['biaya136'] + $row['biaya137'] + $row['biaya138'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total22">Rp-</p>
+                                                        <p id="total22">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5573,9 +8026,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya139,biaya140,biaya141,biaya142,biaya143,biaya144 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya139'] + $row['biaya140'] + $row['biaya141'] + $row['biaya142'] + $row['biaya143'] + $row['biaya144'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total23">Rp-</p>
+                                                        <p id="total23">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
 
                                                 </tr>
                                                 <tr>
@@ -5654,8 +8143,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya145,biaya146,biaya147,biaya148,biaya149,biaya150 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya145'] + $row['biaya146'] + $row['biaya147'] + $row['biaya148'] + $row['biaya149'] + $row['biaya150'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total24">Rp-</p>
+                                                        <p id="total24">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5663,11 +8187,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                 <!-- Nomor 6 -->
                                                 <tr>
-                                                    <td rowspan="14">6</td>
+                                                    <td rowspan="16">6</td>
                                                     <td rowspan="6">a. Injeksi</td>
                                                     <td>Inj. Piracetam</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya151 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61111" name="biaya151" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61111" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61111" name="biaya151" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61111" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya151 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61112" name="biaya151" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61112" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61112" name="biaya151" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61112" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya151 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61113" name="biaya151" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61113" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61113" name="biaya151" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61113" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya151 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61114" name="biaya151" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61114" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61114" name="biaya151" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61114" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya151 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6111" name="biaya151" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6111" class="custom-control-label"></label>
@@ -5676,10 +8241,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6111" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya152 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61121" name="biaya152" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61121" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61121" name="biaya152" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61121" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya152 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61122" name="biaya152" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61122" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61122" name="biaya152" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61122" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya152 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61123" name="biaya152" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61123" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61123" name="biaya152" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61123" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya152 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61124" name="biaya152" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61124" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61124" name="biaya152" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61124" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya152 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6112" name="biaya152" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6112" class="custom-control-label"></label>
@@ -5688,10 +8294,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6112" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya153 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61131" name="biaya153" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61131" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61131" name="biaya153" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61131" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya153 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61132" name="biaya153" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61132" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61132" name="biaya153" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61132" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya153 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61133" name="biaya153" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61133" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61133" name="biaya153" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61133" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya153 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61134" name="biaya153" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61134" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61134" name="biaya153" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61134" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya153 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6113" name="biaya153" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6113" class="custom-control-label"></label>
@@ -5700,10 +8347,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6113" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya154 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61141" name="biaya154" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61141" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61141" name="biaya154" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61141" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya154 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61142" name="biaya154" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61142" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61142" name="biaya154" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61142" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya154 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61143" name="biaya154" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61143" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61143" name="biaya154" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61143" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya154 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61144" name="biaya154" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61144" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61144" name="biaya154" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61144" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya154 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6114" name="biaya154" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6114" class="custom-control-label"></label>
@@ -5712,10 +8400,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6114" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya155 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61151" name="biaya155" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61151" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61151" name="biaya155" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61151" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya155 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61152" name="biaya155" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61152" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61152" name="biaya155" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61152" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya155 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61153" name="biaya155" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61153" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61153" name="biaya155" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61153" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya155 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61154" name="biaya155" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61154" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61154" name="biaya155" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61154" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya155 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6115" name="biaya155" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6115" class="custom-control-label"></label>
@@ -5724,10 +8453,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6115" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya156 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61161" name="biaya156" value="0" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61161" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61161" name="biaya156" value="0" onchange="hitungTotal25()">
+                                                                <label for="customRadio61161" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya156 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61162" name="biaya156" value="9057" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61162" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61162" name="biaya156" value="9057" onchange="hitungTotal25()">
+                                                                <label for="customRadio61162" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya156 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61163" name="biaya156" value="18114" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61163" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61163" name="biaya156" value="18114" onchange="hitungTotal25()">
+                                                                <label for="customRadio61163" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya156 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61164" name="biaya156" value="27171" onchange="hitungTotal25()" checked>
+                                                                <label for="customRadio61164" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61164" name="biaya156" value="27171" onchange="hitungTotal25()">
+                                                                <label for="customRadio61164" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya156 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6116" name="biaya156" value="9057" onchange="hitungTotal25()" checked>
                                                                 <label for="customCheckbox6116" class="custom-control-label"></label>
@@ -5736,18 +8506,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6116" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya151,biaya152,biaya153,biaya154,biaya155,biaya156 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya151'] + $row['biaya152'] + $row['biaya153'] + $row['biaya154'] + $row['biaya155'] + $row['biaya156'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total25">Rp-</p>
+                                                        <p id="total25">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
                                                 <tr>
 
                                                     <td>Inj. Citicolin</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya157 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61211" name="biaya157" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61211" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61211" name="biaya157" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61211" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya157 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61212" name="biaya157" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61212" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61212" name="biaya157" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61212" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya157 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61213" name="biaya157" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61213" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61213" name="biaya157" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61213" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya157 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61214" name="biaya157" value="27171" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61214" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61214" name="biaya157" value="27171" onchange="hitungTotal26()">
+                                                                <label for="customRadio61214" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya157 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6121" name="biaya157" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6121" class="custom-control-label"></label>
@@ -5756,10 +8603,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6121" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya158 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61221" name="biaya158" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61221" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61221" name="biaya158" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61221" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya158 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61222" name="biaya158" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61222" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61222" name="biaya158" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61222" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya158 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61223" name="biaya158" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61223" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61223" name="biaya158" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61223" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya158 == 59940) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61224" name="biaya158" value="59940" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61224" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61224" name="biaya158" value="59940" onchange="hitungTotal26()">
+                                                                <label for="customRadio61224" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya158 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6122" name="biaya158" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6122" class="custom-control-label"></label>
@@ -5768,10 +8656,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6122" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya159 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61231" name="biaya159" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61231" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61231" name="biaya159" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61231" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya159 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61232" name="biaya159" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61232" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61232" name="biaya159" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61232" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya159 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61233" name="biaya159" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61233" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61233" name="biaya159" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61233" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya159 == 59940) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61234" name="biaya159" value="59940" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61234" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61234" name="biaya159" value="59940" onchange="hitungTotal26()">
+                                                                <label for="customRadio61234" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya159 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6123" name="biaya159" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6123" class="custom-control-label"></label>
@@ -5780,10 +8709,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6123" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya160 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61241" name="biaya160" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61241" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61241" name="biaya160" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61241" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya160 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61242" name="biaya160" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61242" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61242" name="biaya160" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61242" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya160 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61243" name="biaya160" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61243" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61243" name="biaya160" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61243" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya160 == 59940) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61244" name="biaya160" value="59940" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61244" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61244" name="biaya160" value="59940" onchange="hitungTotal26()">
+                                                                <label for="customRadio61244" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya160 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6124" name="biaya160" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6124" class="custom-control-label"></label>
@@ -5792,10 +8762,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6124" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya161 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61251" name="biaya161" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61251" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61251" name="biaya161" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61251" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya161 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61252" name="biaya161" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61252" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61252" name="biaya161" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61252" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya161 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61253" name="biaya161" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61253" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61253" name="biaya161" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61253" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya161 == 59940) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61254" name="biaya161" value="59940" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61254" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61254" name="biaya161" value="59940" onchange="hitungTotal26()">
+                                                                <label for="customRadio61254" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya161 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6125" name="biaya161" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6125" class="custom-control-label"></label>
@@ -5804,10 +8815,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6125" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya162 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61261" name="biaya162" value="0" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61261" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61261" name="biaya162" value="0" onchange="hitungTotal26()">
+                                                                <label for="customRadio61261" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya162 == 19980) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61262" name="biaya162" value="19980" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61262" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61262" name="biaya162" value="19980" onchange="hitungTotal26()">
+                                                                <label for="customRadio61262" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya162 == 39960) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61263" name="biaya162" value="39960" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61263" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61263" name="biaya162" value="39960" onchange="hitungTotal26()">
+                                                                <label for="customRadio61263" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya162 == 59940) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61264" name="biaya162" value="59940" onchange="hitungTotal26()" checked>
+                                                                <label for="customRadio61264" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61264" name="biaya162" value="59940" onchange="hitungTotal26()">
+                                                                <label for="customRadio61264" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya162 == 19980) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6126" name="biaya162" value="19980" onchange="hitungTotal26()" checked>
                                                                 <label for="customCheckbox6126" class="custom-control-label"></label>
@@ -5816,19 +8868,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6126" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya157,biaya158,biaya159,biaya160,biaya161,biaya162 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya157'] + $row['biaya158'] + $row['biaya159'] + $row['biaya160'] + $row['biaya161'] + $row['biaya162'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total26">Rp-</p>
+                                                        <p id="total26">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
                                                 <tr>
 
-                                                    <td>Inj. Mekobalamin</td>
+                                                    <td>Inj. Mecobalamin</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya163 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61311" name="biaya163" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61311" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61311" name="biaya163" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61311" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya163 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61312" name="biaya163" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61312" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61312" name="biaya163" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61312" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya163 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61313" name="biaya163" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61313" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61313" name="biaya163" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61313" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya163 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61314" name="biaya163" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61314" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61314" name="biaya163" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61314" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya163 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6131" name="biaya163" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6131" class="custom-control-label"></label>
@@ -5837,10 +8965,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6131" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya164 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61321" name="biaya164" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61321" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61321" name="biaya164" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61321" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya164 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61322" name="biaya164" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61322" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61322" name="biaya164" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61322" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya164 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61323" name="biaya164" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61323" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61323" name="biaya164" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61323" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya164 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61324" name="biaya164" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61324" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61324" name="biaya164" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61324" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya164 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6132" name="biaya164" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6132" class="custom-control-label"></label>
@@ -5849,10 +9018,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6132" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya165 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61331" name="biaya165" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61331" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61331" name="biaya165" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61331" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya165 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61332" name="biaya165" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61332" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61332" name="biaya165" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61332" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya165 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61333" name="biaya165" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61333" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61333" name="biaya165" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61333" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya165 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61334" name="biaya165" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61334" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61334" name="biaya165" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61334" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya165 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6133" name="biaya165" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6133" class="custom-control-label"></label>
@@ -5861,10 +9071,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6133" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya166 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61341" name="biaya166" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61341" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61341" name="biaya166" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61341" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya166 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61342" name="biaya166" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61342" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61342" name="biaya166" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61342" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya166 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61343" name="biaya166" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61343" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61343" name="biaya166" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61343" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya166 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61344" name="biaya166" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61344" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61344" name="biaya166" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61344" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya166 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6134" name="biaya166" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6134" class="custom-control-label"></label>
@@ -5873,10 +9124,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6134" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya167 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61351" name="biaya167" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61351" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61351" name="biaya167" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61351" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya167 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61352" name="biaya167" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61352" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61352" name="biaya167" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61352" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya167 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61353" name="biaya167" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61353" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61353" name="biaya167" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61353" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya167 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61354" name="biaya167" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61354" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61354" name="biaya167" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61354" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya167 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6135" name="biaya167" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6135" class="custom-control-label"></label>
@@ -5885,10 +9177,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6135" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya168 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61361" name="biaya168" value="0" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61361" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61361" name="biaya168" value="0" onchange="hitungTotal27()">
+                                                                <label for="customRadio61361" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya168 == 9057) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61362" name="biaya168" value="9057" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61362" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61362" name="biaya168" value="9057" onchange="hitungTotal27()">
+                                                                <label for="customRadio61362" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya168 == 18114) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61363" name="biaya168" value="18114" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61363" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61363" name="biaya168" value="18114" onchange="hitungTotal27()">
+                                                                <label for="customRadio61363" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya168 == 27171) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61364" name="biaya168" value="27171" onchange="hitungTotal27()" checked>
+                                                                <label for="customRadio61364" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61364" name="biaya168" value="27171" onchange="hitungTotal27()">
+                                                                <label for="customRadio61364" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya168 == 9057) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6136" name="biaya168" value="9057" onchange="hitungTotal27()" checked>
                                                                 <label for="customCheckbox6136" class="custom-control-label"></label>
@@ -5897,11 +9230,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6136" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya163,biaya164,biaya165,biaya166,biaya167,biaya168 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya163'] + $row['biaya164'] + $row['biaya165'] + $row['biaya166'] + $row['biaya167'] + $row['biaya168'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total27">Rp-</p>
+                                                        <p id="total27">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5909,7 +9277,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>Inj. Ranitidin</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya169 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61411" name="biaya169" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61411" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61411" name="biaya169" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61411" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya169 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61412" name="biaya169" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61412" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61412" name="biaya169" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61412" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya169 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61413" name="biaya169" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61413" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61413" name="biaya169" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61413" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya169 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61414" name="biaya169" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61414" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61414" name="biaya169" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61414" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya169 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6141" name="biaya169" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6141" class="custom-control-label"></label>
@@ -5918,10 +9327,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6141" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya170 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61421" name="biaya170" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61421" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61421" name="biaya170" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61421" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya170 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61422" name="biaya170" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61422" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61422" name="biaya170" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61422" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya170 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61423" name="biaya170" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61423" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61423" name="biaya170" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61423" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya170 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61424" name="biaya170" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61424" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61424" name="biaya170" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61424" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya170 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6142" name="biaya170" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6142" class="custom-control-label"></label>
@@ -5930,10 +9380,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6142" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya171 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61431" name="biaya171" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61431" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61431" name="biaya171" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61431" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya171 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61432" name="biaya171" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61432" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61432" name="biaya171" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61432" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya171 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61433" name="biaya171" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61433" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61433" name="biaya171" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61433" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya171 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61434" name="biaya171" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61434" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61434" name="biaya171" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61434" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya171 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6143" name="biaya171" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6143" class="custom-control-label"></label>
@@ -5942,10 +9433,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6143" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya172 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61441" name="biaya172" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61441" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61441" name="biaya172" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61441" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya172 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61442" name="biaya172" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61442" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61442" name="biaya172" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61442" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya172 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61443" name="biaya172" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61443" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61443" name="biaya172" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61443" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya172 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61444" name="biaya172" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61444" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61444" name="biaya172" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61444" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya172 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6144" name="biaya172" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6144" class="custom-control-label"></label>
@@ -5954,10 +9486,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6144" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya173 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61451" name="biaya173" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61451" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61451" name="biaya173" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61451" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya173 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61452" name="biaya173" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61452" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61452" name="biaya173" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61452" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya173 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61453" name="biaya173" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61453" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61453" name="biaya173" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61453" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya173 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61454" name="biaya173" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61454" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61454" name="biaya173" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61454" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya173 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6145" name="biaya173" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6145" class="custom-control-label"></label>
@@ -5966,10 +9539,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6145" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya174 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61461" name="biaya174" value="0" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61461" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61461" name="biaya174" value="0" onchange="hitungTotal28()">
+                                                                <label for="customRadio61461" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya174 == 1270) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61462" name="biaya174" value="1270" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61462" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61462" name="biaya174" value="1270" onchange="hitungTotal28()">
+                                                                <label for="customRadio61462" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya174 == 2540) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61463" name="biaya174" value="2540" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61463" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61463" name="biaya174" value="2540" onchange="hitungTotal28()">
+                                                                <label for="customRadio61463" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya174 == 3810) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61464" name="biaya174" value="3810" onchange="hitungTotal28()" checked>
+                                                                <label for="customRadio61464" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61464" name="biaya174" value="3810" onchange="hitungTotal28()">
+                                                                <label for="customRadio61464" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya174 == 1270) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6146" name="biaya174" value="1270" onchange="hitungTotal28()" checked>
                                                                 <label for="customCheckbox6146" class="custom-control-label"></label>
@@ -5978,11 +9592,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6146" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya169,biaya170,biaya171,biaya172,biaya173,biaya174 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya169'] + $row['biaya170'] + $row['biaya171'] + $row['biaya172'] + $row['biaya173'] + $row['biaya174'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total28">Rp-</p>
+                                                        <p id="total28">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -5991,7 +9640,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>Inj. OMZ</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya175 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61511" name="biaya175" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61511" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61511" name="biaya175" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61511" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya175 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61512" name="biaya175" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61512" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61512" name="biaya175" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61512" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya175 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61513" name="biaya175" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61513" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61513" name="biaya175" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61513" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya175 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61514" name="biaya175" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61514" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61514" name="biaya175" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61514" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya175 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6151" name="biaya175" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6151" class="custom-control-label"></label>
@@ -6000,10 +9690,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6151" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya176 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61521" name="biaya176" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61521" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61521" name="biaya176" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61521" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya176 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61522" name="biaya176" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61522" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61522" name="biaya176" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61522" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya176 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61523" name="biaya176" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61523" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61523" name="biaya176" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61523" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya176 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61524" name="biaya176" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61524" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61524" name="biaya176" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61524" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya176 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6152" name="biaya176" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6152" class="custom-control-label"></label>
@@ -6012,10 +9743,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6152" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya177 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61531" name="biaya177" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61531" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61531" name="biaya177" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61531" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya177 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61532" name="biaya177" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61532" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61532" name="biaya177" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61532" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya177 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61533" name="biaya177" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61533" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61533" name="biaya177" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61533" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya177 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61534" name="biaya177" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61534" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61534" name="biaya177" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61534" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya177 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6153" name="biaya177" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6153" class="custom-control-label"></label>
@@ -6024,10 +9796,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6153" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya178 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61541" name="biaya178" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61541" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61541" name="biaya178" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61541" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya178 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61542" name="biaya178" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61542" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61542" name="biaya178" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61542" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya178 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61543" name="biaya178" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61543" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61543" name="biaya178" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61543" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya178 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61544" name="biaya178" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61544" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61544" name="biaya178" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61544" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya178 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6154" name="biaya178" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6154" class="custom-control-label"></label>
@@ -6036,10 +9849,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6154" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya179 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61551" name="biaya179" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61551" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61551" name="biaya179" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61551" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya179 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61552" name="biaya179" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61552" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61552" name="biaya179" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61552" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya179 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61553" name="biaya179" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61553" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61553" name="biaya179" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61553" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya179 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61554" name="biaya179" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61554" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61554" name="biaya179" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61554" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya179 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6155" name="biaya179" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6155" class="custom-control-label"></label>
@@ -6048,10 +9902,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6155" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya180 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61561" name="biaya180" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61561" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61561" name="biaya180" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61561" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya180 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61562" name="biaya180" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61562" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61562" name="biaya180" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61562" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya180 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61563" name="biaya180" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61563" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61563" name="biaya180" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61563" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya180 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61564" name="biaya180" value="0" onchange="hitungTotal29()" checked>
+                                                                <label for="customRadio61564" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61564" name="biaya180" value="0" onchange="hitungTotal29()">
+                                                                <label for="customRadio61564" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya180 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6156" name="biaya180" value="0" onchange="hitungTotal29()" checked>
                                                                 <label for="customCheckbox6156" class="custom-control-label"></label>
@@ -6060,11 +9955,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6156" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya175,biaya176,biaya177,biaya178,biaya179,biaya180 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya175'] + $row['biaya176'] + $row['biaya177'] + $row['biaya178'] + $row['biaya179'] + $row['biaya180'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total29">Rp-</p>
+                                                        <p id="total29">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6073,7 +10003,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>Inj. Furosemid</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya181 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61611" name="biaya181" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61611" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61611" name="biaya181" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61611" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya181 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61612" name="biaya181" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61612" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61612" name="biaya181" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61612" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya181 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61613" name="biaya181" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61613" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61613" name="biaya181" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61613" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya181 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61614" name="biaya181" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61614" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61614" name="biaya181" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61614" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya181 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6161" name="biaya181" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6161" class="custom-control-label"></label>
@@ -6082,10 +10053,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6161" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya182 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61621" name="biaya182" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61621" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61621" name="biaya182" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61621" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya182 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61622" name="biaya182" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61622" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61622" name="biaya182" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61622" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya182 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61623" name="biaya182" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61623" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61623" name="biaya182" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61623" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya182 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61624" name="biaya182" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61624" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61624" name="biaya182" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61624" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya182 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6162" name="biaya182" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6162" class="custom-control-label"></label>
@@ -6094,10 +10106,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6162" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya183 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61631" name="biaya183" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61631" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61631" name="biaya183" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61631" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya183 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61632" name="biaya183" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61632" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61632" name="biaya183" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61632" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya183 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61633" name="biaya183" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61633" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61633" name="biaya183" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61633" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya183 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61634" name="biaya183" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61634" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61634" name="biaya183" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61634" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya183 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6163" name="biaya183" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6163" class="custom-control-label"></label>
@@ -6106,10 +10159,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6163" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya184 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61641" name="biaya184" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61641" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61641" name="biaya184" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61641" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya184 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61642" name="biaya184" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61642" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61642" name="biaya184" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61642" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya184 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61643" name="biaya184" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61643" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61643" name="biaya184" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61643" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya184 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61644" name="biaya184" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61644" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61644" name="biaya184" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61644" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya184 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6164" name="biaya184" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6164" class="custom-control-label"></label>
@@ -6118,10 +10212,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6164" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya185 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61651" name="biaya185" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61651" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61651" name="biaya185" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61651" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya185 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61652" name="biaya185" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61652" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61652" name="biaya185" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61652" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya185 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61653" name="biaya185" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61653" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61653" name="biaya185" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61653" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya185 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61654" name="biaya185" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61654" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61654" name="biaya185" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61654" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya185 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6165" name="biaya185" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6165" class="custom-control-label"></label>
@@ -6130,10 +10265,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6165" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya186 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61661" name="biaya186" value="0" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61661" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61661" name="biaya186" value="0" onchange="hitungTotal30()">
+                                                                <label for="customRadio61661" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya186 == 2216) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61662" name="biaya186" value="2216" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61662" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61662" name="biaya186" value="2216" onchange="hitungTotal30()">
+                                                                <label for="customRadio61662" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya186 == 4432) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61663" name="biaya186" value="4432" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61663" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61663" name="biaya186" value="4432" onchange="hitungTotal30()">
+                                                                <label for="customRadio61663" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya186 == 6648) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61664" name="biaya186" value="6648" onchange="hitungTotal30()" checked>
+                                                                <label for="customRadio61664" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio61664" name="biaya186" value="6648" onchange="hitungTotal30()">
+                                                                <label for="customRadio61664" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya186 == 2216) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6166" name="biaya186" value="2216" onchange="hitungTotal30()" checked>
                                                                 <label for="customCheckbox6166" class="custom-control-label"></label>
@@ -6142,11 +10318,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6166" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya181,biaya182,biaya183,biaya184,biaya185,biaya186 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya181'] + $row['biaya182'] + $row['biaya183'] + $row['biaya184'] + $row['biaya185'] + $row['biaya186'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total30">Rp-</p>
+                                                        <p id="total30">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6155,7 +10366,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                 <tr>
 
-                                                    <td rowspan="2">b. Infus</td>
+                                                    <td rowspan="4">b. Infus</td>
                                                     <td>Asering</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
@@ -6230,12 +10441,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
-                                                    <td>
-                                                        <p id="total31">Rp-</p>
-                                                    </td>
-                                                </tr>
-                                                <tr>
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
 
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya187,biaya188,biaya189,biaya190,biaya191,biaya192 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya187'] + $row['biaya188'] + $row['biaya189'] + $row['biaya190'] + $row['biaya191'] + $row['biaya192'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total31">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
                                                     <td>Manitol</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
@@ -6310,8 +10557,275 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya193,biaya194,biaya195,biaya196,biaya197,biaya198 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya193'] + $row['biaya194'] + $row['biaya195'] + $row['biaya196'] + $row['biaya197'] + $row['biaya198'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total32">Rp-</p>
+                                                        <p id="total32">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Nacl 3%</td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya313 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6231" name="biaya313" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6231" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6231" name="biaya313" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6231" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya314 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6232" name="biaya314" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6232" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6232" name="biaya314" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6232" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya315 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6233" name="biaya315" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6233" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6233" name="biaya315" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6233" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya316 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6234" name="biaya316" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6234" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6234" name="biaya316" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6234" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya317 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6235" name="biaya317" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6235" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6235" name="biaya317" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6235" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya318 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6236" name="biaya318" value="29221" onchange="hitungTotal52()" checked>
+                                                                <label for="customCheckbox6236" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6236" name="biaya318" value="29221" onchange="hitungTotal52()">
+                                                                <label for="customCheckbox6236" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya313,biaya314,biaya315,biaya316,biaya317,biaya318 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya313'] + $row['biaya314'] + $row['biaya315'] + $row['biaya316'] + $row['biaya317'] + $row['biaya318'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total52">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr>
+                                                    <td>KCL</td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya319 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6241" name="biaya319" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6241" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6241" name="biaya319" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6241" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya320 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6242" name="biaya320" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6242" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6242" name="biaya320" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6242" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya321 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6243" name="biaya321" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6243" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6243" name="biaya321" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6243" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya322 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6244" name="biaya322" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6244" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6244" name="biaya322" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6244" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya323 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6245" name="biaya323" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6245" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6245" name="biaya323" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6245" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="custom-control custom-checkbox">
+                                                            <?php if ($biaya324 == 29221) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6246" name="biaya324" value="29221" onchange="hitungTotal53()" checked>
+                                                                <label for="customCheckbox6246" class="custom-control-label"></label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6246" name="biaya324" value="29221" onchange="hitungTotal53()">
+                                                                <label for="customCheckbox6246" class="custom-control-label"></label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                    </td>
+                                                    <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya319,biaya320,biaya321,biaya322,biaya323,biaya324 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya319'] + $row['biaya320'] + $row['biaya321'] + $row['biaya322'] + $row['biaya323'] + $row['biaya324'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
+                                                    <td>
+                                                        <p id="total53">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6321,7 +10835,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td rowspan="5">c. Obat Oral</td>
                                                     <td>Antiplatelet</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya199 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63111" name="biaya199" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63111" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63111" name="biaya199" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63111" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya199 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63112" name="biaya199" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63112" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63112" name="biaya199" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63112" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya199 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63113" name="biaya199" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63113" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63113" name="biaya199" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63113" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya199 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63114" name="biaya199" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63114" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63114" name="biaya199" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63114" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya199 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6311" name="biaya199" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6311" class="custom-control-label"></label>
@@ -6330,10 +10885,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6311" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya200 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63121" name="biaya200" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63121" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63121" name="biaya200" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63121" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya200 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63122" name="biaya200" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63122" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63122" name="biaya200" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63122" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya200 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63123" name="biaya200" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63123" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63123" name="biaya200" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63123" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya200 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63124" name="biaya200" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63124" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63124" name="biaya200" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63124" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya200 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6312" name="biaya200" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6312" class="custom-control-label"></label>
@@ -6342,10 +10938,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6312" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya201 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63131" name="biaya201" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63131" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63131" name="biaya201" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63131" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya201 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63132" name="biaya201" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63132" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63132" name="biaya201" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63132" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya201 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63133" name="biaya201" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63133" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63133" name="biaya201" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63133" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya201 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63134" name="biaya201" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63134" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63134" name="biaya201" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63134" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya201 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6313" name="biaya201" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6313" class="custom-control-label"></label>
@@ -6354,10 +10991,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6313" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya202 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63141" name="biaya202" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63141" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63141" name="biaya202" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63141" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya202 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63142" name="biaya202" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63142" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63142" name="biaya202" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63142" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya202 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63143" name="biaya202" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63143" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63143" name="biaya202" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63143" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya202 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63144" name="biaya202" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63144" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63144" name="biaya202" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63144" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya202 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6314" name="biaya202" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6314" class="custom-control-label"></label>
@@ -6366,10 +11044,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6314" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya203 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63151" name="biaya203" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63151" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63151" name="biaya203" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63151" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya203 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63152" name="biaya203" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63152" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63152" name="biaya203" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63152" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya203 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63153" name="biaya203" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63153" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63153" name="biaya203" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63153" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya203 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63154" name="biaya203" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63154" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63154" name="biaya203" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63154" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya203 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6315" name="biaya203" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6315" class="custom-control-label"></label>
@@ -6378,10 +11097,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6315" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya204 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63161" name="biaya204" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63161" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63161" name="biaya204" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63161" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya204 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63162" name="biaya204" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63162" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63162" name="biaya204" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63162" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya204 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63163" name="biaya204" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63163" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63163" name="biaya204" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63163" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya204 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63164" name="biaya204" value="0" onchange="hitungTotal33()" checked>
+                                                                <label for="customRadio63164" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63164" name="biaya204" value="0" onchange="hitungTotal33()">
+                                                                <label for="customRadio63164" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya204 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6316" name="biaya204" value="0" onchange="hitungTotal33()" checked>
                                                                 <label for="customCheckbox6316" class="custom-control-label"></label>
@@ -6390,18 +11151,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6316" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya199,biaya200,biaya201,biaya202,biaya203,biaya204 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya199'] + $row['biaya200'] + $row['biaya201'] + $row['biaya202'] + $row['biaya203'] + $row['biaya204'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total33">Rp-</p>
+                                                        <p id="total33">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
                                                 <tr>
 
                                                     <td>Simvasatatin</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya205 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63211" name="biaya205" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63211" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63211" name="biaya205" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63211" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya205 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63212" name="biaya205" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63212" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63212" name="biaya205" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63212" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya205 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63213" name="biaya205" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63213" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63213" name="biaya205" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63213" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya205 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63214" name="biaya205" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63214" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63214" name="biaya205" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63214" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya205 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6321" name="biaya205" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6321" class="custom-control-label"></label>
@@ -6410,10 +11248,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6321" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya206 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63221" name="biaya206" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63221" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63221" name="biaya206" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63221" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya206 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63222" name="biaya206" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63222" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63222" name="biaya206" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63222" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya206 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63223" name="biaya206" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63223" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63223" name="biaya206" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63223" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya206 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63224" name="biaya206" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63224" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63224" name="biaya206" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63224" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya206 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6322" name="biaya206" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6322" class="custom-control-label"></label>
@@ -6422,10 +11301,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6322" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya207 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63231" name="biaya207" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63231" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63231" name="biaya207" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63231" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya207 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63232" name="biaya207" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63232" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63232" name="biaya207" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63232" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya207 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63233" name="biaya207" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63233" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63233" name="biaya207" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63233" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya207 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63234" name="biaya207" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63234" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63234" name="biaya207" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63234" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya207 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6323" name="biaya207" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6323" class="custom-control-label"></label>
@@ -6434,10 +11354,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6323" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya208 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63241" name="biaya208" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63241" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63241" name="biaya208" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63241" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya208 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63242" name="biaya208" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63242" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63242" name="biaya208" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63242" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya208 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63243" name="biaya208" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63243" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63243" name="biaya208" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63243" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya208 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63244" name="biaya208" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63244" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63244" name="biaya208" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63244" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya208 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6324" name="biaya208" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6324" class="custom-control-label"></label>
@@ -6446,10 +11407,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6324" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya209 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63251" name="biaya209" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63251" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63251" name="biaya209" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63251" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya209 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63252" name="biaya209" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63252" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63252" name="biaya209" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63252" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya209 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63253" name="biaya209" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63253" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63253" name="biaya209" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63253" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya209 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63254" name="biaya209" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63254" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63254" name="biaya209" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63254" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya209 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6325" name="biaya209" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6325" class="custom-control-label"></label>
@@ -6458,10 +11460,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6325" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya210 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63261" name="biaya210" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63261" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63261" name="biaya210" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63261" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya210 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63262" name="biaya210" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63262" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63262" name="biaya210" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63262" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya210 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63263" name="biaya210" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63263" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63263" name="biaya210" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63263" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya210 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63264" name="biaya210" value="0" onchange="hitungTotal34()" checked>
+                                                                <label for="customRadio63264" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63264" name="biaya210" value="0" onchange="hitungTotal34()">
+                                                                <label for="customRadio63264" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya210 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6326" name="biaya210" value="0" onchange="hitungTotal34()" checked>
                                                                 <label for="customCheckbox6326" class="custom-control-label"></label>
@@ -6470,11 +11513,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6326" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya205,biaya206,biaya207,biaya208,biaya209,biaya210 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya205'] + $row['biaya206'] + $row['biaya207'] + $row['biaya208'] + $row['biaya209'] + $row['biaya210'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total34">Rp-</p>
+                                                        <p id="total34">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6483,7 +11561,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>Amlodipin/Candesartan</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya211 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63311" name="biaya211" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63311" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63311" name="biaya211" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63311" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya211 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63312" name="biaya211" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63312" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63312" name="biaya211" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63312" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya211 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63313" name="biaya211" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63313" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63313" name="biaya211" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63313" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya211 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63314" name="biaya211" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63314" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63314" name="biaya211" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63314" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya211 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6331" name="biaya211" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6331" class="custom-control-label"></label>
@@ -6492,10 +11611,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6331" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya212 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63321" name="biaya212" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63321" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63321" name="biaya212" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63321" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya212 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63322" name="biaya212" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63322" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63322" name="biaya212" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63322" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya212 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63323" name="biaya212" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63323" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63323" name="biaya212" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63323" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya212 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63324" name="biaya212" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63324" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63324" name="biaya212" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63324" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya212 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6332" name="biaya212" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6332" class="custom-control-label"></label>
@@ -6504,10 +11664,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6332" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya213 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63331" name="biaya213" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63331" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63331" name="biaya213" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63331" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya213 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63332" name="biaya213" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63332" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63332" name="biaya213" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63332" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya213 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63333" name="biaya213" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63333" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63333" name="biaya213" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63333" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya213 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63334" name="biaya213" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63334" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63334" name="biaya213" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63334" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya213 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6333" name="biaya213" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6333" class="custom-control-label"></label>
@@ -6516,10 +11717,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6333" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya214 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63341" name="biaya214" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63341" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63341" name="biaya214" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63341" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya214 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63342" name="biaya214" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63342" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63342" name="biaya214" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63342" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya214 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63343" name="biaya214" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63343" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63343" name="biaya214" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63343" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya214 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63344" name="biaya214" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63344" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63344" name="biaya214" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63344" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya214 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6334" name="biaya214" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6334" class="custom-control-label"></label>
@@ -6528,10 +11770,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6334" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya215 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63351" name="biaya215" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63351" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63351" name="biaya215" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63351" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya215 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63352" name="biaya215" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63352" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63352" name="biaya215" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63352" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya215 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63353" name="biaya215" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63353" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63353" name="biaya215" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63353" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya215 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63354" name="biaya215" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63354" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63354" name="biaya215" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63354" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya215 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6335" name="biaya215" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6335" class="custom-control-label"></label>
@@ -6540,10 +11823,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6335" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya216 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63361" name="biaya216" value="0" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63361" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63361" name="biaya216" value="0" onchange="hitungTotal35()">
+                                                                <label for="customRadio63361" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya216 == 352) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63362" name="biaya216" value="352" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63362" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63362" name="biaya216" value="352" onchange="hitungTotal35()">
+                                                                <label for="customRadio63362" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya216 == 704) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63363" name="biaya216" value="704" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63363" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63363" name="biaya216" value="704" onchange="hitungTotal35()">
+                                                                <label for="customRadio63363" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya216 == 1056) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63364" name="biaya216" value="1056" onchange="hitungTotal35()" checked>
+                                                                <label for="customRadio63364" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63364" name="biaya216" value="1056" onchange="hitungTotal35()">
+                                                                <label for="customRadio63364" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya216 == 352) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6336" name="biaya216" value="352" onchange="hitungTotal35()" checked>
                                                                 <label for="customCheckbox6336" class="custom-control-label"></label>
@@ -6552,11 +11876,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6336" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya211,biaya212,biaya213,biaya214,biaya215,biaya216 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya211'] + $row['biaya212'] + $row['biaya213'] + $row['biaya214'] + $row['biaya215'] + $row['biaya216'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total35">Rp-</p>
+                                                        <p id="total35">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6565,7 +11924,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>CPG</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya217 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63411" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63411" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63411" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63411" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya217 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63412" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63412" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya217 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63413" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63413" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya217 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63414" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63414" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya217 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6341" name="biaya217" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6341" class="custom-control-label"></label>
@@ -6574,10 +11974,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6341" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya218 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63421" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63421" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63421" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63421" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya218 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63422" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63422" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya218 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63423" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63423" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya218 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63424" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63424" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya218 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6342" name="biaya218" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6342" class="custom-control-label"></label>
@@ -6586,10 +12027,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6342" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya219 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63431" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63431" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63431" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63431" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya219 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63432" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63432" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya219 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63433" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63433" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya219 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63434" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63434" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya219 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6343" name="biaya219" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6343" class="custom-control-label"></label>
@@ -6598,10 +12081,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6343" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya220 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63441" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63441" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63441" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63441" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya220 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63442" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63442" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya220 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63443" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63443" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya220 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63444" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63444" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya220 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6344" name="biaya220" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6344" class="custom-control-label"></label>
@@ -6610,10 +12135,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6344" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya221 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63451" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63451" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63451" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63451" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya221 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63452" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63452" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya221 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63453" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63453" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya221 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63454" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63454" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya221 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6345" name="biaya221" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6345" class="custom-control-label"></label>
@@ -6622,10 +12188,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6345" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya222 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63461" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63461" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63461" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63461" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya222 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63462" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63462" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya222 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63463" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63463" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya222 == 1) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <label for="customRadio63464" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <label for="customRadio63464" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya222 == 1) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6346" name="biaya222" value="0" onchange="hitungTotal36()" checked>
                                                                 <label for="customCheckbox6346" class="custom-control-label"></label>
@@ -6634,11 +12241,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6346" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya217,biaya218,biaya219,biaya220,biaya221,biaya222 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya217'] + $row['biaya218'] + $row['biaya219'] + $row['biaya220'] + $row['biaya221'] + $row['biaya222'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total36">Rp-</p>
+                                                        <p id="total36">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6647,7 +12289,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>Mecobalamin</td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya223 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63511" name="biaya223" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63511" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63511" name="biaya223" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63511" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya223 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63512" name="biaya223" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63512" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63512" name="biaya223" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63512" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya223 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63513" name="biaya223" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63513" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63513" name="biaya223" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63513" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya223 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63514" name="biaya223" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63514" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63514" name="biaya223" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63514" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya223 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6351" name="biaya223" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6351" class="custom-control-label"></label>
@@ -6656,10 +12339,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6351" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya224 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63521" name="biaya224" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63521" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63521" name="biaya224" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63521" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya224 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63522" name="biaya224" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63522" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63522" name="biaya224" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63522" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya224 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63523" name="biaya224" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63523" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63523" name="biaya224" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63523" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya224 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63524" name="biaya224" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63524" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63524" name="biaya224" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63524" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya224 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6352" name="biaya224" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6352" class="custom-control-label"></label>
@@ -6668,10 +12395,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6352" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya225 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63531" name="biaya225" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63531" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63531" name="biaya225" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63531" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya225 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63532" name="biaya225" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63532" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63532" name="biaya225" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63532" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya225 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63533" name="biaya225" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63533" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63533" name="biaya225" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63533" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya225 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63534" name="biaya225" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63534" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63534" name="biaya225" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63534" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya225 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6353" name="biaya225" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6353" class="custom-control-label"></label>
@@ -6680,10 +12450,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6353" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya226 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63541" name="biaya226" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63541" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63541" name="biaya226" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63541" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya226 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63542" name="biaya226" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63542" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63542" name="biaya226" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63542" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya226 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63543" name="biaya226" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63543" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63543" name="biaya226" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63543" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya226 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63544" name="biaya226" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63544" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63544" name="biaya226" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63544" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya226 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6354" name="biaya226" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6354" class="custom-control-label"></label>
@@ -6692,10 +12507,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6354" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya227 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63551" name="biaya227" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63551" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63551" name="biaya227" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63551" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya227 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63552" name="biaya227" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63552" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63552" name="biaya227" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63552" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya227 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63553" name="biaya227" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63553" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63553" name="biaya227" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63553" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya227 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63554" name="biaya227" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63554" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63554" name="biaya227" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63554" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya227 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6355" name="biaya227" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6355" class="custom-control-label"></label>
@@ -6704,10 +12563,54 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6355" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
+
+
                                                     <td>
-                                                        <div class="custom-control custom-checkbox">
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya228 == 0) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63561" name="biaya228" value="0" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63561" class="custom-control-label">-</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63561" name="biaya228" value="0" onchange="hitungTotal37()">
+                                                                <label for="customRadio63561" class="custom-control-label">-</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya228 == 806) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63562" name="biaya228" value="806" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63562" class="custom-control-label">1X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63562" name="biaya228" value="806" onchange="hitungTotal37()">
+                                                                <label for="customRadio63562" class="custom-control-label">1X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya228 == 1612) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63563" name="biaya228" value="1612" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63563" class="custom-control-label">2X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63563" name="biaya228" value="1612" onchange="hitungTotal37()">
+                                                                <label for="customRadio63563" class="custom-control-label">2X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+                                                        <div class="custom-control custom-radio">
+                                                            <?php if ($biaya228 == 2418) { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63564" name="biaya228" value="2418" onchange="hitungTotal37()" checked>
+                                                                <label for="customRadio63564" class="custom-control-label">3X</label>
+                                                            <?php } else { ?>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63564" name="biaya228" value="2418" onchange="hitungTotal37()">
+                                                                <label for="customRadio63564" class="custom-control-label">3X</label>
+                                                            <?php
+                                                            } ?>
+                                                        </div>
+
+
+                                                        <!-- <div class="custom-control custom-checkbox">
                                                             <?php if ($biaya228 == 806) { ?>
                                                                 <input class="custom-control-input" type="checkbox" id="customCheckbox6356" name="biaya228" value="806" onchange="hitungTotal37()" checked>
                                                                 <label for="customCheckbox6356" class="custom-control-label"></label>
@@ -6716,11 +12619,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                                 <label for="customCheckbox6356" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
-                                                        </div>
+                                                        </div> -->
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya223,biaya224,biaya225,biaya226,biaya227,biaya228 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya223'] + $row['biaya224'] + $row['biaya225'] + $row['biaya226'] + $row['biaya227'] + $row['biaya228'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total37">Rp-</p>
+                                                        <p id="total37">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
 
                                                 </tr>
@@ -6802,9 +12740,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya229,biaya230,biaya231,biaya232,biaya233,biaya234 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya229'] + $row['biaya230'] + $row['biaya231'] + $row['biaya232'] + $row['biaya233'] + $row['biaya234'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total38">Rp-</p>
+                                                        <p id="total38">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
 
                                                 <!-- Nomor 7 -->
@@ -6885,9 +12859,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya235,biaya236,biaya237,biaya238,biaya239,biaya240 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya235'] + $row['biaya236'] + $row['biaya237'] + $row['biaya238'] + $row['biaya239'] + $row['biaya240'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total39">Rp-</p>
+                                                        <p id="total39">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
 
                                                 <tr>
@@ -6967,9 +12977,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya241,biaya242,biaya243,biaya244,biaya245,biaya246 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya241'] + $row['biaya242'] + $row['biaya243'] + $row['biaya244'] + $row['biaya245'] + $row['biaya246'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total40">Rp-</p>
+                                                        <p id="total40">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
 
                                                 <tr>
@@ -7049,24 +13095,60 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya247,biaya248,biaya249,biaya250,biaya251,biaya252 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya247'] + $row['biaya248'] + $row['biaya249'] + $row['biaya250'] + $row['biaya251'] + $row['biaya252'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total41">Rp-</p>
+                                                        <p id="total41">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
 
                                                 <tr>
 
-                                                    <td>c. Keperawatan</td>
+                                                    <td rowspan="4">c. Keperawatan</td>
 
-                                                    <td> -</td>
+                                                    <td>Asuhan Keperawatan</td>
 
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya253 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya253 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7311" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7311" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7074,11 +13156,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya254 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya254 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7312" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7312" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7086,11 +13168,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya255 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya255 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7313" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7313" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7098,11 +13180,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya256 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya256 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7314" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7314" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7110,11 +13192,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya257 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya257 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7315" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7315" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7122,35 +13204,417 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya258 == 5750) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="5750" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya258 == 13000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="13000" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7316" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="5750" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="13000" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7316" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya253,biaya254,biaya255,biaya256,biaya257,biaya258 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya253'] + $row['biaya254'] + $row['biaya255'] + $row['biaya256'] + $row['biaya257'] + $row['biaya258'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total42">Rp-</p>
+                                                        <p id="total42">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
 
+                                                <td>Discharge Planning</td>
+
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya259 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7321" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7321" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya260 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7322" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7322" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya261 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7323" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7323" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya262 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7324" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7324" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya263 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7325" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7325" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya264 == 19600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="19600" onchange="hitungTotal43()" checked>
+                                                            <label for="customCheckbox7326" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="19600" onchange="hitungTotal43()">
+                                                            <label for="customCheckbox7326" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya259,biaya260,biaya261,biaya262,biaya263,biaya264 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya259'] + $row['biaya260'] + $row['biaya261'] + $row['biaya262'] + $row['biaya263'] + $row['biaya264'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total43">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>Monit. ITBSM</td>
+
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya265 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7331" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7331" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya266 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7332" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7332" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya267 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7333" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7333" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya268 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7334" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7334" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya269 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7335" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7335" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya270 == 28100) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="28100" onchange="hitungTotal44()" checked>
+                                                            <label for="customCheckbox7336" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="28100" onchange="hitungTotal44()">
+                                                            <label for="customCheckbox7336" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya265,biaya266,biaya267,biaya268,biaya269,biaya270 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya265'] + $row['biaya266'] + $row['biaya267'] + $row['biaya268'] + $row['biaya269'] + $row['biaya270'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total44">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>KDM</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya271 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7341" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7341" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya272 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7342" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7342" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya273 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7343" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7343" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya274 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7344" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7344" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya275 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7345" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7345" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya276 == 50800) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="50800" onchange="hitungTotal45()" checked>
+                                                            <label for="customCheckbox7346" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="50800" onchange="hitungTotal45()">
+                                                            <label for="customCheckbox7346" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya271,biaya272,biaya273,biaya274,biaya275,biaya276 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya271'] + $row['biaya272'] + $row['biaya273'] + $row['biaya274'] + $row['biaya275'] + $row['biaya276'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total45">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+
+
                                                 <tr>
-
-                                                    <td>d. Fisioterapi</td>
-
-                                                    <td> -</td>
-
+                                                    <td rowspan="6">d. Fisioterapi</td>
+                                                    <td>-</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya259 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya259" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya277 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7411" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya259" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7411" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7158,11 +13622,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya260 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya260" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya278 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7412" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya260" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7412" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7170,11 +13634,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya261 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya261" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya279 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7413" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya261" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7413" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7182,11 +13646,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya262 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya262" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya280 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7414" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya262" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7414" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7194,11 +13658,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya263 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya263" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya281 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7415" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya263" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7415" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7206,21 +13670,634 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya264 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya264" value="26000" onchange="hitungTotal43()" checked>
+                                                            <?php if ($biaya282 == 26000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="26000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7416" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya264" value="26000" onchange="hitungTotal43()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="26000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7416" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                     </td>
                                                     <!-- <td> -</td> -->
+                                                    <?php
+                                                    $host = '192.168.1.178';
+                                                    $user = 'root';
+                                                    $password = 'takonbudi';
+                                                    $database = 'simrs';
+
+                                                    // Create a connection
+                                                    $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                    // Check if the connection was successful
+                                                    if (!$connection) {
+                                                        die("Connection failed: " . mysqli_connect_error());
+                                                    }
+
+                                                    // Get the RM number from the URL parameter
+                                                    $NOMR = $_GET["nomr"];
+
+                                                    // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                    $query = "SELECT biaya277,biaya278,biaya279,biaya280,biaya281,biaya282 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                    $result = mysqli_query($connection, $query);
+
+                                                    // Check if the query was successful
+                                                    if ($result) {
+                                                        // Fetch the total_biaya value
+                                                        $row = mysqli_fetch_assoc($result);
+                                                        $totalBiaya = $row['biaya277'] + $row['biaya278'] + $row['biaya279'] + $row['biaya280'] + $row['biaya281'] + $row['biaya282'];
+                                                        // print_r($totalBiaya);
+                                                    } else {
+                                                        echo "Error executing query: " . mysqli_error($connection);
+                                                    }
+
+
+                                                    ?>
+
+                                                    <!-- Display the total in an HTML <td> element -->
                                                     <td>
-                                                        <p id="total43">Rp-</p>
+                                                        <p id="total46">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
                                                     </td>
+
                                                 </tr>
+
+                                                <td>Bobath</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya283 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7421" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7421" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya284 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7422" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7422" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya285 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7423" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7423" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya286 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7424" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7424" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya287 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7425" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7425" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya288 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="31500" onchange="hitungTotal47()" checked>
+                                                            <label for="customCheckbox7426" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="31500" onchange="hitungTotal47()">
+                                                            <label for="customCheckbox7426" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya283,biaya284,biaya285,biaya286,biaya287,biaya288 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya283'] + $row['biaya284'] + $row['biaya285'] + $row['biaya286'] + $row['biaya287'] + $row['biaya288'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total47">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>PNF</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya289 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7431" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7431" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya290 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7432" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7432" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya291 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7433" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7433" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya292 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7434" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7434" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya293 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7435" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7435" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya294 == 31500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="31500" onchange="hitungTotal48()" checked>
+                                                            <label for="customCheckbox7436" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="31500" onchange="hitungTotal48()">
+                                                            <label for="customCheckbox7436" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya289,biaya290,biaya291,biaya292,biaya293,biaya294 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya289'] + $row['biaya290'] + $row['biaya291'] + $row['biaya292'] + $row['biaya293'] + $row['biaya294'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total48">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>Aktif</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya295 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7441" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7441" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya296 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7442" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7442" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya297 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7443" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7443" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya298 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7444" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7444" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya299 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7445" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7445" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya300 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="18500" onchange="hitungTotal49()" checked>
+                                                            <label for="customCheckbox7446" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="18500" onchange="hitungTotal49()">
+                                                            <label for="customCheckbox7446" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya295,biaya296,biaya297,biaya298,biaya299,biaya300 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya295'] + $row['biaya296'] + $row['biaya297'] + $row['biaya298'] + $row['biaya299'] + $row['biaya300'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total49">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>Pasif</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya301 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7451" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7451" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya302 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7452" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7452" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya303 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7453" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7453" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya304 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7454" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7454" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya305 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7455" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7455" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya306 == 18500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="18500" onchange="hitungTotal50()" checked>
+                                                            <label for="customCheckbox7456" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="18500" onchange="hitungTotal50()">
+                                                            <label for="customCheckbox7456" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya301,biaya302,biaya303,biaya304,biaya305,biaya306 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya301'] + $row['biaya302'] + $row['biaya303'] + $row['biaya304'] + $row['biaya305'] + $row['biaya306'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total50">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+                                                <td>Breathing Exercise</td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya307 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7461" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7461" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya309 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7462" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7462" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya309 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7463" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7463" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya310 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7464" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7464" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya311 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7465" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7465" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <?php if ($biaya312 == 26500) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="26500" onchange="hitungTotal51()" checked>
+                                                            <label for="customCheckbox7466" class="custom-control-label"></label>
+                                                        <?php } else { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="26500" onchange="hitungTotal51()">
+                                                            <label for="customCheckbox7466" class="custom-control-label"></label>
+                                                        <?php
+                                                        } ?>
+                                                    </div>
+                                                </td>
+                                                <!-- <td> -</td> -->
+                                                <?php
+                                                $host = '192.168.1.178';
+                                                $user = 'root';
+                                                $password = 'takonbudi';
+                                                $database = 'simrs';
+
+                                                // Create a connection
+                                                $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                // Check if the connection was successful
+                                                if (!$connection) {
+                                                    die("Connection failed: " . mysqli_connect_error());
+                                                }
+
+                                                // Get the RM number from the URL parameter
+                                                $NOMR = $_GET["nomr"];
+
+                                                // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                $query = "SELECT biaya307,biaya308,biaya309,biaya310,biaya311,biaya312 FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                $result = mysqli_query($connection, $query);
+
+                                                // Check if the query was successful
+                                                if ($result) {
+                                                    // Fetch the total_biaya value
+                                                    $row = mysqli_fetch_assoc($result);
+                                                    $totalBiaya = $row['biaya307'] + $row['biaya308'] + $row['biaya309'] + $row['biaya310'] + $row['biaya311'] + $row['biaya312'];
+                                                    // print_r($totalBiaya);
+                                                } else {
+                                                    echo "Error executing query: " . mysqli_error($connection);
+                                                }
+
+
+                                                ?>
+
+                                                <!-- Display the total in an HTML <td> element -->
+                                                <td>
+                                                    <p id="total51">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                </td>
+
+                                                </tr>
+
+
 
                                             </tbody>
 
@@ -7231,8 +14308,127 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <th colspan="8" class="text-center"></th>
                                                     <th class="text-center">TOTAL BIAYA</th>
                                                     <td>
+                                                        <?php
+                                                        $host = '192.168.1.178';
+                                                        $user = 'root';
+                                                        $password = 'takonbudi';
+                                                        $database = 'simrs';
 
-                                                        <p id="totalSum"></p>
+                                                        // Create a connection
+                                                        $connection = mysqli_connect($host, $user, $password, $database);
+
+                                                        // Check if the connection was successful
+                                                        if (!$connection) {
+                                                            die("Connection failed: " . mysqli_connect_error());
+                                                        }
+
+                                                        // Get the RM number from the URL parameter
+                                                        $NOMR = $_GET["nomr"];
+
+                                                        // Query to calculate the sum of biaya1, biaya2, and biaya3 for the specific RM number
+                                                        $query = "SELECT 
+                                biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
+                                biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
+                                biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
+                                biaya37, biaya38, biaya39, biaya40, biaya41, biaya42, biaya43, biaya44, biaya45, biaya46, biaya47, biaya48,
+                                biaya49, biaya50, biaya51, biaya52, biaya53, biaya54, biaya55, biaya56, biaya57, biaya58, biaya59, biaya60,
+                                biaya61, biaya62, biaya63, biaya64, biaya65, biaya66, biaya67, biaya68, biaya69, biaya70, biaya71, biaya72,
+                                biaya73, biaya74, biaya75, biaya76, biaya77, biaya78, biaya79, biaya80, biaya81, biaya82, biaya83, biaya84,
+                                biaya85, biaya86, biaya87, biaya88, biaya89, biaya90, biaya91, biaya92, biaya93, biaya94, biaya95, biaya96,
+                                biaya97, biaya98, biaya99, biaya100, biaya101, biaya102, biaya103, biaya104, biaya105, biaya106, biaya107, biaya108,
+                                biaya109, biaya110, biaya111, biaya112, biaya113, biaya114, biaya115, biaya116, biaya117, biaya118, biaya119, biaya120,
+                                
+                                biaya121, biaya122, biaya123, biaya124, biaya125, biaya126, biaya127, biaya128, biaya129, biaya130, biaya131, biaya132,
+                                biaya133, biaya134, biaya135, biaya136, biaya137, biaya138, biaya139, biaya140, biaya141, biaya142, biaya143, biaya144,
+                                biaya145, biaya146, biaya147, biaya148, biaya149, biaya150, biaya151, biaya152, biaya153, biaya154, biaya155, biaya156,
+                                biaya157, biaya158, biaya159, biaya160, biaya161, biaya162, biaya163, biaya164, biaya165, biaya166, biaya167, biaya168,
+                                biaya169, biaya170, biaya171, biaya172, biaya173, biaya174, biaya175, biaya176, biaya177, biaya178, biaya179, biaya180,
+                                biaya181, biaya182, biaya183, biaya184, biaya185, biaya186, biaya187, biaya188, biaya189, biaya190, biaya191, biaya192,
+                                biaya193, biaya194, biaya195, biaya196, biaya197, biaya198, biaya199, biaya200, biaya201, biaya202, biaya203, biaya204,
+                                biaya205, biaya206, biaya207, biaya208, biaya209, biaya210, biaya211, biaya212, biaya213, biaya214, biaya215, biaya216,
+                                biaya217, biaya218, biaya219, biaya220, biaya221, biaya222, biaya223, biaya224, biaya225, biaya226, biaya227, biaya228,
+                                biaya229, biaya230, biaya231, biaya232, biaya233, biaya234, biaya235, biaya236, biaya237, biaya238, biaya239, biaya240,
+                                
+                                biaya241, biaya242, biaya243, biaya244, biaya245, biaya246, biaya247, biaya248, biaya249, biaya250, biaya251, biaya252,
+                                biaya253, biaya254, biaya255, biaya256, biaya257, biaya258, biaya259, biaya260, biaya261, biaya262, biaya263, biaya264,
+                                biaya265, biaya266, biaya267, biaya268, biaya269, biaya270, biaya271, biaya272, biaya273, biaya274, biaya275, biaya276,
+                                biaya277, biaya278, biaya279, biaya280, biaya281, biaya282, biaya283, biaya284, biaya285, biaya286, biaya287, biaya288,
+                                biaya289, biaya290, biaya291, biaya292, biaya293, biaya294, biaya295, biaya296, biaya297, biaya298, biaya299, biaya300,
+                                biaya301, biaya302, biaya303, biaya304, biaya305, biaya306, biaya307, biaya308, biaya309, biaya310, biaya311, biaya312,
+                                biaya313, biaya314, biaya315, biaya316, biaya317, biaya318, biaya319, biaya320, biaya321, biaya322, biaya323, biaya324
+                                
+                                FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR";
+                                                        $result = mysqli_query($connection, $query);
+
+                                                        // Check if the query was successful
+                                                        if ($result) {
+                                                            // Fetch the total_biaya value
+                                                            $row = mysqli_fetch_assoc($result);
+                                                            $totalBiaya =
+                                                                $row['biaya1'] + $row['biaya2'] + $row['biaya3'] + $row['biaya4'] + $row['biaya5'] + $row['biaya6'] +
+                                                                $row['biaya7'] + $row['biaya8'] + $row['biaya9'] + $row['biaya10'] + $row['biaya11'] + $row['biaya12'] +
+                                                                $row['biaya13'] + $row['biaya14'] + $row['biaya15'] + $row['biaya16'] + $row['biaya17'] + $row['biaya18'] +
+                                                                $row['biaya19'] + $row['biaya20'] + $row['biaya21'] + $row['biaya22'] + $row['biaya23'] + $row['biaya24'] +
+                                                                $row['biaya25'] + $row['biaya26'] + $row['biaya27'] + $row['biaya28'] + $row['biaya29'] + $row['biaya30'] +
+                                                                $row['biaya31'] + $row['biaya32'] + $row['biaya33'] + $row['biaya34'] + $row['biaya35'] + $row['biaya36'] +
+                                                                $row['biaya37'] + $row['biaya38'] + $row['biaya39'] + $row['biaya40'] + $row['biaya41'] + $row['biaya42'] +
+                                                                $row['biaya43'] + $row['biaya44'] + $row['biaya45'] + $row['biaya46'] + $row['biaya47'] + $row['biaya48'] +
+                                                                $row['biaya49'] + $row['biaya50'] + $row['biaya51'] + $row['biaya52'] + $row['biaya53'] + $row['biaya54'] +
+                                                                $row['biaya55'] + $row['biaya56'] + $row['biaya57'] + $row['biaya58'] + $row['biaya59'] + $row['biaya60'] +
+                                                                $row['biaya61'] + $row['biaya62'] + $row['biaya63'] + $row['biaya64'] + $row['biaya65'] + $row['biaya66'] +
+                                                                $row['biaya67'] + $row['biaya68'] + $row['biaya69'] + $row['biaya70'] + $row['biaya71'] + $row['biaya72'] +
+                                                                $row['biaya73'] + $row['biaya74'] + $row['biaya75'] + $row['biaya76'] + $row['biaya77'] + $row['biaya78'] +
+                                                                $row['biaya79'] + $row['biaya80'] + $row['biaya81'] + $row['biaya82'] + $row['biaya83'] + $row['biaya84'] +
+                                                                $row['biaya85'] + $row['biaya86'] + $row['biaya87'] + $row['biaya88'] + $row['biaya89'] + $row['biaya90'] +
+                                                                $row['biaya91'] + $row['biaya92'] + $row['biaya93'] + $row['biaya94'] + $row['biaya95'] + $row['biaya96'] +
+                                                                $row['biaya97'] + $row['biaya98'] + $row['biaya99'] + $row['biaya100'] + $row['biaya101'] + $row['biaya102'] +
+                                                                $row['biaya103'] + $row['biaya104'] + $row['biaya105'] + $row['biaya106'] + $row['biaya107'] + $row['biaya108'] + $row['biaya109'] + $row['biaya110'] + $row['biaya111'] + $row['biaya112'] + $row['biaya113'] + $row['biaya114'] +
+                                                                $row['biaya115'] + $row['biaya116'] + $row['biaya117'] + $row['biaya118'] + $row['biaya119'] + $row['biaya120'] +
+                                                                $row['biaya121'] + $row['biaya122'] + $row['biaya123'] + $row['biaya124'] + $row['biaya125'] + $row['biaya126'] +
+                                                                $row['biaya127'] + $row['biaya128'] + $row['biaya129'] + $row['biaya130'] + $row['biaya131'] + $row['biaya132'] +
+                                                                $row['biaya133'] + $row['biaya134'] + $row['biaya135'] + $row['biaya136'] + $row['biaya137'] + $row['biaya138'] +
+                                                                $row['biaya139'] + $row['biaya140'] + $row['biaya141'] + $row['biaya142'] + $row['biaya143'] + $row['biaya144'] +
+                                                                $row['biaya145'] + $row['biaya146'] + $row['biaya147'] + $row['biaya148'] + $row['biaya149'] + $row['biaya150'] +
+                                                                $row['biaya151'] + $row['biaya152'] + $row['biaya153'] + $row['biaya154'] + $row['biaya155'] + $row['biaya156'] +
+                                                                $row['biaya157'] + $row['biaya158'] + $row['biaya159'] + $row['biaya160'] + $row['biaya161'] + $row['biaya162'] +
+                                                                $row['biaya163'] + $row['biaya164'] + $row['biaya165'] + $row['biaya166'] + $row['biaya167'] + $row['biaya168'] +
+                                                                $row['biaya169'] + $row['biaya170'] + $row['biaya171'] + $row['biaya172'] + $row['biaya173'] + $row['biaya174'] +
+                                                                $row['biaya175'] + $row['biaya176'] + $row['biaya177'] + $row['biaya178'] + $row['biaya179'] + $row['biaya180'] +
+                                                                $row['biaya181'] + $row['biaya182'] + $row['biaya183'] + $row['biaya184'] + $row['biaya185'] + $row['biaya186'] +
+                                                                $row['biaya187'] + $row['biaya188'] + $row['biaya189'] + $row['biaya190'] + $row['biaya191'] + $row['biaya192'] +
+                                                                $row['biaya193'] + $row['biaya194'] + $row['biaya195'] + $row['biaya196'] + $row['biaya197'] + $row['biaya198'] +
+                                                                $row['biaya199'] + $row['biaya200'] + $row['biaya201'] + $row['biaya202'] + $row['biaya203'] + $row['biaya204'] +
+                                                                $row['biaya205'] + $row['biaya206'] + $row['biaya207'] + $row['biaya208'] + $row['biaya209'] + $row['biaya210'] +
+                                                                $row['biaya211'] + $row['biaya212'] + $row['biaya213'] + $row['biaya214'] + $row['biaya215'] + $row['biaya216'] +
+                                                                $row['biaya217'] + $row['biaya218'] + $row['biaya219'] + $row['biaya220'] + $row['biaya221'] + $row['biaya222'] +
+                                                                $row['biaya223'] + $row['biaya224'] + $row['biaya225'] + $row['biaya226'] + $row['biaya227'] + $row['biaya228'] +
+                                                                $row['biaya229'] + $row['biaya230'] + $row['biaya231'] + $row['biaya232'] + $row['biaya233'] + $row['biaya234'] +
+                                                                $row['biaya235'] + $row['biaya236'] + $row['biaya237'] + $row['biaya238'] + $row['biaya239'] + $row['biaya240'] +
+                                                                $row['biaya241'] + $row['biaya242'] + $row['biaya243'] + $row['biaya244'] + $row['biaya245'] + $row['biaya246'] +
+                                                                $row['biaya247'] + $row['biaya248'] + $row['biaya249'] + $row['biaya250'] + $row['biaya251'] + $row['biaya252'] +
+                                                                $row['biaya253'] + $row['biaya254'] + $row['biaya255'] + $row['biaya256'] + $row['biaya257'] + $row['biaya258'] +
+                                                                $row['biaya259'] + $row['biaya260'] + $row['biaya261'] + $row['biaya262'] + $row['biaya263'] + $row['biaya264'] +
+                                                                $row['biaya265'] + $row['biaya266'] + $row['biaya267'] + $row['biaya268'] + $row['biaya269'] + $row['biaya270'] +
+                                                                $row['biaya271'] + $row['biaya272'] + $row['biaya273'] + $row['biaya274'] + $row['biaya275'] + $row['biaya276'] +
+                                                                $row['biaya277'] + $row['biaya278'] + $row['biaya279'] + $row['biaya280'] + $row['biaya281'] + $row['biaya282'] +
+                                                                $row['biaya283'] + $row['biaya284'] + $row['biaya285'] + $row['biaya286'] + $row['biaya287'] + $row['biaya288'] +
+                                                                $row['biaya289'] + $row['biaya290'] + $row['biaya291'] + $row['biaya292'] + $row['biaya293'] + $row['biaya294'] +
+                                                                $row['biaya295'] + $row['biaya296'] + $row['biaya297'] + $row['biaya298'] + $row['biaya299'] + $row['biaya300'] +
+                                                                $row['biaya301'] + $row['biaya302'] + $row['biaya303'] + $row['biaya304'] + $row['biaya305'] + $row['biaya306'] +
+                                                                $row['biaya307'] + $row['biaya308'] + $row['biaya309'] + $row['biaya310'] + $row['biaya311'] + $row['biaya312'] +
+                                                                $row['biaya313'] + $row['biaya314'] + $row['biaya315'] + $row['biaya316'] + $row['biaya317'] + $row['biaya318'] +
+                                                                $row['biaya319'] + $row['biaya320'] + $row['biaya321'] + $row['biaya322'] + $row['biaya323'] + $row['biaya324'];
+                                                            // print_r($totalBiaya);
+                                                        } else {
+                                                            echo "Error executing query: " . mysqli_error($connection);
+                                                        }
+
+
+                                                        ?>
+
+                                                        <!-- Display the total in an HTML <td> element -->
+                                                        <p id="totalSum">Rp <?php echo number_format($totalBiaya, 0, ',', '.'); ?>,00</p>
+                                                        <!-- <p id="totalSum"></p> -->
 
                                                     </td>
 
@@ -7307,8 +14503,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/plugins/select2/js/select2.full.min.js"></script>
+
+
 
 
     <!-- AdminLTE App -->
@@ -7322,7 +14522,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "responsive": true,
                 "lengthChange": false,
                 "autoWidth": false,
-                // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
             $('#example2').DataTable({
                 "paging": true,
@@ -7333,6 +14533,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "autoWidth": false,
                 "responsive": true,
             });
+
         });
     </script>
 
@@ -7400,6 +14601,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             calculateSum();
         });
 
+
+
         // Function to calculate the total sum and display an alert if it reaches the 'nilai' value
         function calculateSum() {
             var checkboxes = document.getElementsByTagName("input");
@@ -7435,6 +14638,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 currency: 'IDR'
             }).format(value);
         }
+
+        $(function() {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        })
     </script>
 
 
