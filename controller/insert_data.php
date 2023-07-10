@@ -44,16 +44,16 @@ if (isset($_POST['submit'])) {
 
         if ($_SESSION['pesan'] == 'sukses') {
             if ($_POST['ruangan'] == 'Camar Bawah') {
-                header("Location: /clicinalpathway/camarbawah.php");
+                header("Location: /clinicalpathway/camarbawah.php");
                 exit;
             } elseif ($_POST['ruangan'] == 'Cendrawasih Atas') {
-                header("Location: /clicinalpathway/cendraatas.php");
+                header("Location: /clinicalpathway/cendraatas.php");
                 exit;
             } elseif ($_POST['ruangan'] == 'Kenari Atas') {
-                header("Location: /clicinalpathway/kenariatas.php");
+                header("Location: /clinicalpathway/kenariatas.php");
                 exit;
             } elseif ($_POST['ruangan'] == 'Cendrawasih Bawah') {
-                header("Location: /clicinalpathway/cendrabawah.php");
+                header("Location: /clinicalpathway/cendrabawah.php");
                 exit;
             }
         }
