@@ -52,7 +52,8 @@ FROM simrs.t_clinicalpathway WHERE NOMR = $NOMR
 ");
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-
+$dxutama = $row['dxutama'];
+$dxsekunder =$row['dxsekunder'];
 
 
 $biaya1 = isset($_SESSION['biaya1']) ? $_SESSION['biaya1'] : $row['biaya1'];
@@ -398,6 +399,8 @@ $biaya324 = isset($_SESSION['biaya324']) ? $_SESSION['biaya324'] : $row['biaya32
 // Update checkbox values when the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // $NOMR = $_GET["nomr"];
+    $dxutama = isset($_POST['dxutama']) ? $_POST['dxutama'] : 0;
+    $dxsekunder = isset($_POST['dxsekunder']) ? $_POST['dxsekunder'] : 0;
 
     $biaya1 = isset($_POST['biaya1']) ? $_POST['biaya1'] : 0;
     $biaya2 = isset($_POST['biaya2']) ? $_POST['biaya2'] : 0;
@@ -1059,7 +1062,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($row) {
         // Prepare and execute an SQL statement to update the checkbox values
-        $stmt = $pdo->prepare("UPDATE t_clinicalpathway SET 
+        $stmt = $pdo->prepare("UPDATE t_clinicalpathway SET
+        dxutama = ?, dxsekunder = ?,
         biaya1 = ?, biaya2 = ?, biaya3 = ?, biaya4 = ?, biaya5 = ?, biaya6 = ?, biaya7 = ?, biaya8 = ?, biaya9 = ?, biaya10 = ?, biaya11 = ?, biaya12 = ?,
         biaya13 = ?, biaya14 = ?, biaya15 = ?, biaya16 = ?, biaya17 = ?, biaya18 = ?, biaya19 = ?, biaya20 = ?, biaya21 = ?, biaya22 = ?, biaya23 = ?, biaya24 = ?,
         biaya25 = ?, biaya26 = ?, biaya27 = ?, biaya28 = ?, biaya29 = ?, biaya30 = ?, biaya31 = ?, biaya32 = ?, biaya33 = ?, biaya34 = ?, biaya35 = ?, biaya36 = ?,
@@ -1089,6 +1093,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         biaya313 = ?, biaya314 = ?, biaya315 = ?, biaya316 = ?, biaya317 = ?, biaya318 = ?, biaya319 = ?, biaya320 = ?, biaya321 = ?, biaya322 = ?, biaya323 = ?, biaya324 = ?
         where nomr = $NOMR ");
         $stmt->execute([
+            $dxutama,
+            $dxsekunder,
+
             $biaya1,
             $biaya2,
             $biaya3,
@@ -1420,6 +1427,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Prepare and execute an SQL statement to insert the checkbox values
         $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway
+            dxutama, dxsekunder,
             biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
             biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
@@ -1450,6 +1458,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             biaya301, biaya302, biaya303, biaya304, biaya305, biaya306, biaya307, biaya308, biaya309, biaya310, biaya311, biaya312,
             biaya313, biaya314, biaya315, biaya316, biaya317, biaya318, biaya319, biaya320, biaya321, biaya322, biaya323, biaya324
             ) VALUES (
+                ?, ?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
                 ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,? ,?,
@@ -1811,7 +1820,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Redirect back to index.php
-    header("Location: detailkelas1.php?nomr=$NOMR");
+    header("Location: detailkelas3.php?nomr=$NOMR");
     echo "<script>alert('data berhasil disimpan');</script>";
 
 
@@ -2148,7 +2157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 } elseif (!$row) {
     // If no checkbox data is found in the database, insert default values
     $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway (
-            biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
+            dxutama, dxsekunder, biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
             biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
             biaya37, biaya38, biaya39, biaya40, biaya41, biaya42, biaya43, biaya44, biaya45, biaya46, biaya47, biaya48,
@@ -2182,7 +2191,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             biaya313, biaya314, biaya315, biaya316, biaya317, biaya318, biaya319, biaya320, biaya321, biaya322, biaya323, biaya324
 
         ) VALUES (
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            $dxutama, $dxsekunder, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -4824,6 +4833,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     </div>
                                 </div>
+                                <form method="POST">
                                 <!-- /.card-header -->
                                 <div class="card-body table-responsive p-0">
                                     <table class="table table-hover text-nowrap">
@@ -4832,7 +4842,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <th style="text-align:center;">Nama Pasien</th>
                                                 <th style="text-align:center;">No. RM</th>
                                                 <th style="text-align:center;">Tgl. Masuk</th>
-                                                <th style="text-align:center;">Tgl. Keluar</th>
+                                                <!-- <th style="text-align:center;">Tgl. Keluar</th> -->
                                                 <th style="text-align:center;">DX Medis Utama</th>
                                                 <th style="text-align:center;">DX Medis Sekunder</th>
                                                 <th style="text-align:center;">ICD 10</th>
@@ -4870,10 +4880,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td style="text-align:center;"><?php echo $nama_pasien; ?></td>
                                                 <td style="text-align:center;"><?php echo $nomr; ?></td>
                                                 <td style="text-align:center;"><?php echo $masuk_rs; ?></td>
-                                                <td style="text-align:center;"></td>
+                                                <!-- <td style="text-align:center;"></td> -->
                                                 <td style="text-align:center;">
-                                                    <select class="form-control" id="selectOption">
-                                                        <option>Pilih DX Medis Utama</option>
+                                                    
+                                                    <select class="form-control" id="selectOption" name="dxutama">
+                                                        <option value="<?php echo $dxutama; ?>"><?php echo $dxutama; ?></option>
+                                                        <!-- <option value="0" >Pilih DX Medis Utama</option> -->
+                                                        <!-- <option value="1" id="cerebral-infarction">cerebral infarction (i63.9)</option>
+                                                        <option value="2" id="intracerebral-haemorrhage">intracerebral haemorrhage(I61.9)</option> -->
+
                                                         <option id="cerebral-infarction">cerebral infarction (i63.9)</option>
                                                         <option id="intracerebral-haemorrhage">intracerebral haemorrhage(I61.9)</option>
                                                     </select>
@@ -4881,8 +4896,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
 
                                                 <td style="text-align:center;">
-                                                    <select class="form-control" id="selectOption2">
-                                                        <option>Pilih DX Medis Sekunder</option>
+                                                    <select class="form-control" id="selectOption2" name="dxsekunder">
+                                                        <option value="<?php echo $dxsekunder; ?>"><?php echo $dxsekunder; ?></option>
+                                                        <!-- <option value="1" id="hemiplegi">hemiplegi(G81)</option>
+                                                        <option value="2" id="congestive-heart-failure">Congestive heart failure (I50.0)</option> -->
+
                                                         <option id="hemiplegi">hemiplegi(G81)</option>
                                                         <option id="congestive-heart-failure">Congestive heart failure (I50.0)</option>
                                                     </select></th>
@@ -4904,7 +4922,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <h3 class="card-title">Detail Data Pasien</h3>
                                 </div> -->
                                 <!-- <form method="POST" action="detailkelas1.php?"> -->
-                                <form method="POST">
+                                
 
                                     <!-- /.card-header -->
                                     <div class="card-body">

@@ -1429,7 +1429,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Prepare and execute an SQL statement to insert the checkbox values
         $stmt = $pdo->prepare("INSERT INTO t_clinicalpathway
-        dxutama, dxsekunder,
+            dxutama, dxsekunder,
             biaya1, biaya2, biaya3, biaya4, biaya5, biaya6, biaya7, biaya8, biaya9, biaya10, biaya11, biaya12,
             biaya13, biaya14, biaya15, biaya16, biaya17, biaya18, biaya19, biaya20, biaya21, biaya22, biaya23, biaya24,
             biaya25, biaya26, biaya27, biaya28, biaya29, biaya30, biaya31, biaya32, biaya33, biaya34, biaya35, biaya36,
@@ -4846,7 +4846,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <th style="text-align:center;">Nama Pasien</th>
                                                 <th style="text-align:center;">No. RM</th>
                                                 <th style="text-align:center;">Tgl. Masuk</th>
-                                                <th style="text-align:center;">Tgl. Keluar</th>
+                                                <!-- <th style="text-align:center;">Tgl. Keluar</th> -->
                                                 <th style="text-align:center;">DX Medis Utama</th>
                                                 <th style="text-align:center;">DX Medis Sekunder</th>
                                                 <th style="text-align:center;">ICD 10</th>
@@ -4884,7 +4884,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td style="text-align:center;"><?php echo $nama_pasien; ?></td>
                                                 <td style="text-align:center;"><?php echo $nomr; ?></td>
                                                 <td style="text-align:center;"><?php echo $masuk_rs; ?></td>
-                                                <td style="text-align:center;"></td>
+                                                <!-- <td style="text-align:center;"></td> -->
                                                 <td style="text-align:center;">
                                                     
                                                     <select class="form-control" id="selectOption" name="dxutama">
