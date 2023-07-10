@@ -4468,6 +4468,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <link rel='icon' href='img/Logo.png'>
+
     <script>
         $(document).ready(function() {
             $('#customCheckbox1a11').change(function() {
@@ -4661,10 +4663,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="assets/dist/img/user2.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="assets/dist/img/user4.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Admin</a>
+                        <?php
+                        
+                        // Check if the user is logged in and the username session variable is set
+                        if (isset($_SESSION['username'])) {
+                            // Display the username
+                            echo '<a href="#" class="d-block white-text">' . $_SESSION['username'] . '</a>';
+                        } else {
+                            // User is not logged in
+                            echo '<a href="#" class="d-block white-text">Guest</a>';
+                        }
+                        ?>
                     </div>
                 </div>
 
@@ -5408,11 +5420,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>Rawat Inap</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya25 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1231" name="biaya25" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya25 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1231" name="biaya25" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1231" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1231" name="biaya25" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1231" name="biaya25" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1231" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5420,11 +5432,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya26 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1232" name="biaya26" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya26 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1232" name="biaya26" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1232" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1232" name="biaya26" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1232" name="biaya26" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1232" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5432,11 +5444,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya27 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1233" name="biaya27" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya27 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1233" name="biaya27" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1233" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1233" name="biaya27" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1233" name="biaya27" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1233" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5444,11 +5456,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya28 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1234" name="biaya28" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya28 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1234" name="biaya28" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1234" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1234" name="biaya28" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1234" name="biaya28" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1234" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5456,11 +5468,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya29 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1235" name="biaya29" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya29 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1235" name="biaya29" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1235" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1235" name="biaya29" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1235" name="biaya29" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1235" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -5468,11 +5480,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya30 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1236" name="biaya30" value="13000" onchange="hitungTotal5()" checked>
+                                                            <?php if ($biaya30 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1236" name="biaya30" value="5750" onchange="hitungTotal5()" checked>
                                                                 <label for="customCheckbox1236" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1236" name="biaya30" value="13000" onchange="hitungTotal5()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox1236" name="biaya30" value="5750" onchange="hitungTotal5()">
                                                                 <label for="customCheckbox1236" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7604,11 +7616,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>DPJP</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya121 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya121 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4111" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4111" name="biaya121" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4111" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7616,11 +7628,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya122 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya122 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4112" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4112" name="biaya122" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4112" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7628,11 +7640,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya123 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya123 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4113" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4113" name="biaya123" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4113" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7640,11 +7652,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya124 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya124 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4114" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4114" name="biaya124" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4114" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7652,11 +7664,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya125 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya125 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4115" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4115" name="biaya125" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4115" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -7664,11 +7676,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya126 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="27000" onchange="hitungTotal20()" checked>
+                                                            <?php if ($biaya126 == 17000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="17000" onchange="hitungTotal20()" checked>
                                                                 <label for="customCheckbox4116" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="27000" onchange="hitungTotal20()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox4116" name="biaya126" value="17000" onchange="hitungTotal20()">
                                                                 <label for="customCheckbox4116" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12788,11 +12800,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>Asesmen Ulang</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya235 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7111" name="biaya235" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya235 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7111" name="biaya235" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7111" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7111" name="biaya235" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7111" name="biaya235" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7111" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12800,11 +12812,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya236 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7112" name="biaya236" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya236 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7112" name="biaya236" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7112" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7112" name="biaya236" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7112" name="biaya236" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7112" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12812,11 +12824,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya237 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7113" name="biaya237" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya237 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7113" name="biaya237" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7113" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7113" name="biaya237" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7113" name="biaya237" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7113" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12824,11 +12836,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya238 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7114" name="biaya238" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya238 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7114" name="biaya238" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7114" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7114" name="biaya238" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7114" name="biaya238" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7114" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12836,11 +12848,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya239 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7115" name="biaya239" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya239 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7115" name="biaya239" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7115" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7115" name="biaya239" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7115" name="biaya239" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7115" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12848,11 +12860,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya240 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7116" name="biaya240" value="45000" onchange="hitungTotal39()" checked>
+                                                            <?php if ($biaya240 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7116" name="biaya240" value="22000" onchange="hitungTotal39()" checked>
                                                                 <label for="customCheckbox7116" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7116" name="biaya240" value="45000" onchange="hitungTotal39()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7116" name="biaya240" value="22000" onchange="hitungTotal39()">
                                                                 <label for="customCheckbox7116" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12906,11 +12918,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>DPJP Sekunder</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya241 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7211" name="biaya241" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya241 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7211" name="biaya241" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7211" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7211" name="biaya241" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7211" name="biaya241" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7211" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12918,11 +12930,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya242 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7212" name="biaya242" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya242 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7212" name="biaya242" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7212" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7212" name="biaya242" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7212" name="biaya242" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7212" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12930,11 +12942,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya243 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7213" name="biaya243" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya243 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7213" name="biaya243" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7213" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7213" name="biaya243" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7213" name="biaya243" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7213" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12942,11 +12954,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya244 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7214" name="biaya244" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya244 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7214" name="biaya244" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7214" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7214" name="biaya244" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7214" name="biaya244" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7214" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12954,11 +12966,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya245 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7215" name="biaya245" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya245 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7215" name="biaya245" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7215" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7215" name="biaya245" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7215" name="biaya245" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7215" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -12966,11 +12978,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya246 == 45000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7216" name="biaya246" value="45000" onchange="hitungTotal40()" checked>
+                                                            <?php if ($biaya246 == 22000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7216" name="biaya246" value="22000" onchange="hitungTotal40()" checked>
                                                                 <label for="customCheckbox7216" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7216" name="biaya246" value="45000" onchange="hitungTotal40()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7216" name="biaya246" value="22000" onchange="hitungTotal40()">
                                                                 <label for="customCheckbox7216" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13024,11 +13036,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>DU</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya247 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7221" name="biaya247" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya247 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7221" name="biaya247" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7221" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7221" name="biaya247" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7221" name="biaya247" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7221" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13036,11 +13048,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya248 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7222" name="biaya248" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya248 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7222" name="biaya248" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7222" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7222" name="biaya248" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7222" name="biaya248" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7222" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13048,11 +13060,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya249 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7223" name="biaya249" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya249 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7223" name="biaya249" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7223" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7223" name="biaya249" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7223" name="biaya249" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7223" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13060,11 +13072,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya250 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7224" name="biaya250" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya250 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7224" name="biaya250" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7224" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7224" name="biaya250" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7224" name="biaya250" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7224" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13072,11 +13084,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya251 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7225" name="biaya251" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya251 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7225" name="biaya251" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7225" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7225" name="biaya251" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7225" name="biaya251" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7225" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13084,11 +13096,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya252 == 27000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7226" name="biaya252" value="27000" onchange="hitungTotal41()" checked>
+                                                            <?php if ($biaya252 == 12000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7226" name="biaya252" value="12000" onchange="hitungTotal41()" checked>
                                                                 <label for="customCheckbox7226" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7226" name="biaya252" value="27000" onchange="hitungTotal41()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7226" name="biaya252" value="12000" onchange="hitungTotal41()">
                                                                 <label for="customCheckbox7226" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13144,11 +13156,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya253 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya253 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7311" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7311" name="biaya253" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7311" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13156,11 +13168,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya254 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya254 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7312" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7312" name="biaya254" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7312" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13168,11 +13180,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya255 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya255 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7313" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7313" name="biaya255" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7313" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13180,11 +13192,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya256 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya256 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7314" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7314" name="biaya256" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7314" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13192,11 +13204,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya257 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya257 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7315" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7315" name="biaya257" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7315" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13204,11 +13216,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya258 == 13000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="13000" onchange="hitungTotal42()" checked>
+                                                            <?php if ($biaya258 == 5750) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="5750" onchange="hitungTotal42()" checked>
                                                                 <label for="customCheckbox7316" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="13000" onchange="hitungTotal42()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7316" name="biaya258" value="5750" onchange="hitungTotal42()">
                                                                 <label for="customCheckbox7316" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13260,11 +13272,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya259 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya259 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7321" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7321" name="biaya259" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7321" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13272,11 +13284,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya260 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya260 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7322" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7322" name="biaya260" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7322" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13284,11 +13296,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya261 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya261 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7323" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7323" name="biaya261" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7323" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13296,11 +13308,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya262 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya262 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7324" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7324" name="biaya262" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7324" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13308,11 +13320,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya263 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya263 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7325" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7325" name="biaya263" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7325" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13320,11 +13332,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya264 == 19600) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="19600" onchange="hitungTotal43()" checked>
+                                                        <?php if ($biaya264 == 12200) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="12200" onchange="hitungTotal43()" checked>
                                                             <label for="customCheckbox7326" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="19600" onchange="hitungTotal43()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7326" name="biaya264" value="12200" onchange="hitungTotal43()">
                                                             <label for="customCheckbox7326" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13376,11 +13388,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya265 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya265 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7331" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7331" name="biaya265" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7331" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13388,11 +13400,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya266 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya266 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7332" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7332" name="biaya266" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7332" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13400,11 +13412,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya267 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya267 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7333" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7333" name="biaya267" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7333" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13412,11 +13424,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya268 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya268 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7334" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7334" name="biaya268" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7334" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13424,11 +13436,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya269 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya269 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7335" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7335" name="biaya269" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7335" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13436,11 +13448,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya270 == 28100) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="28100" onchange="hitungTotal44()" checked>
+                                                        <?php if ($biaya270 == 20600) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="20600" onchange="hitungTotal44()" checked>
                                                             <label for="customCheckbox7336" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="28100" onchange="hitungTotal44()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7336" name="biaya270" value="20600" onchange="hitungTotal44()">
                                                             <label for="customCheckbox7336" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13491,11 +13503,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>KDM</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya271 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya271 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7341" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7341" name="biaya271" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7341" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13503,11 +13515,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya272 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya272 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7342" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7342" name="biaya272" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7342" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13515,11 +13527,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya273 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya273 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7343" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7343" name="biaya273" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7343" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13527,11 +13539,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya274 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya274 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7344" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7344" name="biaya274" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7344" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13539,11 +13551,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya275 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya275 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7345" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7345" name="biaya275" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7345" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13551,11 +13563,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya276 == 50800) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="50800" onchange="hitungTotal45()" checked>
+                                                        <?php if ($biaya276 == 39400) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="39400" onchange="hitungTotal45()" checked>
                                                             <label for="customCheckbox7346" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="50800" onchange="hitungTotal45()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7346" name="biaya276" value="39400" onchange="hitungTotal45()">
                                                             <label for="customCheckbox7346" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13610,11 +13622,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     <td>-</td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya277 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya277 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7411" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7411" name="biaya277" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7411" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13622,11 +13634,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya278 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya278 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7412" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7412" name="biaya278" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7412" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13634,11 +13646,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya279 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya279 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7413" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7413" name="biaya279" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7413" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13646,11 +13658,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya280 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya280 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7414" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7414" name="biaya280" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7414" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13658,11 +13670,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya281 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya281 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7415" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7415" name="biaya281" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7415" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13670,11 +13682,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya282 == 26000) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="26000" onchange="hitungTotal46()" checked>
+                                                            <?php if ($biaya282 == 20000) { ?>
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="20000" onchange="hitungTotal46()" checked>
                                                                 <label for="customCheckbox7416" class="custom-control-label"></label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="26000" onchange="hitungTotal46()">
+                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox7416" name="biaya282" value="20000" onchange="hitungTotal46()">
                                                                 <label for="customCheckbox7416" class="custom-control-label"></label>
                                                             <?php
                                                             } ?>
@@ -13725,11 +13737,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>Bobath</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya283 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya283 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7421" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7421" name="biaya283" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7421" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13737,11 +13749,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya284 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya284 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7422" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7422" name="biaya284" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7422" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13749,11 +13761,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya285 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya285 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7423" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7423" name="biaya285" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7423" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13761,11 +13773,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya286 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya286 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7424" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7424" name="biaya286" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7424" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13773,11 +13785,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya287 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya287 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7425" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7425" name="biaya287" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7425" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13785,11 +13797,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya288 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="31500" onchange="hitungTotal47()" checked>
+                                                        <?php if ($biaya288 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="24000" onchange="hitungTotal47()" checked>
                                                             <label for="customCheckbox7426" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="31500" onchange="hitungTotal47()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7426" name="biaya288" value="24000" onchange="hitungTotal47()">
                                                             <label for="customCheckbox7426" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13840,11 +13852,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>PNF</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya289 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya289 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7431" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7431" name="biaya289" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7431" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13852,11 +13864,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya290 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya290 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7432" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7432" name="biaya290" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7432" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13864,11 +13876,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya291 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya291 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7433" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7433" name="biaya291" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7433" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13876,11 +13888,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya292 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya292 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7434" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7434" name="biaya292" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7434" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13888,11 +13900,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya293 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya293 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7435" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7435" name="biaya293" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7435" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13900,11 +13912,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya294 == 31500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="31500" onchange="hitungTotal48()" checked>
+                                                        <?php if ($biaya294 == 24000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="24000" onchange="hitungTotal48()" checked>
                                                             <label for="customCheckbox7436" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="31500" onchange="hitungTotal48()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7436" name="biaya294" value="24000" onchange="hitungTotal48()">
                                                             <label for="customCheckbox7436" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13955,11 +13967,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>Aktif</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya295 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya295 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7441" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7441" name="biaya295" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7441" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13967,11 +13979,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya296 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya296 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7442" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7442" name="biaya296" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7442" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13979,11 +13991,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya297 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya297 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7443" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7443" name="biaya297" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7443" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -13991,11 +14003,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya298 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya298 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7444" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7444" name="biaya298" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7444" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14003,11 +14015,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya299 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya299 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7445" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7445" name="biaya299" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7445" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14015,11 +14027,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya300 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="18500" onchange="hitungTotal49()" checked>
+                                                        <?php if ($biaya300 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="14000" onchange="hitungTotal49()" checked>
                                                             <label for="customCheckbox7446" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="18500" onchange="hitungTotal49()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7446" name="biaya300" value="14000" onchange="hitungTotal49()">
                                                             <label for="customCheckbox7446" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14070,11 +14082,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>Pasif</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya301 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya301 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7451" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7451" name="biaya301" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7451" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14082,11 +14094,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya302 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya302 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7452" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7452" name="biaya302" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7452" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14094,11 +14106,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya303 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya303 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7453" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7453" name="biaya303" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7453" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14106,11 +14118,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya304 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya304 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7454" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7454" name="biaya304" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7454" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14118,11 +14130,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya305 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya305 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7455" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7455" name="biaya305" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7455" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14130,11 +14142,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya306 == 18500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="18500" onchange="hitungTotal50()" checked>
+                                                        <?php if ($biaya306 == 14000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="14000" onchange="hitungTotal50()" checked>
                                                             <label for="customCheckbox7456" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="18500" onchange="hitungTotal50()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7456" name="biaya306" value="14000" onchange="hitungTotal50()">
                                                             <label for="customCheckbox7456" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14185,11 +14197,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 <td>Breathing Exercise</td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya307 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya307 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7461" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7461" name="biaya307" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7461" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14197,11 +14209,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya309 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya309 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7462" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7462" name="biaya309" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7462" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14209,11 +14221,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya309 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya309 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7463" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7463" name="biaya309" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7463" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14221,11 +14233,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya310 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya310 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7464" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7464" name="biaya310" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7464" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14233,11 +14245,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya311 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya311 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7465" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7465" name="biaya311" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7465" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>
@@ -14245,11 +14257,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 </td>
                                                 <td>
                                                     <div class="custom-control custom-checkbox">
-                                                        <?php if ($biaya312 == 26500) { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="26500" onchange="hitungTotal51()" checked>
+                                                        <?php if ($biaya312 == 20000) { ?>
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="20000" onchange="hitungTotal51()" checked>
                                                             <label for="customCheckbox7466" class="custom-control-label"></label>
                                                         <?php } else { ?>
-                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="26500" onchange="hitungTotal51()">
+                                                            <input class="custom-control-input" type="checkbox" id="customCheckbox7466" name="biaya312" value="20000" onchange="hitungTotal51()">
                                                             <label for="customCheckbox7466" class="custom-control-label"></label>
                                                         <?php
                                                         } ?>

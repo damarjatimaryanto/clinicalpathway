@@ -34,6 +34,15 @@ require_once 'db_connection.php';
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
 
     <link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker.css">
+
+    <link rel='icon' href='img/Logo.png'>
+
+    <style>
+        .white-text {
+            color: #fff;
+            /* or use 'white' keyword */
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -192,10 +201,20 @@ require_once 'db_connection.php';
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="assets/dist/img/user2.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="assets/dist/img/user4.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Admin</a>
+                        <?php
+
+                        // Check if the user is logged in and the username session variable is set
+                        if (isset($_SESSION['username'])) {
+                            // Display the username
+                            echo '<a href="#" class="d-block white-text">' . $_SESSION['username'] . '</a>';
+                        } else {
+                            // User is not logged in
+                            echo '<a href="#" class="d-block white-text">Guest</a>';
+                        }
+                        ?>
                     </div>
                 </div>
 

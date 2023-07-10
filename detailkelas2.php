@@ -4468,6 +4468,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <link rel='icon' href='img/Logo.png'>
+
     <script>
         $(document).ready(function() {
             $('#customCheckbox1a11').change(function() {
@@ -4661,10 +4663,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <!-- Sidebar user (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="assets/dist/img/user2.png" class="img-circle elevation-2" alt="User Image">
+                        <img src="assets/dist/img/user4.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Admin</a>
+                        <?php
+                        
+                        // Check if the user is logged in and the username session variable is set
+                        if (isset($_SESSION['username'])) {
+                            // Display the username
+                            echo '<a href="#" class="d-block white-text">' . $_SESSION['username'] . '</a>';
+                        } else {
+                            // User is not logged in
+                            echo '<a href="#" class="d-block white-text">Guest</a>';
+                        }
+                        ?>
                     </div>
                 </div>
 
