@@ -54,7 +54,7 @@ $conn->close();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | DataTables</title>
+    <title>SINAPS</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -66,18 +66,28 @@ $conn->close();
     <link rel="stylesheet" href="assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
+    <link rel='icon' href='img/Logo.png'>
+
+    <style>
+        body {
+            background-image: url('img/Background3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-            <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
+            <a href="#" class="brand-link d-flex justify-content-center">
                 <img src="img/Logo.png" alt="SINAPS LOGO" class="" style="opacity: .8; height:200px;">
 
             </a>
             <div class="card-header text-center">
-                <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
+                <a href="#" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>

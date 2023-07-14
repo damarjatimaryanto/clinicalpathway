@@ -3,8 +3,7 @@ session_start();
 
 $jut = session_destroy();
 
-if($jut){
+if ($jut) {
     header("Location: login.php");
-exit();
+    exit();
 }
-?>

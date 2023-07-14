@@ -59,18 +59,27 @@ $conn->close();
     <link rel="stylesheet" href="assets/dist/css/adminlte.min.css">
 
     <link rel='icon' href='img/Logo.png'>
+
+    <style>
+        body {
+            background-image: url('img/Background3.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
-            <a href="assets/index3.html" class="brand-link d-flex justify-content-center">
+            <a href="#" class="brand-link d-flex justify-content-center">
                 <img src="img/Logo.png" alt="SINAPS LOGO" class="" style="opacity: .8; height:200px;">
 
             </a>
             <div class="card-header text-center mh-auto">
-                <a href="../../index2.html" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
+                <a href="#" class="h5"><b>Sensus Terintegrasi dan Akurat Pasien Stroke</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
