@@ -12444,45 +12444,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya217 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63412" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63412" name="biaya217" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63412" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya217 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63413" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63413" name="biaya217" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63413" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya217 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63414" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63414" name="biaya217" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63414" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
-
-                                                        <!-- <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya217 == 1) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6341" name="biaya217" value="0" onchange="hitungTotal36()" checked>
-                                                                <label for="customCheckbox6341" class="custom-control-label"></label>
-                                                            <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6341" name="biaya217" value="0" onchange="hitungTotal36()">
-                                                                <label for="customCheckbox6341" class="custom-control-label"></label>
-                                                            <?php
-                                                            } ?>
-                                                        </div> -->
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-radio">
@@ -12497,45 +12486,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya218 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63422" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63422" name="biaya218" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63422" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya218 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63423" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63423" name="biaya218" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63423" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya218 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63424" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63424" name="biaya218" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63424" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
-
-                                                        <!-- <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya218 == 1) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6342" name="biaya218" value="0" onchange="hitungTotal36()" checked>
-                                                                <label for="customCheckbox6342" class="custom-control-label"></label>
-                                                            <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6342" name="biaya218" value="0" onchange="hitungTotal36()">
-                                                                <label for="customCheckbox6342" class="custom-control-label"></label>
-                                                            <?php
-                                                            } ?>
-                                                        </div> -->
                                                     </td>
 
                                                     <td>
@@ -12551,45 +12529,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya219 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63432" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63432" name="biaya219" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63432" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya219 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63433" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63433" name="biaya219" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63433" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya219 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63434" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63434" name="biaya219" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63434" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
-
-                                                        <!-- <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya219 == 1) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6343" name="biaya219" value="0" onchange="hitungTotal36()" checked>
-                                                                <label for="customCheckbox6343" class="custom-control-label"></label>
-                                                            <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6343" name="biaya219" value="0" onchange="hitungTotal36()">
-                                                                <label for="customCheckbox6343" class="custom-control-label"></label>
-                                                            <?php
-                                                            } ?>
-                                                        </div> -->
                                                     </td>
 
                                                     <td>
@@ -12605,45 +12572,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya220 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63442" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63442" name="biaya220" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63442" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya220 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63443" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63443" name="biaya220" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63443" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya220 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63444" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63444" name="biaya220" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63444" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
-
-                                                        <!-- <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya220 == 1) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6344" name="biaya220" value="0" onchange="hitungTotal36()" checked>
-                                                                <label for="customCheckbox6344" class="custom-control-label"></label>
-                                                            <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6344" name="biaya220" value="0" onchange="hitungTotal36()">
-                                                                <label for="customCheckbox6344" class="custom-control-label"></label>
-                                                            <?php
-                                                            } ?>
-                                                        </div> -->
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-radio">
@@ -12658,45 +12614,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya221 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63452" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63452" name="biaya221" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63452" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya221 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63453" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63453" name="biaya221" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63453" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya221 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63454" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63454" name="biaya221" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63454" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
-
-                                                        <!-- <div class="custom-control custom-checkbox">
-                                                            <?php if ($biaya221 == 1) { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6345" name="biaya221" value="0" onchange="hitungTotal36()" checked>
-                                                                <label for="customCheckbox6345" class="custom-control-label"></label>
-                                                            <?php } else { ?>
-                                                                <input class="custom-control-input" type="checkbox" id="customCheckbox6345" name="biaya221" value="0" onchange="hitungTotal36()">
-                                                                <label for="customCheckbox6345" class="custom-control-label"></label>
-                                                            <?php
-                                                            } ?>
-                                                        </div> -->
                                                     </td>
                                                     <td>
                                                         <div class="custom-control custom-radio">
@@ -12711,30 +12656,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya222 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="697" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63462" class="custom-control-label">1X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63462" name="biaya222" value="697" onchange="hitungTotal36()">
                                                                 <label for="customRadio63462" class="custom-control-label">1X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya222 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="1394" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63463" class="custom-control-label">2X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63463" name="biaya222" value="1394" onchange="hitungTotal36()">
                                                                 <label for="customRadio63463" class="custom-control-label">2X</label>
                                                             <?php
                                                             } ?>
                                                         </div>
                                                         <div class="custom-control custom-radio">
                                                             <?php if ($biaya222 == 1) { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="0" onchange="hitungTotal36()" checked>
+                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="2091" onchange="hitungTotal36()" checked>
                                                                 <label for="customRadio63464" class="custom-control-label">3X</label>
                                                             <?php } else { ?>
-                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="0" onchange="hitungTotal36()">
+                                                                <input class="custom-control-input" type="radio" id="customRadio63464" name="biaya222" value="2091" onchange="hitungTotal36()">
                                                                 <label for="customRadio63464" class="custom-control-label">3X</label>
                                                             <?php
                                                             } ?>
